@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rare-disease-mva"
+version = "0.1.0"
+description = "Rare Disease Real Kid: MVA Hackathon 2026"
+requires-python = ">=3.11"
+dependencies = [
+    # HuggingFace data download
+    "huggingface_hub>=0.24",
+    # VCF/genomic file handling
+    "cyvcf2>=0.31",
+    "pysam>=0.22",
+    # Data analysis
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "scipy>=1.13",
+    # Bioinformatics
+    "biopython>=1.83",  # imports as `Bio`
+    # Notebooks & viz
+    "jupyter>=1.0",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    # Utilities
+    "python-dotenv>=1.0",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.4",
+]

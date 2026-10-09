@@ -1,0 +1,30 @@
+# Data - never commit (up to 85 GB)
+data/
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.bam
+*.bam.bai
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.cram
+*.bed
+*.bed.gz
+
+# Environment
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
