@@ -1,0 +1,60 @@
+gene	panel	inheritance	rationale
+BUB1B	mva	AR	MVA1; spindle assembly checkpoint; rhabdomyosarcoma/Wilms, IUGR, short stature
+CEP57	mva	AR	MVA2
+TRIP13	mva	AR	MVA3; Wilms tumour
+BUB1	mva_related	AR	SAC kinase; aneuploidy/microcephaly
+BUB3	mva_related	AR	SAC component
+MAD2L1	mva_related	AR	SAC component
+TTK	mva_related	AR	MPS1 SAC kinase
+KNL1	mva_related	AR	kinetochore; microcephaly
+CENPE	mva_related	AR	kinetochore motor; microcephalic primordial dwarfism
+BLM	chromosome_instability	AR	Bloom syndrome; growth restriction + cancer
+FANCA	chromosome_instability	AR	Fanconi anaemia; growth restriction, renal anomalies, cancer
+FANCB	chromosome_instability	XLR	Fanconi anaemia
+FANCC	chromosome_instability	AR	Fanconi anaemia
+FANCD2	chromosome_instability	AR	Fanconi anaemia
+FANCE	chromosome_instability	AR	Fanconi anaemia
+FANCF	chromosome_instability	AR	Fanconi anaemia
+FANCG	chromosome_instability	AR	Fanconi anaemia
+FANCI	chromosome_instability	AR	Fanconi anaemia
+BRIP1	chromosome_instability	AR	Fanconi anaemia J
+FANCL	chromosome_instability	AR	Fanconi anaemia
+FANCM	chromosome_instability	AR	Fanconi anaemia
+PALB2	chromosome_instability	AR	Fanconi anaemia N
+BRCA2	chromosome_instability	AR	Fanconi anaemia D1; biallelic -> embryonal tumours
+SLX4	chromosome_instability	AR	Fanconi anaemia P
+RAD51C	chromosome_instability	AR	Fanconi anaemia O
+UBE2T	chromosome_instability	AR	Fanconi anaemia T
+NBN	chromosome_instability	AR	Nijmegen breakage; growth failure + cancer
+LIG4	chromosome_instability	AR	LIG4 syndrome; growth failure
+RECQL4	chromosome_instability	AR	Rothmund-Thomson/Baller-Gerold; growth + cancer
+ATM	chromosome_instability	AR	ataxia-telangiectasia
+TP53	sarcoma_predisposition	AD	Li-Fraumeni; rhabdomyosarcoma
+MLH1	sarcoma_predisposition	AR	CMMRD (biallelic)
+MSH2	sarcoma_predisposition	AR	CMMRD (biallelic)
+MSH6	sarcoma_predisposition	AR	CMMRD (biallelic)
+PMS2	sarcoma_predisposition	AR	CMMRD (biallelic)
+DICER1	sarcoma_predisposition	AD	DICER1 syndrome; embryonal RMS
+NF1	sarcoma_predisposition	AD	NF1; RMS
+HRAS	sarcoma_predisposition	AD	Costello; RMS + growth failure
+KRAS	sarcoma_predisposition	AD	RASopathy
+PTPN11	sarcoma_predisposition	AD	Noonan; RMS
+SOS1	sarcoma_predisposition	AD	Noonan
+PTCH1	sarcoma_predisposition	AD	Gorlin; RMS
+SUFU	sarcoma_predisposition	AD	Gorlin; RMS
+CDKN1C	sarcoma_predisposition	AD	Beckwith-Wiedemann / IMAGe (growth restriction)
+TRIM37	growth_cancer	AR	Mulibrey nanism; IUGR + Wilms
+CYP24A1	nephrocalcinosis	AR	infantile hypercalcaemia 1; nephrocalcinosis
+SLC34A1	nephrocalcinosis	AR	infantile hypercalcaemia 2; nephrocalcinosis
+SLC34A3	nephrocalcinosis	AR	HHRH; nephrocalcinosis
+CLDN16	nephrocalcinosis	AR	FHHNC
+CLDN19	nephrocalcinosis	AR	FHHNC
+CASR	nephrocalcinosis	AD	ADH1 / hypercalciuria
+SLC4A1	nephrocalcinosis	AD	distal RTA
+ATP6V1B1	nephrocalcinosis	AR	distal RTA
+ATP6V0A4	nephrocalcinosis	AR	distal RTA
+CLCN5	nephrocalcinosis	XLR	Dent disease
+OCRL	nephrocalcinosis	XLR	Dent 2 / Lowe
+SLC12A1	nephrocalcinosis	AR	Bartter 1 (antenatal; nephrocalcinosis, prematurity)
+KCNJ1	nephrocalcinosis	AR	Bartter 2 (antenatal; nephrocalcinosis, prematurity)
+HNF4A	nephrocalcinosis	AD	Fanconi renotubular + hyperinsulinism
