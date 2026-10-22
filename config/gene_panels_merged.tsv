@@ -10,17 +10,17 @@ BMPR1A	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 BRCA1	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 BRCA2	repo:chromosome_instability;panelapp:243@5.12	AR	Fanconi anaemia D1; biallelic -> embryonal tumours
 BRIP1	repo:chromosome_instability;panelapp:243@5.12	AR	Fanconi anaemia J
-BUB1	repo:mva_related	AR	SAC kinase; aneuploidy/microcephaly
-BUB1B	repo:mva;panelapp:1637@1.3;panelapp:243@5.12	AR	MVA1; spindle assembly checkpoint; rhabdomyosarcoma/Wilms, IUGR, short stature
-BUB3	repo:mva_related	AR	SAC component
+BUB1	repo:mva_related;hpo:v2026-09-01	AR	SAC kinase; aneuploidy/microcephaly
+BUB1B	repo:mva;panelapp:1637@1.3;panelapp:243@5.12;hpo:v2026-09-01	AR	MVA1; spindle assembly checkpoint; rhabdomyosarcoma/Wilms, IUGR, short stature
+BUB3	repo:mva_related;hpo:v2026-09-01	AR	SAC component
 CASR	repo:nephrocalcinosis	AD	ADH1 / hypercalciuria
 CBL	panelapp:1637@1.3;panelapp:243@5.12		PanelApp green: R457 Sarcoma of possible germline origin
 CDC73	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 CDKN1C	repo:sarcoma_predisposition;panelapp:243@5.12	AD	Beckwith-Wiedemann / IMAGe (growth restriction)
 CDKN2A	panelapp:243@5.12		PanelApp green: Childhood solid tumours
-CENATAC	literature	AR	MVA (CENATAC); added from a literature review
+CENATAC	hpo:v2026-09-01;literature	AR	HPO MVA annotation: OMIM:620153
 CENPE	repo:mva_related	AR	kinetochore motor; microcephalic primordial dwarfism
-CEP57	repo:mva	AR	MVA2
+CEP57	repo:mva;hpo:v2026-09-01	AR	MVA2
 CLCN5	repo:nephrocalcinosis	XLR	Dent disease
 CLDN16	repo:nephrocalcinosis	AR	FHHNC
 CLDN19	repo:nephrocalcinosis	AR	FHHNC
@@ -54,6 +54,7 @@ KDM3B	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 KNL1	repo:mva_related	AR	kinetochore; microcephaly
 KRAS	repo:sarcoma_predisposition;panelapp:1637@1.3;panelapp:243@5.12	AD	RASopathy
 LIG4	repo:chromosome_instability	AR	LIG4 syndrome; growth failure
+MAD1L1	hpo:v2026-09-01	AR	HPO MVA annotation: OMIM:620189
 MAD2L1	repo:mva_related	AR	SAC component
 MAX	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 MEN1	panelapp:243@5.12		PanelApp green: Childhood solid tumours
@@ -87,10 +88,12 @@ SLC12A1	repo:nephrocalcinosis	AR	Bartter 1 (antenatal; nephrocalcinosis, prematu
 SLC34A1	repo:nephrocalcinosis	AR	infantile hypercalcaemia 2; nephrocalcinosis
 SLC34A3	repo:nephrocalcinosis	AR	HHRH; nephrocalcinosis
 SLC4A1	repo:nephrocalcinosis	AD	distal RTA
+SLF2	literature	AR	Atelis syndrome 1 (OMIM:620184); MVA-like chromosomal instability, literature review
 SLX4	repo:chromosome_instability;panelapp:243@5.12	AR	Fanconi anaemia P
 SMAD4	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 SMARCA4	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 SMARCB1	panelapp:243@5.12		PanelApp green: Childhood solid tumours
+SMC5	literature	AR	Atelis syndrome 2 (OMIM:620185); MVA-like chromosomal instability, literature review
 SOS1	repo:sarcoma_predisposition;panelapp:243@5.12	AD	Noonan
 STK11	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 SUFU	repo:sarcoma_predisposition;panelapp:243@5.12	AD	Gorlin; RMS
@@ -100,7 +103,7 @@ TERT	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 TP53	repo:sarcoma_predisposition;panelapp:1637@1.3;panelapp:243@5.12	AD	Li-Fraumeni; rhabdomyosarcoma
 TRIM28	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 TRIM37	repo:growth_cancer;panelapp:243@5.12	AR	Mulibrey nanism; IUGR + Wilms
-TRIP13	repo:mva;panelapp:243@5.12	AR	MVA3; Wilms tumour
+TRIP13	repo:mva;panelapp:243@5.12;hpo:v2026-09-01	AR	MVA3; Wilms tumour
 TSC1	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 TSC2	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 TTK	repo:mva_related	AR	MPS1 SAC kinase
