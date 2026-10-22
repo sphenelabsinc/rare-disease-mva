@@ -1,7 +1,7 @@
 """Shared paths and QC thresholds for the Track 1 pipeline.
 
 Every QC threshold lives here so the report can cite one place, and changing a
-cutoff never requires editing a script. Ported from the Plan's pipeline/config.py.
+cutoff never requires editing a script.
 
 QC thresholds only count and flag variants; nothing is removed from the input to
 Exomiser (which uses FILTER=PASS via its own PASS_ONLY mode).

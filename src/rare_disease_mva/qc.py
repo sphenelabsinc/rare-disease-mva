@@ -62,7 +62,7 @@ def alleles_and_ad(v):
 
 
 def allele_balance_ok(gt: list[int], ad: list[int] | None) -> bool:
-    """Ported from the Plan's 01_qc_filter. Handles 0/1, 1/1, hemizygous and 1/2 calls."""
+    """Allele-balance check for 0/1, 1/1, hemizygous and 1/2 calls."""
     if not ad:
         return True  # no AD to judge by; GQ/DP already gate the call
     total = sum(ad)

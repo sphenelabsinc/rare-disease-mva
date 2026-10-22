@@ -1,12 +1,12 @@
-"""Merge the mechanism panel (Track B) from the Repo list, PanelApp and the literature.
+"""Merge the mechanism gene panel from the in-repo list, PanelApp and the literature.
 
-The merged panel is used only for the convergence check (stage 6) and as the control
+The merged panel is used only to check whether top-ranked genes fall in known mechanism genes, and as the control
 arm of the EPCR sensitivity analysis. It does not weight the ranking or enter EPCR.
 
 Sources, each recorded in the `sources` column:
-  repo:<category>        config/gene_panels.tsv (60 genes chosen from the phenotype)
+  repo:<category>        config/gene_panels.tsv (59 genes chosen from the phenotype)
   panelapp:<id>@<ver>    PanelApp green genes for R457 (1637) and Childhood solid tumours (243)
-  literature             genes added from the Plan's literature review
+  literature             genes added from a literature review
 
 Only panel IDs are sent to PanelApp; no patient data leaves the machine.
 
@@ -24,8 +24,8 @@ from rare_disease_mva import config as C
 PANELAPP = "https://panelapp.genomicsengland.co.uk/api/v1/panels/{}/"
 PANELAPP_IDS = {1637: "R457 Sarcoma of possible germline origin", 243: "Childhood solid tumours"}
 LITERATURE = {
-    "CENATAC": ("AR", "MVA (CENATAC); added from the Plan's literature review"),
-    "ZWINT": ("", "kinetochore / SAC component; added from the Plan's literature review"),
+    "CENATAC": ("AR", "MVA (CENATAC); added from a literature review"),
+    "ZWINT": ("", "kinetochore / SAC component; added from a literature review"),
 }
 REPO_PANEL = C.ROOT / "config" / "gene_panels.tsv"
 DEFAULT_OUT = C.ROOT / "config" / "gene_panels_merged.tsv"

@@ -18,7 +18,7 @@ CBL	panelapp:1637@1.3;panelapp:243@5.12		PanelApp green: R457 Sarcoma of possibl
 CDC73	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 CDKN1C	repo:sarcoma_predisposition;panelapp:243@5.12	AD	Beckwith-Wiedemann / IMAGe (growth restriction)
 CDKN2A	panelapp:243@5.12		PanelApp green: Childhood solid tumours
-CENATAC	literature	AR	MVA (CENATAC); added from the Plan's literature review
+CENATAC	literature	AR	MVA (CENATAC); added from a literature review
 CENPE	repo:mva_related	AR	kinetochore motor; microcephalic primordial dwarfism
 CEP57	repo:mva	AR	MVA2
 CLCN5	repo:nephrocalcinosis	XLR	Dent disease
@@ -111,4 +111,4 @@ WRN	panelapp:1637@1.3;panelapp:243@5.12		PanelApp green: R457 Sarcoma of possibl
 WT1	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 XPA	panelapp:243@5.12		PanelApp green: Childhood solid tumours
 XPC	panelapp:243@5.12		PanelApp green: Childhood solid tumours
-ZWINT	literature		kinetochore / SAC component; added from the Plan's literature review
+ZWINT	literature		kinetochore / SAC component; added from a literature review
