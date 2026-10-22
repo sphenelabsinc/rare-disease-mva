@@ -35,3 +35,15 @@ HOM_ALT_MIN_AB = 0.80        # alt allele balance for hom-alt calls
 QC_DIR = WORK / "qc"
 QC_FUNNEL = QC_DIR / "qc_funnel.tsv"
 CANDIDATE_QC = QC_DIR / "candidate_qc.tsv"
+
+# --- EPCR scoring (see epcr.py) ----------------------------------------------------
+# EPCR = w_pheno * phenotype_score + w_acmg * ACMG tier (+ w_panel * panel, control only)
+EPCR_WEIGHTS = (0.6, 0.4, 0.0)
+EPCR_SENSITIVITY = [(0.6, 0.4, 0.0), (0.5, 0.5, 0.0), (0.75, 0.25, 0.0), (0.5, 0.3, 0.2)]
+EPCR_CONTROL = (0.5, 0.3, 0.2)  # panel bonus added back; reported, never submitted
+ACMG_TIER = {"P": 1.0, "LP": 0.75, "VUS": 0.4, "LB": 0.1, "B": 0.0}
+CIS_DISTANCE_BP = 100   # two hets closer than this are treated as one allele in cis
+CIS_PENALTY = 0.3
+HEDGE_EPCR = 0.08       # fixed band 0.05-0.1, no formula
+SECONDARY_EPCR = 0.10   # fixed band 0.05-0.15, no formula
+MAX_MANUAL_ADJUST = 0.10
