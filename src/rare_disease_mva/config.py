@@ -36,11 +36,26 @@ QC_DIR = WORK / "qc"
 QC_FUNNEL = QC_DIR / "qc_funnel.tsv"
 CANDIDATE_QC = QC_DIR / "candidate_qc.tsv"
 
+# --- Candidate rules (see rank.py) -------------------------------------------------
+# Population rarity, gnomAD popmax as reported by Exomiser (MAX_FREQ, percent units).
+MAX_FREQ_PCT_RECESSIVE = 0.1    # AR / XR: < 0.1%
+MAX_FREQ_PCT_DOMINANT = 0.01    # AD / XD / MT: < 0.01%
+# Clustered low-allele-balance calls are likely reads mismapped from a paralog. Cluster size and
+# window follow GATK VariantFiltration (--cluster-size 3 --cluster-window-size 10).
+CLUSTER_SIZE = 3
+CLUSTER_WINDOW_BP = 10
+CLUSTER_MAX_AB = 0.20           # a clustered call is flagged only if its alt allele balance is below this
+
 # --- EPCR scoring (see epcr.py) ----------------------------------------------------
 # EPCR = w_pheno * phenotype_score + w_acmg * ACMG tier (+ w_panel * panel, control only)
+# phenotype_score is the Exomiser gene phenotype score, not the combined score: the combined
+# score already contains the variant score, which the ACMG tier also scores.
 EPCR_WEIGHTS = (0.6, 0.4, 0.0)
 EPCR_SENSITIVITY = [(0.6, 0.4, 0.0), (0.5, 0.5, 0.0), (0.75, 0.25, 0.0), (0.5, 0.3, 0.2)]
 EPCR_CONTROL = (0.5, 0.3, 0.2)  # panel bonus added back; reported, never submitted
+# Exomiser phenotype score of a gene with no phenotype match (median over all genes in this run);
+# the baseline-corrected sensitivity arm uses max(0, (score - baseline) / (1 - baseline)).
+PHENO_BASELINE = 0.5
 ACMG_TIER = {"P": 1.0, "LP": 0.75, "VUS": 0.4, "LB": 0.1, "B": 0.0}
 CIS_DISTANCE_BP = 100   # two hets closer than this are treated as one allele in cis
 CIS_PENALTY = 0.3
