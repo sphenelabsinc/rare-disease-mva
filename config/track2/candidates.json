@@ -1,0 +1,196 @@
+{
+  "_doc": "Hand-curated scoring inputs for Stage 4 (scripts/track2/s4_rank.py). c1 (max 25) and c3 (max 15) are lists of evidence items, each worth points with a source, so leave-one-source-out can remove them. c2 (max 20) is scored per mechanism scenario M1-M4. c4 (max 15), c5 (max 15) and c6 (max 10) are single judgements, each with a reason. gate: pass | review | exclude. Scores are judgements, documented so they can be challenged; they are not measurements.",
+  "scenario_priors": {"M1": 0.50, "M2": 0.05, "M3": 0.25, "M4": 0.10},
+  "candidates": [
+    {
+      "drug": "Niacin (nicotinic acid)",
+      "status": "Approved Rx (FDA/EMA, extended-release for dyslipidaemia); also OTC",
+      "branch": "A: restore residual BUBR1",
+      "node": "NAD+ -> SIRT2 -> BUBR1 abundance",
+      "c1": [
+        {"pts": 8, "src": "24825348", "note": "NAD+ precursor NMN raises BubR1 abundance in vivo; NAD+ decline drives BubR1 loss via SIRT2/K668"},
+        {"pts": 4, "src": "24825348", "note": "SIRT2 overexpression extends median lifespan of BubR1 H/H mice (genetic, same axis)"}
+      ],
+      "c2": {"M1": 17, "M2": 6, "M3": 10, "M4": 2, "speculative": false,
+             "why": "All patient BUBR1 is p.N1002K (allele 1 is null), so raising abundance only helps if the stabilised mutant protein works. Fits best under M1"},
+      "c3": [
+        {"pts": 4, "src": "24825348", "note": "Healthspan and lifespan of BubR1 H/H improved via SIRT2"},
+        {"pts": 3, "src": "Pirinen 2020 Cell Metab", "note": "Niacin raises blood NAD+ up to 8x and restores muscle NAD+ in humans (mitochondrial myopathy)"}
+      ],
+      "c4": {"pts": 10, "why": "Decades of use; paediatric dyslipidaemia experience; flushing, hepatotoxicity (SR forms), glucose intolerance"},
+      "c5": {"pts": 7, "why": "Raises uric acid (stone risk with nephrocalcinosis needs monitoring); raising NAD+ may support tumour metabolism (NAMPT is pro-tumour in some cancers), and there are no RMS data"},
+      "c6": {"pts": 9, "why": "Oral, cheap; testable in patient lymphocytes or fibroblasts with NAD+ and BUBR1 western blot readouts"},
+      "gate": "pass",
+      "counter": "Wu 2023 (38009412): SIRT2 overexpression does not extend lifespan in wild-type mice, so the benefit may be specific to low-BubR1 states (which applies here). The niacin -> BUBR1 link is not tested directly. Nicotinamide, NR and NMN are supplements, not approved drugs.",
+      "hypothesis": "Niacin or NAD+ repletion raises steady-state BUBR1-N1002K and lowers PCS and missegregation in patient cells",
+      "endpoint": "BUBR1 western blot (vs cycloheximide chase), K668 acetylation, PCS rate, live-cell mitotic timing"
+    },
+    {
+      "drug": "Arimoclomol",
+      "status": "Approved (FDA 2024, Miplyffa; NPC, age >=2 y)",
+      "branch": "A: restore residual BUBR1",
+      "node": "Chaperone capacity (HSF1/HSP70 co-inducer) -> BUBR1 fold stability",
+      "c1": [
+        {"pts": 3, "src": "20516114", "note": "Kinase-domain MVA mutants depend on HSP90 for stability; arimoclomol itself is untested on BUBR1 and acts mainly on HSP70"}
+      ],
+      "c2": {"M1": 15, "M2": 3, "M3": 6, "M4": 1, "speculative": true,
+             "why": "A pharmacological chaperone-network approach for a destabilised fold. Requires the mutant to be a chaperone client (shown for analogous MVA alleles)"},
+      "c3": [
+        {"pts": 2, "src": "Miplyffa label / NPC trials", "note": "Restores folding or trafficking of misfolded proteins in other diseases"}
+      ],
+      "c4": {"pts": 12, "why": "Approved from age 2; mostly mild adverse effects (URTI, diarrhoea, weight loss); hypersensitivity warning"},
+      "c5": {"pts": 5, "why": "Raises serum creatinine 10-20% via OCT2 (confounds kidney monitoring with nephrocalcinosis); HSF1 activation is pro-tumorigenic in some models"},
+      "c6": {"pts": 7, "why": "Can be tested in vitro alongside an HSP90-dependence assay; costly"},
+      "gate": "review",
+      "counter": "No evidence links HSP70 induction to BUBR1. Boosting chaperones could help tumour cells too.",
+      "hypothesis": "Arimoclomol increases BUBR1-N1002K half-life in patient cells in an HSF1-dependent manner",
+      "endpoint": "Cycloheximide-chase half-life with or without drug; HSP70 induction; PCS rate"
+    },
+    {
+      "drug": "Sodium phenylbutyrate",
+      "status": "Approved (urea cycle disorders, paediatric)",
+      "branch": "A: restore residual BUBR1",
+      "node": "Chemical chaperone -> BUBR1 fold stability",
+      "c1": [],
+      "c2": {"M1": 11, "M2": 2, "M3": 4, "M4": 1, "speculative": true,
+             "why": "Non-specific chemical chaperone; it is also an HDAC inhibitor, which could change BubR1 acetylation either way"},
+      "c3": [],
+      "c4": {"pts": 11, "why": "Long paediatric use in urea cycle disorders; high sodium load, body odour, menstrual effects"},
+      "c5": {"pts": 8, "why": "No clear tumour signal; sodium load matters for kidney and blood pressure"},
+      "c6": {"pts": 7, "why": "In vitro testable"},
+      "gate": "pass",
+      "counter": "No BUBR1 data at all. HDAC-inhibitor effects on mitosis are a confounder.",
+      "hypothesis": "4-PBA raises BUBR1-N1002K abundance without changing K668 acetylation",
+      "endpoint": "BUBR1 western blot, acetyl-K668, PCS"
+    },
+    {
+      "drug": "Sirolimus / everolimus",
+      "status": "Approved (paediatric TSC, transplant)",
+      "branch": "B/C: downstream stress and tissue",
+      "node": "mTORC1 hyperactivity -> sarcopenia; senescence and SASP",
+      "c1": [
+        {"pts": 5, "src": "31738183", "note": "Sarcopenia in monoallelic BubR1 MVA-mutant mice correlates with mTORC1 hyperactivity (correlation, no drug tested)"}
+      ],
+      "c2": {"M1": 7, "M2": 8, "M3": 8, "M4": 10, "speculative": false,
+             "why": "Acts downstream, so it is largely independent of the variant mechanism"},
+      "c3": [
+        {"pts": 4, "src": "31738183", "note": "mTORC1 is linked to an MVA-relevant tissue phenotype"},
+        {"pts": 3, "src": "general geroscience", "note": "Rapamycin extends healthspan in other mouse ageing models (not BubR1)"}
+      ],
+      "c4": {"pts": 10, "why": "Everolimus approved from age 1 (TSC); immunosuppression, mucositis, impaired wound healing, dyslipidaemia, growth concerns"},
+      "c5": {"pts": 9, "why": "Temsirolimus with VAC/VI was feasible in RMS (ARST1431) but gave no EFS benefit; activity in relapsed RMS (ARST0921). Proteinuria needs monitoring"},
+      "c6": {"pts": 8, "why": "Oral; S6K phosphorylation readout; in vitro and in patient muscle cells"},
+      "gate": "review",
+      "counter": "mTOR inhibition induces autophagy, and autophagy degrades BubR1 in senescent cells (37094517), so it might lower BUBR1 further. Immunosuppression during cancer therapy.",
+      "hypothesis": "Low-dose rapalog lowers SASP and senescence in patient fibroblasts without lowering BUBR1 or raising missegregation",
+      "endpoint": "pS6, SA-beta-gal, SASP panel, BUBR1 level, karyotype"
+    },
+    {
+      "drug": "Dasatinib (+/- quercetin)",
+      "status": "Dasatinib approved (paediatric Ph+ ALL/CML); quercetin is a supplement",
+      "branch": "B: reduce consequences (senolytic)",
+      "node": "p16Ink4a senescence -> progeroid tissue decline",
+      "c1": [
+        {"pts": 5, "src": "22048312", "note": "Genetic clearance of p16+ cells in BubR1 H/H delays progeroid phenotypes (not a drug)"},
+        {"pts": 2, "src": "US11517572 patent", "note": "D+Q lowered senescence markers in BubR1 H/H fat (patent data, not peer-reviewed)"}
+      ],
+      "c2": {"M1": 6, "M2": 8, "M3": 8, "M4": 10, "speculative": false,
+             "why": "Mechanism-independent; targets consequences, not the defect"},
+      "c3": [
+        {"pts": 7, "src": "22048312", "note": "Healthspan (fat, muscle, eye) improved; no lifespan extension"}
+      ],
+      "c4": {"pts": 8, "why": "Paediatric oncology use; myelosuppression, pleural effusion, QT; intermittent senolytic dosing is untested in children"},
+      "c5": {"pts": 6, "why": "Senescence is a tumour barrier in a cancer-predisposed child; overlaps with chemotherapy myelosuppression. ChEMBL: no BUBR1 inhibition (>75% residual activity at 1 uM)"},
+      "c6": {"pts": 7, "why": "In vitro senolysis of patient fibroblasts is straightforward"},
+      "gate": "review",
+      "counter": "Healthspan but not lifespan benefit; it does not address the tumour risk and might remove a tumour-suppressive barrier.",
+      "hypothesis": "D(+Q) selectively removes senescent patient fibroblasts without enriching aneuploid proliferating cells",
+      "endpoint": "SA-beta-gal/p16 clearance; interphase FISH aneuploidy of survivors"
+    },
+    {
+      "drug": "Hydroxychloroquine",
+      "status": "Approved (malaria, lupus, JIA; paediatric)",
+      "branch": "A/B: block autophagic BUBR1 loss; aneuploidy-selective",
+      "node": "Autophagy -> BUBR1 degradation; aneuploid-cell tolerance",
+      "c1": [
+        {"pts": 3, "src": "37094517", "note": "Autophagy-dependent BubR1 degradation in senescent cells (oxidative-stress model, not MVA)"}
+      ],
+      "c2": {"M1": 8, "M2": 4, "M3": 6, "M4": 6, "speculative": true,
+             "why": "Two arms: preserves BUBR1 from autophagy (but proteasome is the route shown for MVA mutants), and is selectively toxic to aneuploid cells"},
+      "c3": [
+        {"pts": 4, "src": "21315436", "note": "Chloroquine is aneuploidy-selective in trisomic MEFs"}
+      ],
+      "c4": {"pts": 10, "why": "Long paediatric use; retinal toxicity with long-term use; QT"},
+      "c5": {"pts": 8, "why": "Autophagy inhibition is under clinical study as an anticancer approach (paediatric data limited); dose adjustment in renal impairment"},
+      "c6": {"pts": 8, "why": "Cheap; in vitro LC3 flux and BUBR1 readouts"},
+      "gate": "pass",
+      "counter": "MVA mutant BUBR1 is cleared by the proteasome, not shown to go through autophagy. Killing aneuploid cells in a mosaic child could harm tissues, an untested risk.",
+      "hypothesis": "HCQ raises BUBR1 in patient cells under stress and preferentially reduces aneuploid-cell fitness",
+      "endpoint": "LC3-II flux, BUBR1 level, FISH aneuploidy fraction over passages"
+    },
+    {
+      "drug": "Metformin",
+      "status": "Approved (T2D, age >=10 y)",
+      "branch": "B: aneuploid-cell stress (AMPK)",
+      "node": "AMPK energy stress -> aneuploid-cell selection",
+      "c1": [],
+      "c2": {"M1": 4, "M2": 5, "M3": 5, "M4": 6, "speculative": true,
+             "why": "By analogy with AICAR (AMPK activator) in trisomic MEFs"},
+      "c3": [
+        {"pts": 3, "src": "21315436", "note": "AICAR, an AMPK activator, is selectively antiproliferative in aneuploid MEFs"}
+      ],
+      "c4": {"pts": 11, "why": "Paediatric T2D experience; GI effects; B12 deficiency"},
+      "c5": {"pts": 4, "why": "Lactic acidosis risk with reduced eGFR (nephrocalcinosis) means a kidney gate review; may worsen growth or weight in a child with failure to thrive"},
+      "c6": {"pts": 9, "why": "Cheap, oral"},
+      "gate": "review",
+      "counter": "Metformin is not AICAR, and AMPK-mediated selection is only shown for trisomies. Failure to thrive argues against an anorexigenic drug.",
+      "hypothesis": "Metformin reduces the aneuploid fraction in long-term patient fibroblast culture",
+      "endpoint": "Interphase FISH over passages; growth curves"
+    },
+    {
+      "drug": "Ruxolitinib / baricitinib (JAK inhibitors)",
+      "status": "Approved (paediatric GVHD >=12 y; JIA)",
+      "branch": "B: inflammation (cGAS-STING -> IFN/SASP)",
+      "node": "cGAS-STING -> type I IFN / SASP",
+      "c1": [],
+      "c2": {"M1": 4, "M2": 5, "M3": 5, "M4": 6, "speculative": true,
+             "why": "Whether cGAS-STING drives MVA pathology, and in which direction, is unknown"},
+      "c3": [
+        {"pts": 3, "src": "39169218", "note": "MVA is linked to chronic immune response (review)"}
+      ],
+      "c4": {"pts": 8, "why": "Infection risk; growth effects"},
+      "c5": {"pts": 3, "why": "Baricitinib/tofacitinib carry boxed malignancy warnings (ruxolitinib does not); weakens immune surveillance in a cancer-predisposed child"},
+      "c6": {"pts": 7, "why": "ISG readouts in vitro"},
+      "gate": "review",
+      "counter": "cGAS-STING-driven immune clearance of CIN cells may be protective (28738408). Direction unknown.",
+      "hypothesis": "Patient cells show an ISG signature that JAK inhibition reverses without raising aneuploid-cell survival",
+      "endpoint": "ISG score, micronuclei, cGAS foci"
+    },
+    {
+      "drug": "Bortezomib",
+      "status": "Approved (myeloma; paediatric ALL protocols)",
+      "branch": "A: block proteasomal clearance of mutant BUBR1",
+      "node": "Proteasome -> BUBR1 abundance",
+      "c1": [
+        {"pts": 8, "src": "20516114", "note": "MG132 blocks degradation of HSP90-destabilised MVA mutant BUBR1 in vitro"}
+      ],
+      "c2": {"M1": 14, "M2": 2, "M3": 5, "M4": 1, "speculative": false,
+             "why": "Directly blocks the clearance route shown for analogous mutants"},
+      "c3": [],
+      "c4": {"pts": 3, "why": "Systemic proteasome inhibition is a cytotoxic chemotherapy, not suitable for chronic use"},
+      "c5": {"pts": 1, "why": "Additive peripheral neuropathy with vincristine (RMS backbone); blocks APC/C-dependent mitotic proteolysis"},
+      "c6": {"pts": 6, "why": "Useful only as an in vitro mechanistic probe"},
+      "gate": "exclude",
+      "counter": "Toxicity profile is incompatible with chronic use in a child on vincristine.",
+      "hypothesis": "(Probe) Proteasome inhibition rescues BUBR1-N1002K levels, which would show M1",
+      "endpoint": "BUBR1 level after MG132/bortezomib in patient cells"
+    }
+  ],
+  "avoid": [
+    {"class": "HSP90 inhibitors (e.g. pimitespib, approved in Japan)", "why": "Kinase-domain MVA mutant BUBR1 is HSP90-dependent; GA + CHX removed virtually all mutant protein (20516114)"},
+    {"class": "MPS1/TTK, Aurora B, PLK1 inhibitors (investigational)", "why": "Weaken the SAC or KARD phosphorylation further; aneuploid cells are sensitive to SAC inhibition over time (33505028)"},
+    {"class": "p53 inhibition (e.g. pifithrin; no approved drug)", "why": "p53 is net protective against tissue decline in BubR1 progeroid mice (23602569)"},
+    {"class": "Microtubule-targeting agents (vincristine, vinorelbine)", "why": "Standard RMS backbone, so not avoidable. A checkpoint-weak background changes the response to mitotic arrest (19282667). The MVA RMS case was managed with reduced intensity (31184400), and genomic-instability disorders show treatment hypersensitivity (39264246). Flag for oncology dose review, not exclusion"},
+    {"class": "Radiotherapy", "why": "Genomic-instability disorders may be exquisitely radiosensitive (39264246); evidence for MVA specifically is sparse"}
+  ]
+}

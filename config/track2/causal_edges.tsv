@@ -1,0 +1,36 @@
+source	target	relation	module	status	tier	pmids	note
+BUB1B p.Leu737*	BUB1B mRNA (allele 1)	NMD loss	primary	inferred	E2	20516114	MVA truncating-allele transcripts absent in patient cells; not measured for this allele
+BUB1B p.Asn1002Lys	BUBR1 fold stability	destabilises	primary	inferred	E2	20516114;22698286	Kinase-domain MVA missense I909T/R727C/L1012P have ~2x turnover; pseudokinase fold needs ATP-site residues for stability. Not measured for N1002K
+HSP90	BUBR1 fold stability	chaperones	primary	demonstrated	E2	20516114	GA+CHX removed virtually all mutant BUBR1 in U2OS
+Proteasome	BUBR1 abundance	degrades unstable mutant	primary	demonstrated	E2	20516114	MG132 prevented HSP90-inhibition-induced loss
+BUBR1 fold stability	BUBR1 abundance	determines	primary	demonstrated	E2	20516114	
+BUB1B mRNA (allele 1)	BUBR1 abundance	contributes	primary	demonstrated	E2	20516114;16411201	
+NAD+	SIRT2 activity	cofactor	primary	demonstrated	E3	24825348	
+SIRT2 activity	BUBR1 abundance	deacetylates K668, stabilises	primary	demonstrated	E3	24825348	NMN raises BubR1 in vivo; SIRT2-Tg extends BubR1 H/H median lifespan
+CBP	BUBR1 abundance	acetylates K668, destabilises	primary	demonstrated	E3	24825348	
+Autophagy	BUBR1 abundance	degrades in senescence	secondary	demonstrated	E4	37094517	Oxidative-stress model, not MVA
+BUBR1 abundance	SAC strength	required (dosage-dependent)	primary	demonstrated	E2	18932004;16411201;20516114	PCS with any reduction; aneuploidy below ~50%
+BUBR1 pseudokinase domain	KARD phosphorylation	promotes	primary	demonstrated	E2	33207204	
+PLK1	KARD phosphorylation	phosphorylates	primary	demonstrated	E2	23079597	
+KARD phosphorylation	PP2A-B56 at kinetochore	recruits	primary	demonstrated	E2	23079597;23789096;33207204	
+PP2A-B56 at kinetochore	Stable K-MT attachment	opposes Aurora B	primary	demonstrated	E2	23079597;23789096	MVA patient cells show B56 recruitment defect
+BUB1B p.Asn1002Lys	BUBR1 pseudokinase domain	may impair (M3)	primary	speculative	E5	33207204	Structural proximity to T1008/L1012 only
+SAC strength	Chromosome missegregation	prevents	primary	demonstrated	E2	20516114;28553959	
+Stable K-MT attachment	Chromosome missegregation	prevents	primary	demonstrated	E2	23079597	
+SAC strength	Premature chromatid separation	prevents	primary	demonstrated	E2	18932004;16411201	
+Chromosome missegregation	Mosaic variegated aneuploidy	causes	primary	demonstrated	E2	15475955;20516114	
+Chromosome missegregation	Micronuclei	causes	secondary	demonstrated	E4	28738408	
+Micronuclei	cGAS-STING	activates	secondary	demonstrated	E4	28738408;29342134	Direction of effect on MVA tissue unknown
+Mosaic variegated aneuploidy	p53/p21	activates	secondary	demonstrated	E3	23602569;37900274	
+p53/p21	Progenitor senescence	attenuates (p16 route) and drives (lens)	secondary	demonstrated	E3	23602569	p53 is net protective; do not inhibit
+Mosaic variegated aneuploidy	p16Ink4a senescence	induces	secondary	demonstrated	E3	15208629;22048312	
+p16Ink4a senescence	Progeroid tissue decline	drives	clinical	demonstrated	E3	22048312	INK-ATTAC clearance delays onset; healthspan not lifespan
+mTORC1 hyperactivity	Sarcopenia	correlates	clinical	inferred	E3	31738183	Monoallelic BubR1 carriers; correlation not intervention
+Mosaic variegated aneuploidy	mTORC1 hyperactivity	associated	secondary	speculative	E3	31738183	Mechanistic link not established
+Mosaic variegated aneuploidy	Apoptosis (p53-independent too)	causes	secondary	demonstrated	E3	37900274;30668728	Microcephaly mechanism
+Apoptosis (p53-independent too)	Growth failure / IUGR	contributes	clinical	inferred	E3	30668728;15208629	
+Mosaic variegated aneuploidy	Embryonal tumours (RMS, Wilms)	predisposes	clinical	demonstrated	E2	15475955;28553959;11932988	Biallelic BUB1B/TRIP13 = severe SAC loss = embryonal tumours
+Mosaic variegated aneuploidy	Recurrent pregnancy loss	causes (carrier-level PCS)	clinical	inferred	E3	24981203;42434306	
+BUBR1 abundance	Tumour suppression	promotes	clinical	demonstrated	E3	23242215	BubR1 overexpression reduces tumours even with oncogenic Ras
+BUBR1 abundance	Healthy lifespan	promotes	clinical	demonstrated	E3	23242215;24825348	
+Mosaic variegated aneuploidy	Chemo/radiation hypersensitivity	predisposes	clinical	inferred	E2	39264246;31081598	Severe dactinomycin reaction in MVA Wilms case

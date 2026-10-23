@@ -1,0 +1,9 @@
+drug	base_rank	max_rank_shift_loso	most_influential_source	rank_speculative_halved	single_source_flag
+Niacin (nicotinic acid)	1	2	24825348	1	FLAG
+Sirolimus / everolimus	2	3	31738183	2	FLAG
+Dasatinib (+/- quercetin)	3	4	22048312	3	FLAG
+Hydroxychloroquine	4	1	21315436	4	
+Arimoclomol	5	0		5	
+Sodium phenylbutyrate	6	0		6	
+Metformin	7	0		7	
+Ruxolitinib / baricitinib (JAK inhibitors)	8	0		8	

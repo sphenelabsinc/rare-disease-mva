@@ -1,0 +1,593 @@
+pmid	year	journal	first_author	queries	title
+42434306	2026	Front Endocrinol (Lausanne)	Wei	mva_bub1b	Functional and clinical evidence for two novel heterozygous BUB1B variants and their value in precision genetic counseling for recurrent pregnancy loss.
+42595739	2026	Orbit	Vempuluru	mva_cancer_rx,cep57_trip13	Sequential presentation of Wilms' tumor and orbital rhabdomyosarcoma in a child with mosaic variegated aneuploidy syndrome 3.
+41700350	2026	J Pediatr Endocrinol Metab	Viudes	mva_cancer_rx,cep57_trip13	A novel CEP57 gene mutation in mosaic variegated aneuploidy syndrome 2: case report.
+42286606	2026	Stem Cell Res Ther	Mi	missense_function,senescence	BDNF secreted by mesenchymal stem cells ameliorates the accelerated meiotic progression in aged mouse oocytes by activating the PI3K/AKT pathway.
+41285333	2026	Int J Biol Macromol	Zhao	senescence	TOP2A, BUB1B, CENPF, KIF15 and MELK: Key senescence-related genes linked to prognosis and immune infiltration in lung adenocarcinoma.
+41827050	2026	Parasit Vectors	Li	senescence	Single-cell transcriptomics reveals lipid metabolism reprogramming in macrophages in vitro during early stages of Leishmania donovani infection.
+41545558	2026	Sci Rep	Sun	overexpression,cin_taxane	Translational evaluation of BUB1B as a precision medicine biomarker for hepatocellular carcinoma.
+41898560	2026	Int J Mol Sci	Serban	overexpression	Molecular Characterization of Soft Tissue Sarcomas Using RNA-Based Next-Generation Sequencing.
+42295646	2026	Clin Transl Oncol	Tian	overexpression	BUB1B is a novel prognostic-related biomarker and correlated with immune infiltrates in lung adenocarcinoma.
+42339509	2026	J Cell Sci	Zhou	mtor	Cumulus cells enhance oocyte genomic quality control by promoting DNA damage-induced meiotic arrest.
+42237635	2026	Blood	Schavgoulidze	aneuploid_selective	PKMYT1 is a targetable vulnerability in del(17p) high-risk multiple myeloma.
+42258764	2026	Cancer Res	Kim	aneuploid_selective	Deficiency in POLE Exonuclease Causes Synthetic Lethality in Highly Aneuploid Cancer Cells.
+42160513	2026	Mol Biol Cell	Liu	aneuploid_selective	The scaffold protein PRR14L is linked to mitotic fidelity and sensitivity to MPS1 inhibition.
+41576363	2026	Mol Cancer Ther	Nguyen	aneuploid_selective	NN-01-195, a Novel Conjugate of HSP90 and AURKA Inhibitors, Effectively Targets Solid Tumors.
+41610251	2026	Science	Tomaskovic	cin_cgas	DNA-protein cross-links promote cGAS-STING-driven premature aging and embryonic lethality.
+41811963	2026	Sci Adv	Beernaert	cin_cgas	Chromosomal instability shapes the tumor microenvironment of esophageal adenocarcinoma via a cGAS-chemokine-myeloid axis.
+42596654	2026	Cancer Biol Med	Zhao	cin_cgas	cGAS-STING pathway activation drives the cold-to-hot tumor transition and sensitizes immunotherapy.
+42322953	2026	Redox Biol	Piscone	cin_cgas	XRCC1 deficiency drives telomeric chromatin leakage, inflammatory signalling and senescence.
+42069841	2026	Genes Immun	Shahi	cin_cgas	Hyperactivation of the cGAS-STING pathway promotes liver inflammation in Down syndrome.
+42115593	2026	Nat Commun	Ren	bubr1_acetylation	Molecular anatomy of PLK1 master docking motifs.
+42647139	2026	Cancer Res Commun	Tabe	bubr1_acetylation	Spindle Assembly Checkpoint Competency Determines Sensitivity to KIF18A Inhibition in Small Cell Lung Cancer.
+41571838	2026	Mol Syst Biol	Heller	aneuploidy_proteotoxic	Protein buffering of aneuploidy is driven by coordinated factors identified through machine learning.
+42094535	2026	bioRxiv	Schukken	aneuploidy_proteotoxic	Paired CRISPR screens identify mitochondrial metabolism and UBE2H as aneuploid-specific dependencies in human cancer cell lines.
+42168750	2026	Adv Exp Med Biol	Modi	aneuploidy_proteotoxic	Investigating the Consequences of Aneuploidy in Cancer and Normal Tissue.
+42593111	2026	mBio	Peterson	aneuploidy_proteotoxic	Distinct STRIPAK subunits drive conserved and subunit-specific signaling programs in Cryptococcus neoformans.
+40055864	2025	J Am Heart Assoc	Pun	mva_bub1b,missense_function	BubR1 Controls Heart Development by Promoting Expression of Cardiogenesis Regulators.
+40555658	2025	Zhonghua Yi Xue Yi Chuan Xue Za Zhi	Qu	mva_bub1b,mva_review	[Genetic analysis of two fetuses with Mosaic variegated aneuploidy syndrome caused by compound heterozygous variants in BUB1B and its upstream regulatory elements and a literature Review].
+39392177	2025	Am J Med Genet A	Frattini	mva_review	A Distinctive Type of Mosaic Variegated Aneuploidy: Case Report and Review of the Literature.
+40441073	2025	Curr Opin Cell Biol	Milán	mva_review	Chromosomal instability in development and disease: Beyond cancer evolution.
+39753942	2025	J Assist Reprod Genet	Bazrgar	missense_function	Aneuploidy-driven gene expression profiling in human blastocysts: insights from RNA-Seq analysis.
+39737806	2025	Andrology	Chen	missense_function	CENP-E haploinsufficiency causes chromosome misalignment and spindle assembly checkpoint activation in the spermatogonia.
+40607964	2025	Aging Cell	Pun	senescence	BubR1 Insufficiency Drives Transcriptomic Alterations and Pathology Associated With Cardiac Aging and Heart Failure.
+40260408	2025	3 Biotech	Modanwal	senescence,p53_aneuploidy	Transcriptomic signatures of prostate cancer progression: a comprehensive RNA-seq study.
+41053901	2025	Chin Neurosurg J	Kang	senescence	Identifying the role of aging-related genes in intracranial aneurysms through bioinformatics analysis.
+40168776	2025	Pathol Res Pract	Saeed	senescence	Discovering potential therapeutic targets in glioblastoma multiforme using a multi-omics approach.
+40744332	2025	Cell Signal	Ding	overexpression	High glucose-induced mitochondrial fission drives pancreatic cancer progression through the H3K18la/TTK/BUB1B signal pathway.
+41163302	2025	Cancer Med	Wang	overexpression	BUB1B Promotes Ovarian Cancer Cell Proliferation and Metastasis by Activating the Wnt/β-Catenin Pathway.
+40857057	2025	J Cell Mol Med	Cui	overexpression	KIFC1 Overexpression Promotes Pancreatic Carcinoma Progression via Stabilising BUB1B.
+40056529	2025	Transl Oncol	Qin	overexpression	BUB1B promotes cisplatin resistance in gastric cancer via Rad51-mediated DNA damage repair.
+40812730	2025	Am J Med Sci	Zeng	overexpression	BUB1B promotes gemcitabine resistance in lung adenocarcinoma and activates the PI3K/AKT signaling pathway.
+39903759	2025	Adv Sci (Weinh)	Duan	overexpression	Chromosome Missegregation Triggers Tumor Cell Pyroptosis and Enhances Anti-Tumor Immunotherapy in Colorectal Cancer.
+41229848	2025	J Thorac Dis	Zhang	overexpression,mtor	NUF2 promotes the malignant development of lung adenocarcinoma through the mTORC1 signaling pathway via binding to BUB1B.
+40702150	2025	Sci Rep	Xu	overexpression	Significant prognostic value of cell-cycle proteins in early-stage small cell carcinoma of cervix.
+40216293	2025	Drug Discov Today	Lima	aneuploid_selective	The spindle assembly checkpoint: Molecular mechanisms and kinase-targeted drug discovery.
+40089604	2025	Mol Psychiatry	Giona	aneuploid_selective	Shank3 modulates Rpl3 expression and protein synthesis via mGlu5: implications for Phelan McDermid syndrome.
+40757751	2025	Biofactors	Xue	aneuploid_selective	Profiling of RUVBL2-Induced Transcriptome Alterations Highlights a Critical Role for Chromatin Remodeling in Ovarian Cancer.
+41369352	2025	Cells	Nair	aneuploid_selective	The KIF18A Inhibitor ATX020 Induces Mitotic Arrest and DNA Damage in Chromosomally Instable High-Grade Serous Ovarian Cancer Cells.
+42494299	2025	Acta Biochim Biophys Sin (Shanghai)	Zhao	aneuploid_selective	Inhibiting BCL2L1 preferentially targets aneuploid cells in acute myeloid leukemia.
+39668392	2025	Cancer Res Treat	Kim	aneuploid_selective	Identifying Anti-cancer Effects and Exploring the Mechanism of an MPS1/TTK Inhibitor in Gastric Cancer.
+39075192	2025	Nat Rev Genet	Chen	cin_cgas	Chromosomal instability as a driver of cancer progression.
+41105787	2025	Sci Adv	Chan	cin_cgas	Extrachromosomal circular DNA promotes inflammation and hepatocellular carcinoma development.
+40470467	2025	Cell Insight	Liu	cin_cgas	cGAS, an innate dsDNA sensor with multifaceted functions.
+40654626	2025	bioRxiv	Beernaert	cin_cgas	Chromosomal instability shapes the tumor microenvironment of esophageal adenocarcinoma via a cGAS-chemokine-myeloid axis.
+41279139	2025	bioRxiv	Gulhan	cin_cgas	Tissue specificity and chromosomal alterations shape divergent immune programs in HRD tumors.
+40902254	2025	Mutat Res Rev Mutat Res	Kirsch-Volders	cin_cgas	The intracellular and extracellular fate of DNA and chromatin from micronuclei determines their pathogenicity.
+40820677	2025	J Cell Physiol	Yang	cin_cgas	View Micronuclei in the Extent of Evolution: New Insight Into an Old Issue.
+39772747	2025	Proc Natl Acad Sci U S A	Haj	cin_cgas	The cGAS-STING, p38 MAPK, and p53 pathways link genome instability to accelerated cellular senescence in ATM-deficient murine lung fibroblasts.
+40466638	2025	Cell Rep Med	Tighe	cin_taxane	Screening a living biobank identifies cabazitaxel as a strategy to combat acquired taxol resistance in high-grade serous ovarian cancer.
+40938979	2025	Sci Adv	Cmentowski	bubr1_acetylation	The BUB1 and BUBR1 paralogs scaffold the kinetochore fibrous corona.
+39879985	2025	Mol Cell	Carrillo Roas	aneuploidy_proteotoxic	Convergence of orphan quality control pathways at a ubiquitin chain-elongating ligase.
+40054068	2025	Curr Opin Cell Biol	Cao	aneuploidy_proteotoxic	Aneuploidy as a cancer vulnerability.
+40221883	2025	Biol Chem	Amponsah	aneuploidy_proteotoxic	The proteostasis burden of aneuploidy.
+40527892	2025	Nat Commun	Amponsah	aneuploidy_proteotoxic	Aneuploidy-induced proteostasis disruption impairs mitochondrial functions and mediates aggregation of mitochondrial precursor proteins through SQSTM1/p62.
+40333415	2025	Annu Rev Genomics Hum Genet	Cheng	aneuploidy_proteotoxic	The Hallmarks of Aneuploidy in Cancer and Congenital Syndromes.
+40650052	2025	Int J Mol Sci	Schuyler	aneuploidy_proteotoxic	Tick-Tock: Cancer Cell Division Cycle Clocks Strike Midnight.
+40556977	2025	Vavilovskii Zhurnal Genet Selektsii	Zadesenets	aneuploidy_proteotoxic	From cytogenetics to proteogenomics: new horizons in the study of aneuploidies.
+40193493	2025	Mol Hum Reprod	Cearlock	aneuploidy_proteotoxic	Exploring and validating the marmoset as a primate model for chromosomal instability in early development.
+39014450	2024	J Biomed Sci	Silva	mva_bub1b,cin_taxane	BUB1B monoallelic germline variants contribute to prostate cancer predisposition by triggering chromosomal instability.
+38102195	2024	J Hum Genet	Kawakami	mva_bub1b,missense_function	RNA sequencing and target long-read sequencing reveal an intronic transposon insertion causing aberrant splicing.
+38664248	2024	Int J Legal Med	Esposito	mva_bub1b,mva_cancer_rx	Sudden unexpected postnatal collapse and BUB1B mutation: first forensic case report.
+39169218	2024	Nat Rev Genet	Malumbres	mva_review	Mosaic variegated aneuploidy in development, ageing and cancer.
+39264246	2024	Clin Cancer Res	Nakano	mva_review,mva_cancer_rx	Update on Recommendations for Cancer Screening and Surveillance in Children with Genomic Instability Disorders.
+39030352	2024	Adv Anat Embryol Cell Biol	Biswas	missense_function	Predicting Infertility: How Genetic Variants in Oocyte Spindle Genes Affect Egg Quality.
+39490401	2024	Semin Cancer Biol	Pun	missense_function,sirt2,nad,senescence	BubR1 and SIRT2: Insights into aneuploidy, aging, and cancer.
+39352464	2024	Med Oncol	Karami Fath	missense_function	Centromeres in cancer: Unraveling the link between chromosomal instability and tumorigenesis.
+38553728	2024	Cell Commun Signal	Ju	sirt2	Kinesin KIFC3 is essential for microtubule stability and cytokinesis in oocyte meiosis.
+38334966	2024	Aging (Albany NY)	Liu	senescence,bubr1_acetylation	BubR1 controls starvation-induced lipolysis via IMD signaling pathway in Drosophila.
+38711083	2024	Mol Cancer	Li	overexpression	Positive feedback regulation between glycolysis and histone lactylation drives oncogenesis in pancreatic ductal adenocarcinoma.
+39043653	2024	Cell Death Dis	Ding	overexpression	BUB1b impairs chemotherapy sensitivity via resistance to ferroptosis in lung adenocarcinoma.
+38513740	2024	Biochem Pharmacol	Huang	overexpression	Sensitization of cancer cells to paclitaxel-induced apoptosis by canagliflozin.
+38904203	2024	Oncol Rep	Lim	aneuploid_selective,aneuploidy_proteotoxic	Energy‑stress‑mediated activation of AMPK sensitizes MPS1 kinase inhibition in triple‑negative breast cancer.
+38781347	2024	Sci Adv	Bulanova	aneuploid_selective	A synthetic lethal dependency on casein kinase 2 in response to replication-perturbing therapeutics in RB1-deficient cancer cells.
+37496433	2024	Haematologica	Longo	aneuploid_selective	TTK/MPS1 inhibitor OSU-13 targets the mitotic checkpoint and is a potential therapeutic strategy for myeloma.
+39208110	2024	Science	Di Bona	cin_cgas	Micronuclear collapse from oxidative damage.
+38926338	2024	Nat Commun	Técher	cin_cgas	MRE11 and TREX1 control senescence by coordinating replication stress and interferon signaling.
+38900577	2024	JCI Insight	Bharti	cin_cgas	TTK inhibitor OSU13 promotes immunotherapy responses by activating tumor STING.
+38167338	2024	Nat Commun	Zhao	cin_cgas	Mutant p53 gains oncogenic functions through a chromosomal instability-induced cytosolic DNA response.
+38273467	2024	Zhejiang Da Xue Xue Bao Yi Xue Ban	Shen	cin_cgas	Role of micronucleus-activated cGAS-STING signaling in antitumor immunity.
+39456148	2024	Biomolecules	Wu	cin_cgas	STING Promotes the Progression of ADPKD by Regulating Mitochondrial Function, Inflammation, Fibrosis, and Apoptosis.
+38837436	2024	Bioessays	Técher	cin_cgas	T-Rex escaped from the cytosolic park: Re-thinking the impact of TREX1 exonuclease deficiencies on genomic stability.
+38056369	2024	DNA Repair (Amst)	Zierhut	cin_cgas	Potential cGAS-STING pathway functions in DNA damage responses, DNA replication and DNA repair.
+37643478	2024	Biochem Cell Biol	Mathavarajah	cin_cgas	LINE-1: an emerging initiator of cGAS-STING signalling and inflammation that is dysregulated in disease.
+39698932	2024	FASEB J	Ikeda	cin_taxane	DeSUMOylating isopeptidase 1 participates in the faithful chromosome segregation and vincristine sensitivity.
+39470543	2024	Medicine (Baltimore)	Ren	p53_aneuploidy	Unveiling novel prognostic biomarkers and therapeutic targets for HBV-associated hepatocellular carcinoma through integrated bioinformatic analysis.
+38879159	2024	Life Sci	Jash	p53_aneuploidy	Next generation antimitotic β-carboline derivatives modulate microtubule dynamics and downregulate NF-κB, ERK 1/2 and phospho HSP 27.
+38857398	2024	Proc Natl Acad Sci U S A	Yeh	cep57_trip13	Cep57 regulates human centrosomes through multivalent interactions.
+38699879	2024	Proteins	Sukla	cep57_trip13	Crystal structure of human Cep57 C-terminal domain reveals the presence of leucine zipper and the potential microtubule binding region.
+38856693	2024	Blood Cancer Discov	Sarchi	bubr1_acetylation	Mis-splicing of Mitotic Regulators Sensitizes SF3B1-Mutated Human HSCs to CHK1 Inhibition.
+38354735	2024	Curr Biol	Weber	bubr1_acetylation	A conserved CENP-E region mediates BubR1-independent recruitment to the outer corona at mitotic onset.
+39079532	2024	Curr Biol	Mukherjee	bubr1_acetylation	Distinct roles of spindle checkpoint proteins in meiosis.
+38151757	2024	FEBS Open Bio	Tu	bubr1_acetylation	SETDB2 interacts with BUBR1 to induce accurate chromosome segregation independently of its histone methyltransferase activity.
+39516273	2024	Commun Biol	Song	bubr1_acetylation	Self-priming of Plk1 binding to BubR1 ensures accurate mitotic progression.
+38424231	2024	EMBO Rep	Lakshmi	bubr1_acetylation	CKAP5 stabilizes CENP-E at kinetochores by regulating microtubule-chromosome attachments.
+38781731	2024	Redox Biol	Chen	aneuploidy_proteotoxic	Iron accumulation in ovarian microenvironment damages the local redox balance and oocyte quality in aging mice.
+38778096	2024	Nature	Muenzner	aneuploidy_proteotoxic	Natural proteome diversity links aneuploidy tolerance to protein turnover.
+39415838	2024	Front Pharmacol	Ma	aneuploidy_proteotoxic	Autophagy is a promising process for linking inflammation and redox homeostasis in Down syndrome.
+38316790	2024	Nat Commun	Xiao	aneuploidy_proteotoxic	Aneuploid embryonic stem cells drive teratoma metastasis.
+38523261	2024	BMC Biol	Iglesias-Romero	aneuploidy_proteotoxic	MAPK-dependent control of mitotic progression in S. pombe.
+39247952	2024	Cancer Discov	Ippolito	aneuploidy_proteotoxic	Increased RNA and Protein Degradation Is Required for Counteracting Transcriptional Burden and Proteotoxic Stress in Human Aneuploid Cells.
+38693434	2024	J Mol Neurosci	Islam	aneuploidy_proteotoxic	Aneuploidy is Linked to Neurological Phenotypes Through Oxidative Stress.
+38983116	2024	Front Cell Infect Microbiol	Guo	aneuploidy_proteotoxic	Miconazole induces aneuploidy-mediated tolerance in Candida albicans that is dependent on Hsp90 and calcineurin.
+37900274	2023	Front Cell Dev Biol	Sterling	mva_bub1b,p53_aneuploidy	P53 independent pathogenic mechanisms contribute to BubR1 microcephaly.
+36441015	2023	J Mol Cell Biol	Wang	pseudokinase	Spatial separation of phosphatase and kinase activity within the Bub complex is required for proper mitosis.
+37094517	2023	Redox Biol	Goutas	missense_function,senescence,bubr1_acetylation,aneuploidy_proteotoxic	The establishment of mitotic errors-driven senescence depends on autophagy.
+38009412	2023	Aging Cell	Wu	sirt2,nad,senescence,overexpression	SIRT2 transgenic over-expression does not impact lifespan in mice.
+36979826	2023	Biomedicines	Yao	senescence	Characteristic Analysis of Featured Genes Associated with Cholangiocarcinoma Progression.
+37151120	2023	FEBS J	Shinoda	senescence	Caspase cleaves Drosophila BubR1 to modulate spindle assembly checkpoint function and lifespan of the organism.
+37118121	2023	Nat Aging	Zhang	senescence	Unique progerin C-terminal peptide ameliorates Hutchinson-Gilford progeria syndrome phenotype by rescuing BUBR1.
+37228122	2023	PLoS Comput Biol	Huang	overexpression	Inferring evolutionary trajectories from cross-sectional transcriptomic data to mirror lung adenocarcinoma progression.
+37304238	2023	Oncol Res	Tang	overexpression	Comprehensively analyzing the genetic alterations, and identifying key genes in ovarian cancer.
+37375406	2023	Molecules	Ciardulli	aneuploid_selective	Activity and Selectivity of Novel Chemical Metallic Complexes with Potential Anticancer Effects on Melanoma Cells.
+36859339	2023	Genes Dev	Adell	aneuploid_selective	Adaptation to spindle assembly checkpoint inhibition through the selection of specific aneuploidies.
+37612508	2023	Nature	Li	cin_cgas	Non-cell-autonomous cancer progression from chromosomal instability.
+37088059	2023	Biochim Biophys Acta Rev Cancer	Vasiyani	cin_cgas	Regulation of cGAS-STING signalling in cancer: Approach for combination therapy.
+37806895	2023	Trends Cancer	van den Brink	cin_cgas	Taking the STING out of CIN.
+37788673	2023	Mol Cell	Joo	cin_cgas	ATR promotes clearance of damaged DNA and damaged cells by rupturing micronuclei.
+37561163	2023	Chromosome Res	van den Brink	cin_cgas	Chromosomal instability and inflammation: a catch-22 for cancer cells.
+36876871	2023	Biochem Soc Trans	Beernaert	cin_cgas	cGAS-STING signalling in cancer: striking a balance with chromosomal instability.
+36534085	2023	J Exp Med	Shamseddine	cin_cgas	Innate immune signaling drives late cardiac toxicity following DNA-damaging cancer therapies.
+37866738	2023	Mutat Res Rev Mutat Res	Kirsch-Volders	cin_cgas	Towards prevention of aneuploidy-associated cellular senescence and aging: more questions than answers?
+36882786	2023	Cell Commun Signal	Lamsal	cin_cgas	Opposite and dynamic regulation of the interferon response in metastatic and non-metastatic breast cancer.
+38258067	2023	Pharmaceutics	Pinto	cin_taxane	Maximizing Anticancer Response with MPS1 and CENPE Inhibition Alongside Apoptosis Induction.
+36772957	2023	G3 (Bethesda)	Liu	cin_taxane	Functional tug of war between kinases, phosphatases, and the Gcn5 acetyltransferase in chromatin and cell cycle checkpoint controls.
+36980449	2023	Diagnostics (Basel)	Mishra	p53_aneuploidy	Demystifying the Role of Prognostic Biomarkers in Breast Cancer through Integrated Transcriptome and Pathway Enrichment Analyses.
+36635612	2023	Clin Genet	Langeh	cep57_trip13	Mosaic variegated aneuploidy syndrome 2 with biallelic novel CEP57 splice site variation in Indian siblings: Expanding the clinical and molecular spectrum.
+37796616	2023	JCI Insight	Abdel-Salam	cep57_trip13	Biallelic MAD2L1BP (p31comet) mutation is associated with mosaic aneuploidy and juvenile granulosa cell tumors.
+36518060	2023	IUBMB Life	Fischer	bubr1_acetylation	Kinetochore-catalyzed MCC formation: A structural perspective.
+37305966	2023	J Cell Physiol	Cao	bubr1_acetylation	PARP12 regulates mouse oocyte meiotic maturation.
+37738972	2023	Curr Biol	Jema	bubr1_acetylation	Signaling protein abundance modulates the strength of the spindle assembly checkpoint.
+37427945	2023	J Vis Exp	Xu	bubr1_acetylation	Generation of Centromere-Associated Protein-E CENP-E-/- Knockout Cell Lines using the CRISPR/Cas9 System.
+36934097	2023	Nat Commun	Chen	bubr1_acetylation	The structural flexibility of MAD1 facilitates the assembly of the Mitotic Checkpoint Complex.
+37024976	2023	J Ovarian Res	Wang	aneuploidy_proteotoxic	Mechanisms of ovarian aging in women: a review.
+37333112	2023	bioRxiv	Keller	aneuploidy_proteotoxic	Condition-dependent fitness effects of large synthetic chromosome amplifications.
+37233683	2023	Metabolites	Islam	aneuploidy_proteotoxic	Chromosomal Instability Causes Sensitivity to Polyamines and One-Carbon Metabolism.
+35804254	2022	Neurol Sci	Pavone	mva_bub1b,mva_cancer_rx	Pathogenic correlation between mosaic variegated aneuploidy 1 (MVA1) and a novel BUB1B variant: a reappraisal of a severe syndrome.
+35044816	2022	Sci Adv	Carvalhal	mva_bub1b	Biallelic BUB1 mutations cause microcephaly, developmental delay, and variable effects on cohesion and chromosome segregation.
+36588761	2022	Mol Syndromol	Hübner	mva_cancer_rx,cep57_trip13	Mosaic Variegated Aneuploidy Syndrome and Noonan Syndrome in the Same Family.
+36322655	2022	Sci Adv	Villarroya-Beltri	mva_cancer_rx	Biallelic germline mutations in MAD1L1 induce a syndrome of aneuploidy with high tumor susceptibility.
+35434947	2022	Mol Genet Genomic Med	Feng	mva_cancer_rx,cep57_trip13	A novel CEP57 variant associated with mosaic variegated aneuploidy syndrome in a Chinese female presenting with short stature, microcephaly, brachydactyly, and small teeth.
+35525552	2022	Methods Enzymol	Gama Braga	pseudokinase	Considerations for studying phosphorylation of the mitotic checkpoint pseudokinase BUBR1.
+36191188	2022	Proc Natl Acad Sci U S A	Herman	missense_function,bubr1_acetylation	Hyper-active RAS/MAPK introduces cancer-specific mitotic vulnerabilities.
+36190266	2022	J Vis Exp	Aboelenain	missense_function,bubr1_acetylation	Evaluation of the Spindle Assembly Checkpoint Integrity in Mouse Oocytes.
+35913887	2022	Cancer Res	Chen	missense_function	Germline Missense Variants in CDC20 Result in Aberrant Mitotic Progression and Familial Cancer.
+35835966	2022	Cell Mol Life Sci	Zou	sirt2	Kinesin KIF15 regulates tubulin acetylation and spindle assembly checkpoint in mouse oocyte meiosis.
+34919076	2022	Spine (Phila Pa 1976)	Xiang	nad	The Genetic Association Identified Between Intervertebral Disc Degeneration and Associated Risk Factors Based on a Systems Biology Approach.
+35639235	2022	Mol Cell Biochem	Zhao	senescence,bubr1_acetylation	SIRT1 regulates mitotic catastrophe via autophagy and BubR1 signaling.
+35706790	2022	Transl Cancer Res	Zheng	senescence,overexpression	Identification of hub genes associated with bladder cancer using bioinformatic analyses.
+36539842	2022	Reprod Biol Endocrinol	Gao	senescence,overexpression	Insufficient HtrA2 causes meiotic defects in aging germinal vesicle oocytes.
+35346019	2022	BMC Genomics	Liu	senescence	Transcriptome-wide N6-methyladenine methylation in granulosa cells of women with decreased ovarian reserve.
+36302822	2022	Sci Rep	Zhang	senescence	Tracking footprints of artificial and natural selection signatures in breeding and non-breeding cats.
+36577966	2022	BMC Med Genomics	Qin	overexpression	Clinical value and potential mechanisms of BUB1B up-regulation in nasopharyngeal carcinoma.
+35972731	2022	Clin Cancer Res	Ghosh	overexpression	Combined TRIP13 and Aurora Kinase Inhibition Induces Apoptosis in Human Papillomavirus-Driven Cancers.
+35460921	2022	J Surg Res	Yu	overexpression,bubr1_acetylation	Spindle and Kinetochore-Associated Complex Is Associated With Poor Prognosis in Adrenocortical Carcinoma.
+35517426	2022	J Cancer	Yan	mtor	Aberrant Expression of BUB1B Contributes to the Progression of Thyroid Carcinoma and Predicts Poor Outcomes for Patients.
+35322916	2022	J Cell Mol Med	Lan	mtor	Evaluation of the TRIP13 level in breast cancer and insights into potential molecular pathways.
+35392063	2022	Front Surg	Cai	mtor	Identification of the Tumor Immune Microenvironment and Therapeutic Biomarkers by a Novel Molecular Subtype Based on Aging-Related Genes in Hepatocellular Carcinoma.
+35393542	2022	Oncogene	Shi	aneuploid_selective	Aurora kinase A inhibition induces synthetic lethality in SMAD4-deficient colorectal cancer cells via spindle assembly checkpoint activation.
+35358789	2022	Mutat Res	Kirsch-Volders	cin_cgas	Aneuploidy, inflammation and diseases.
+34374004	2022	Protein Cell	Bai	cin_cgas	Nuclear cGAS: sequestration and beyond.
+35536585	2022	J Mol Cell Biol	Liu	cin_cgas	The multifaceted functions of cGAS.
+35199647	2022	J Clin Invest	Chen	cin_cgas	Tumor Treating Fields dually activate STING and AIM2 inflammasomes to induce adjuvant immunity in glioblastoma.
+35970331	2022	Mutat Res Rev Mutat Res	Guo	cin_cgas	Interplay of cGAS with micronuclei: Regulation and diseases.
+35262626	2022	J Exp Med	Giordano	cin_cgas	DNA damage contributes to neurotoxic inflammation in Aicardi-Goutières syndrome astrocytes.
+35914158	2022	Proc Natl Acad Sci U S A	Chan	cin_cgas	CFI-402257, a TTK inhibitor, effectively suppresses hepatocellular carcinoma.
+36923311	2022	Cancer Res Commun	Sokač	cin_cgas	Classifying cGAS-STING Activity Links Chromosomal Instability with Immunotherapy Response in Metastatic Bladder Cancer.
+35334355	2022	Mutat Res	Bui	cin_cgas	Neutrophils and micronuclei: An emerging link between genomic instability and cancer-driven inflammation.
+35489653	2022	Biochim Biophys Acta Mol Cell Res	Anindya	cin_cgas	Cytoplasmic DNA in cancer cells: Several pathways that potentially limit DNase2 and TREX1 activities.
+36188556	2022	Front Pharmacol	Suleimenov	cin_taxane	Bcl-xL activity influences outcome of the mitotic arrest.
+35656694	2022	Mol Cancer Res	Lucken	cin_taxane	EML4-ALK Variant 3 Promotes Mitotic Errors and Spindle Assembly Checkpoint Deficiency Leading to Increased Microtubule Poison Sensitivity.
+35775700	2022	J Breast Cancer	Quan	cin_taxane	Polo-Like Kinase 1 Regulates Chromosomal Instability and Paclitaxel Resistance in Breast Cancer Cells.
+35568294	2022	Food Chem Toxicol	Lyu	metformin_exercise	High-dose metformin induces a low-glucose dependent genotoxic stress.
+35184951	2022	Trends Biochem Sci	Elowe	bubr1_acetylation	The spindle checkpoint proteins BUB1 and BUBR1: (SLiM)ming down to the basics.
+35767360	2022	Mol Biol Cell	Banerjee	bubr1_acetylation	BubR1 recruitment to the kinetochore via Bub1 enhances spindle assembly checkpoint signaling.
+35723263	2022	Development	Vazquez-Pianzola	bubr1_acetylation	Female meiosis II and pronuclear fusion require the microtubule transport factor Bicaudal D.
+35134396	2022	Chemosphere	Santibáñez-Andrade	bubr1_acetylation	Particulate matter (PM10) destabilizes mitotic spindle through downregulation of SETD2 in A549 lung cancer cells.
+35311075	2022	Front Oncol	Cyran	aneuploidy_proteotoxic	Heat Shock Proteins and HSF1 in Cancer.
+36075287	2022	Biochim Biophys Acta Rev Cancer	Du	aneuploidy_proteotoxic	Nondiploid cancer cells: Stress, tolerance and therapeutic inspirations.
+36444717	2022	Dis Model Mech	Baker	aneuploidy_proteotoxic	Reducing the aneuploid cell burden - cell competition and the ribosome connection.
+36127846	2022	Yeast	de la Cerda Garcia-Caro	aneuploidy_proteotoxic	Enhanced flavour profiles through radicicol induced genomic variation in the lager yeasts, Saccharomyces pastorianus.
+35421971	2022	BMC Cancer	Bowers	aneuploidy_proteotoxic	Autophagy modulating therapeutics inhibit ovarian cancer colony generation by polyploid giant cancer cells (PGCCs).
+34286667	2022	Autophagy	Linda	aneuploidy_proteotoxic	Imbalanced autophagy causes synaptic deficits in a human model for neurodevelopmental disorders.
+33892776	2021	Cell Biosci	Bloom	mva_bub1b,mva_review,senescence	Physiological relevance of post-translational regulation of the spindle assembly checkpoint protein BubR1.
+34500087	2021	Eur J Med Genet	Santos-Simarro	mva_review,cep57_trip13	Mosaic Variegated Aneuploidy syndrome 2 caused by biallelic variants in CEP57, two new cases and review of the phenotype.
+33860079	2021	Mol Cell Oncol	Elowe	pseudokinase	Adventures of the undead at kinetochores.
+33955658	2021	FEBS J	Park	missense_function,p53_aneuploidy	Loss of BubR1 acetylation provokes replication stress and leads to complex chromosomal rearrangements.
+33872216	2021	Aging (Albany NY)	Long	senescence,bubr1_acetylation	Expression and prognosis analyses of BUB1, BUB1B and BUB3 in human sarcoma.
+33446695	2021	Sci Rep	Ma	senescence,p53_aneuploidy	Identifying of biomarkers associated with gastric cancer based on 11 topological analysis methods of CytoHubba.
+33798737	2021	Pharmacol Res	Li	senescence	Icariin enhances youth-like features by attenuating the declined gut microbiota in the aged mice.
+34035233	2021	Cell Death Dis	Vaz	senescence	FOXM1 repression increases mitotic death upon antimitotic chemotherapy through BMF upregulation.
+33431813	2021	Cell Death Dis	Jiao	overexpression	BUB1B promotes extrahepatic cholangiocarcinoma progression via JNK/c-Jun pathways.
+34147108	2021	Cancer Cell Int	Cai	overexpression	RSF1 in cancer: interactions and functions.
+34620840	2021	Signal Transduct Target Ther	Tang	overexpression	BUB1B and circBUB1B_544aa aggravate multiple myeloma malignancy through evoking chromosomal instability.
+33130993	2021	Breast Cancer Res Treat	Koyuncu	overexpression	Spindle assembly checkpoint gene BUB1B is essential in breast cancer cell survival.
+35095717	2021	Front Neurol	Yu	overexpression	Overexpression of SKA Complex Is Associated With Poor Prognosis in Gliomas.
+33588420	2021	Oncology	Sekino	overexpression	BUB1B Overexpression Is an Independent Prognostic Marker and Associated with CD44, p53, and PD-L1 in Renal Cell Carcinoma.
+34156259	2021	Future Oncol	Li	overexpression	Upregulated expression of MTFR2 as a novel biomarker predicts poor prognosis in hepatocellular carcinoma by bioinformatics analysis.
+34027130	2021	Hum Reprod Open	Smits	mtor	Longevity pathways are associated with human ovarian ageing.
+33505028	2021	Nature	Cohen-Sharir	aneuploid_selective	Aneuploidy renders cancer cells vulnerable to mitotic checkpoint inhibition.
+33730576	2021	Cell Rep	Reid	aneuploid_selective	Human pluripotent stem cells identify molecular targets of trisomy 12 in chronic lymphocytic leukemia patients.
+33372007	2021	Cancer Discov	Li	cin_cgas	Metastasis and Immune Evasion from Extracellular cGAMP Hydrolysis.
+33610905	2021	Curr Opin Cell Biol	Krupina	cin_cgas	Causes and consequences of micronuclei.
+33752561	2021	Autophagy	Zhao	cin_cgas	CGAS is a micronucleophagy receptor for the clearance of micronuclei.
+34586646	2021	EMBO J	Beck	cin_cgas	DNA hypomethylation leads to cGAS-induced autoinflammation in the epidermis.
+33981016	2021	Br J Cancer	Xu	cin_taxane	Targeting the actin/tropomyosin cytoskeleton in epithelial ovarian cancer reveals multiple mechanisms of synergy with anti-microtubule agents.
+34987580	2021	J Oncol	Xu	p53_aneuploidy	Weighted Gene Correlation Network Analysis Identifies Specific Functional Modules and Genes in Esophageal Cancer.
+33561696	2021	Theriogenology	Xu	bubr1_acetylation	Fbf1 regulates mouse oocyte meiosis by influencing Plk1.
+33819340	2021	J Cell Biol	Hein	bubr1_acetylation	Coupling of Cdc20 inhibition and activation by BubR1.
+34635673	2021	Nat Commun	Lee	bubr1_acetylation	Spatiotemporal coordination of the RSF1-PLK1-Aurora B cascade establishes mitotic signaling platforms.
+34216545	2021	Dev Cell	Joy	aneuploidy_proteotoxic	Proteostasis failure and mitochondrial dysfunction leads to aneuploidy-induced senescence.
+31738183	2020	J Clin Invest	Sieben	mva_bub1b,mva_cancer_rx,allele_models,missense_function,senescence,cep57_trip13	BubR1 allelic effects drive phenotypic heterogeneity in mosaic-variegated aneuploidy progeria syndrome.
+33094908	2020	Aging Cell	Fujita	mva_bub1b	Premature aging syndrome showing random chromosome number instabilities with CDC20 mutation.
+33136097	2020	J Clin Invest	Sieben	mva_bub1b	BubR1﻿﻿ allelic effects drive phenotypic heterogeneity in mosaic-variegated aneuploidy progeria syndrome.
+32861809	2020	Eur J Med Genet	Dery	mva_bub1b,cep57_trip13	Follow-up of two adult brothers with homozygous CEP57 pathogenic variants expands the phenotype of Mosaic Variegated Aneuploidy Syndrome.
+32884756	2020	Clin Case Rep	Lin	mva_bub1b,cep57_trip13	Prenatal diagnosis and long-term follow-up of a Chinese patient with mosaic variegated aneuploidy and its molecular analysis.
+33209717	2020	Transl Androl Urol	Schneider	mva_review,mva_cancer_rx	Germline predisposition to genitourinary rhabdomyosarcoma.
+31963583	2020	Cells	Akutsu	mva_review,mva_cancer_rx	Applications of Genome Editing Technology in Research on Chromosome Aneuploidy Disorders.
+33207204	2020	Cell Rep	Gama Braga	pseudokinase,kard_pp2a	BUBR1 Pseudokinase Domain Promotes Kinetochore PP2A-B56 Recruitment, Spindle Checkpoint Silencing, and Chromosome Alignment.
+32286328	2020	Nat Commun	Ehlén	missense_function,bubr1_acetylation	Proper chromosome alignment depends on BRCA2 phosphorylation by PLK1.
+32905854	2020	Int J Biochem Cell Biol	Chien	missense_function	NUP62 is required for the maintenance of the spindle assembly checkpoint and chromosomal stability.
+32716490	2020	Hum Mol Genet	Chen	senescence	Rare deleterious BUB1B variants induce premature ovarian insufficiency and early menopause.
+31942195	2020	J Cancer	Zhang	senescence,p53_aneuploidy	Combining Bioinformatics and Experiments to Identify and Verify Key Genes with Prognostic Values in Endometrial Carcinoma.
+32440821	2020	J Mol Neurosci	Pan	senescence,p53_aneuploidy	Identification of Hub Genes in Atypical Teratoid/Rhabdoid Tumor by Bioinformatics Analyses.
+32977361	2020	Cancer Med	Qiu	overexpression,mtor	BUB1B promotes hepatocellular carcinoma progression via activation of the mTORC1 signaling pathway.
+31893996	2020	Anticancer Agents Med Chem	Tian	overexpression	BUB1B Promotes Proliferation of Prostate Cancer via Transcriptional Regulation of MELK.
+32337580	2020	Hum Mol Genet	Khot	overexpression	Twist1 induces chromosomal instability (CIN) in colorectal cancer cells.
+33134313	2020	Front Mol Biosci	Lu	overexpression	Characteristic Analysis of Featured Genes Associated With Stemness Indices in Colorectal Cancer.
+32769939	2020	Medicine (Baltimore)	Sun	overexpression	Screening of significant biomarkers with poor prognosis in hepatocellular carcinoma via bioinformatics analysis.
+33126397	2020	Medicine (Baltimore)	Dai	overexpression	Identification of crucial genes associated with lung adenocarcinoma by bioinformatic analysis.
+31895772	2020	Medicine (Baltimore)	Lin	overexpression	Identification of potential key genes for HER-2 positive breast cancer based on bioinformatics analysis.
+32934706	2020	Oncol Lett	Telang	aneuploid_selective	Stem cell models for genetically predisposed colon cancer.
+32805281	2020	Gastroenterology	Chen	aneuploid_selective	The Long Noncoding RNA CCAT2 Induces Chromosomal Instability Through BOP1-AURKB Signaling.
+31987856	2020	Biochem Pharmacol	Safitri	aneuploid_selective	Elevated intracellular cAMP concentration mediates growth suppression in glioma cells.
+31980556	2020	Life Sci Alliance	Schukken	aneuploid_selective	Altering microtubule dynamics is synergistically toxic with spindle assembly checkpoint inhibition.
+31872377	2020	Sci China Life Sci	Zhang	aneuploid_selective	Genotoxins exaggerate the stressed state of aneuploid embryonic stem cells via activation of autophagy.
+33339583	2020	Mutat Res Rev Mutat Res	Kirsch-Volders	cin_cgas	Micronuclei, inflammation and auto-immune disease.
+35006429	2020	Mol Biomed	Gao	cin_cgas	cGAS/STING: novel perspectives of the classic pathway.
+32671520	2020	Chromosoma	Guo	cin_cgas	Understanding the birth of rupture-prone and irreparable micronuclei.
+32540968	2020	J Biol Chem	Abdisalaam	cin_cgas	Dysfunctional telomeres trigger cellular senescence mediated by cyclic GMP-AMP synthase.
+32710480	2020	Aging Cell	Mu	cin_cgas	Cytoskeleton stiffness regulates cellular senescence and innate immune response in Hutchinson-Gilford Progeria Syndrome.
+33317574	2020	J Nanobiotechnology	Hevia	cin_taxane	Microtubule cytoskeleton-disrupting activity of MWCNTs: applications in cancer treatment.
+32974133	2020	Front Oncol	Ganapathi	cin_taxane	Targeting Aurora A Kinase (AAK) in Platinum-Resistant High Grade Serous Ovarian Cancer.
+32637030	2020	Oncotarget	Chae	cin_taxane	RSK inhibitor BI-D1870 inhibits acute myeloid leukemia cell proliferation by targeting mitotic exit.
+31853539	2020	Nucleic Acids Res	Shih	cin_taxane	Integrative analyses of noncoding RNAs reveal the potential mechanisms augmenting tumor malignancy in lung adenocarcinoma.
+31911655	2020	Nat Commun	Jang	cin_taxane	The RepID-CRL4 ubiquitin ligase complex regulates metaphase to anaphase transition via BUB3 degradation.
+32850387	2020	Front Oncol	Hsu	cin_taxane	Phosphodiesterase Type 5 Inhibitors Synergize Vincristine in Killing Castration-Resistant Prostate Cancer Through Amplifying Mitotic Arrest Signaling.
+31177401	2020	Invest New Drugs	Dinić	cin_taxane	CKT0353, a novel microtubule targeting agent, overcomes paclitaxel induced resistance in cancer cells.
+33322077	2020	Molecules	França	cin_taxane	A Pyranoxanthone as a Potent Antimitotic and Sensitizer of Cancer Cells to Low Doses of Paclitaxel.
+32078082	2020	Biotechnol Lett	Capella Roca	p53_aneuploidy	Altered gene expression in CHO cells following polyamine starvation.
+31943948	2020	Mol Genet Genomic Med	Pezzani	cep57_trip13	Double homozygosity in CEP57 and DYNC2H1 genes detected by WES: Composite or expanded phenotype?
+33115829	2020	Mol Cancer Res	Liu	bubr1_acetylation	Distinct Genomic Alterations in Prostate Tumors Derived from African American Men.
+32873156	2020	Open Biol	Zhou	aneuploidy_proteotoxic	Exploiting aneuploidy-imposed stresses and coping mechanisms to battle cancer.
+31909711	2020	Elife	Hose	aneuploidy_proteotoxic	The genetic basis of aneuploidy tolerance in wild yeast.
+31184400	2019	Pediatr Int	Nishitani-Isa	mva_bub1b,mva_cancer_rx,mva_vincristine	Rhabdomyosarcoma with premature chromatid separation-mosaic variegated aneuploidy syndrome: Reduced-intensity chemotherapy.
+30668728	2019	Hum Mol Genet	Simmons	mva_bub1b,missense_function	Nearly complete deletion of BubR1 causes microcephaly through shortened mitosis and massive cell death.
+31081598	2019	Pediatr Blood Cancer	Ochiai	mva_bub1b,mva_cancer_rx	Long-term remission of bilateral Wilms tumors that developed from premature separation of chromatids/mosaic variegated aneuploidy syndrome due to bilateral nephrectomy and peritoneal dialysis.
+31053147	2019	Orphanet J Rare Dis	Laberko	mva_bub1b,mva_cancer_rx	Hematopoietic stem cell transplantation in a patient with type 1 mosaic variegated aneuploidy syndrome.
+30010053	2019	Eur J Med Genet	De la Torre-García	mva_bub1b,cep57_trip13	A homozygous CEP57 c.915_925dupCAATGTTCAGC mutation in a patient with mosaic variegated aneuploidy syndrome with rhizomelic shortening in the upper and lower limbs and a narrow thorax.
+31201382	2019	Cell Res	Huang	pseudokinase	BubR1 phosphorylates CENP-E as a switch enabling the transition from lateral association to end-on capture of spindle microtubules.
+31478449	2019	Cell Cycle	Zhou	missense_function,bubr1_acetylation	Loss of CENPF leads to developmental failure in mouse embryos.
+31209047	2019	Proc Natl Acad Sci U S A	Lee	senescence,overexpression,p53_aneuploidy	Pak2 kinase promotes cellular senescence and organismal aging.
+31285741	2019	Hereditas	Cai	senescence	Identification of five hub genes as monitoring biomarkers for breast cancer metastasis in silico.
+30765611	2019	Biosci Rep	Dong	overexpression	Overexpression of BUB1B, CCNA2, CDC20, and CDK1 in tumor tissues predicts poor survival in pancreatic ductal adenocarcinoma.
+31595158	2019	Int J Biol Sci	He	aneuploid_selective	PAK4 Regulates Actin and Microtubule Dynamics during Meiotic Maturation in Mouse Oocyte.
+30675059	2019	Nature	Nassour	cin_cgas	Autophagic cell death restricts chromosomal instability during replicative crisis.
+31102604	2019	Mech Ageing Dev	Barroso-Vilares	cin_cgas	Chromosomal instability and pro-inflammatory response in aging.
+30798935	2019	Adv Protein Chem Struct Biol	Mukherjee	cin_cgas	Mechanistic link between DNA damage sensing, repairing and signaling factors and immune signaling.
+30970246	2019	Cell Rep	Proudfoot	cin_taxane	Checkpoint Proteins Bub1 and Bub3 Delay Anaphase Onset in Response to Low Tension Independent of Microtubule-Kinetochore Detachment.
+31482051	2019	Anal Cell Pathol (Amst)	Hasan	p53_aneuploidy	Gene Ontology and Expression Studies of Strigolactone Analogues on a Hepatocellular Carcinoma Cell Line.
+30693443	2019	Mol Neurobiol	Benkafadar	p53_aneuploidy	ROS-Induced Activation of DNA Damage Responses Drives Senescence-Like State in Postmitotic Cochlear Cells: Implication for Hearing Preservation.
+35116861	2019	Transl Cancer Res	Liu	p53_aneuploidy	Survival-based bioinformatics analysis to identify hub genes and key pathways in non-small cell lung cancer.
+30480765	2019	Cancer	Simonetti	p53_aneuploidy	Aneuploid acute myeloid leukemia exhibits a signature of genomic alterations in the cell cycle and protein degradation machinery.
+30804344	2019	Nat Commun	Watanabe	cep57_trip13	The Cep57-pericentrin module organizes PCM expansion and centriole engagement.
+31117839	2019	Free Radic Res	Newman	aneuploidy_proteotoxic	The impact of aneuploidy on cellular homeostasis.
+30602769	2019	Nat Cell Biol	Chunduri	aneuploidy_proteotoxic	The diverse consequences of aneuploidy.
+29981145	2019	Int J Cancer	Simonetti	aneuploidy_proteotoxic	Aneuploidy: Cancer strength or vulnerability?
+31824426	2019	Front Endocrinol (Lausanne)	Sasaki	aneuploidy_proteotoxic	Impact of Oxidative Stress on Age-Associated Decline in Oocyte Developmental Competence.
+30634515	2019	Cancers (Basel)	Guang	aneuploidy_proteotoxic	Targeting Proteotoxic Stress in Cancer: A Review of the Role that Protein Quality Control Pathways Play in Oncogenesis.
+29673003	2018	J Obstet Gynaecol Res	Yamaguchi	mva_bub1b	Prenatal diagnosis of premature chromatid separation/mosaic variegated aneuploidy (PCS/MVA) syndrome.
+30512160	2018	Zhonghua Yi Xue Yi Chuan Xue Za Zhi	He	mva_bub1b,mva_cancer_rx	[Clinical features and genetic analysis of a child with mosaic variegated aneuploidy syndrome].
+29448935	2018	Mol Cancer	Mur	mva_cancer_rx	Germline mutations in the spindle assembly checkpoint genes BUB1 and BUB3 are infrequent in familial colorectal cancer and polyposis.
+29748388	2018	J Biol Chem	Ciossani	pseudokinase	The kinetochore proteins CENP-E and CENP-F directly and specifically interact with distinct BUB mitotic checkpoint Ser/Thr kinases.
+30250048	2018	Sci Rep	Rashid	missense_function,bubr1_acetylation	Analysis of the role of GSK3 in the mitotic checkpoint.
+29067790	2018	Aging Cell	Qiu	missense_function,sirt2,senescence,overexpression	Sirt2-BubR1 acetylation pathway mediates the effects of advanced maternal age on oocyte quality.
+30078214	2018	J Cell Physiol	Li	missense_function	Histone methyltransferase SETD2 is required for meiotic maturation in mouse oocyte.
+30157472	2018	Aging (Albany NY)	Pibiri	senescence	Liver regeneration in aged mice: new insights.
+28974341	2018	J Vasc Surg	Okadome	senescence	BubR1 insufficiency impairs angiogenesis in aging and in experimental critical limb ischemic mice.
+29899396	2018	Sci Rep	Rashid	senescence	Lung cellular senescence is independent of aging in a mouse model of COPD/emphysema.
+30396261	2018	Int Neurourol J	Cho	senescence	BubR1 Insufficiency Impairs Affective Behavior and Memory Function in Mice.
+30221846	2018	Cancer Med	Ryu	senescence,p53_aneuploidy	An Aurora kinase inhibitor, AMG900, inhibits glioblastoma cell proliferation by disrupting mitotic progression.
+29943428	2018	Aging Cell	Rao	senescence	Spontaneous development of Alzheimer's disease-associated brain pathology in a Shugoshin-1 mouse cohesinopathy model.
+30538558	2018	Cancer Manag Res	Song	overexpression	Integrated analysis reveals key genes with prognostic value in lung adenocarcinoma.
+29790920	2018	Endocrinology	Kiseljak-Vassiliades	overexpression	Elucidating the Role of the Maternal Embryonic Leucine Zipper Kinase in Adrenocortical Carcinoma.
+29843214	2018	Cancer Biomark	Zhang	overexpression	Screening and function analysis of hub genes and pathways in hepatocellular carcinoma via bioinformatics approaches.
+28877067	2018	Am J Surg Pathol	Mete	mtor	Diagnostic and Prognostic Biomarkers of Adrenal Cortical Carcinoma.
+30048249	2018	Anticancer Drugs	Capasso	aneuploid_selective	Dual compartmental targeting of cell cycle and angiogenic kinases in colorectal cancer models.
+29342134	2018	Nature	Bakhoum	cin_cgas	Chromosomal instability drives metastasis through a cytosolic DNA response.
+30216189	2018	Cancer Cell	Vanpouille-Box	cin_cgas	Cytosolic DNA Sensing in Organismal Tumor Control.
+29247853	2018	Curr Opin Immunol	Dhanwani	cin_cgas	Cytosolic sensing of immuno-stimulatory DNA, the enemy within.
+29748662	2018	Cell Death Dis	Liu	cin_taxane	Reducing protein regulator of cytokinesis 1 as a prospective therapy for hepatocellular carcinoma.
+29843103	2018	Eur J Med Chem	Yang	cin_taxane	Synthesis, cytotoxic evaluation and target identification of thieno[2,3-d]pyrimidine derivatives with a dithiocarbamate side chain at C2 position.
+30542505	2018	Oncotarget	Islam	cin_taxane	Drug-induced aneuploidy and polyploidy is a mechanism of disease relapse in MYC/BCL2-addicted diffuse large B-cell lymphoma.
+30135207	2018	J Biol Chem	Horiuchi	cin_taxane	The tyrosine kinase v-Src causes mitotic slippage by phosphorylating an inhibitory tyrosine residue of Cdk1.
+30429313	2018	Proc Natl Acad Sci U S A	Pineda	cin_taxane	Site occupancy calibration of taxane pharmacology in live cells and tissues.
+29618387	2018	J Ovarian Res	Chong	cin_taxane	Deregulation of the spindle assembly checkpoint is associated with paclitaxel resistance in ovarian cancer.
+29408509	2018	Biochem Biophys Res Commun	Wu	cin_taxane	MAD2-p31comet axis deficiency reduces cell proliferation, migration and sensitivity of microtubule-interfering agents in glioma.
+30377125	2018	Nan Fang Yi Ke Da Xue Xue Bao	Wang	p53_aneuploidy	[Screening of cell cycle-related genes regulated by KIAA0101 in gastric cancer].
+30035751	2018	J Clin Invest	Aziz	cep57_trip13	Mosaic-variegated aneuploidy syndrome mutation or haploinsufficiency in Cep57 impairs tumor suppression.
+30147898	2018	Clin Case Rep	Brightman	cep57_trip13	Mosaic variegated aneuploidy syndrome caused by a CEP57 mutation diagnosed by whole exome sequencing.
+29804664	2018	Methods Cell Biol	Marcozzi	bubr1_acetylation	Assays for the spindle assembly checkpoint in cell culture.
+29486194	2018	Dev Cell	Zhu	aneuploidy_proteotoxic	Cellular Stress Associated with Aneuploidy.
+29716915	2018	Cancer Res	Levin	aneuploidy_proteotoxic	PSMD5 Inactivation Promotes 26S Proteasome Assembly during Colorectal Tumor Progression.
+30151644	2018	AAPS J	Bastola	aneuploidy_proteotoxic	Emerging Cancer Therapeutic Targets in Protein Homeostasis.
+28383136	2017	Aging Cell	Yang	mva_bub1b,senescence	Age-related decline in BubR1 impairs adult hippocampal neurogenesis.
+28553959	2017	Nat Genet	Yost	mva_bub1b,mva_cancer_rx,cep57_trip13	Biallelic TRIP13 mutations predispose to Wilms tumor and chromosome missegregation.
+28611924	2017	Hum Genome Var	Kato	mva_bub1b	PCS/MVA syndrome caused by an Alu insertion in the BUB1B gene.
+28807937	2017	Cancer Res	Sun	missense_function	HNF1B Loss Exacerbates the Development of Chromophobe Renal Cell Carcinomas.
+28935703	2017	Development	Li	missense_function	HDAC3 promotes meiotic apparatus assembly in mouse oocytes by modulating tubulin acetylation.
+29017149	2017	Aging (Albany NY)	Hussaini	senescence	BubR1 and brain aging.
+27533343	2017	Mol Carcinog	Rao	senescence,p53_aneuploidy	Emerging links among Chromosome Instability (CIN), cancer, and aging.
+28775166	2017	Cancer Res	Tang	aneuploid_selective	Aneuploid Cell Survival Relies upon Sphingolipid Homeostasis.
+28404805	2017	Neurology	Chen	aneuploid_selective	Mutant IDH1 and seizures in patients with glioma.
+27926524	2017	Oncotarget	Huang	aneuploid_selective	Selective HDAC inhibition by ACY-241 enhances the activity of paclitaxel in solid tumor models.
+28223544	2017	Oncotarget	Zhang	aneuploid_selective	HDAC8 functions in spindle assembly during mouse oocyte meiosis.
+28759042	2017	Oncogene	Szymiczek	aneuploid_selective	Inhibition of the spindle assembly checkpoint kinase Mps-1 as a novel therapeutic strategy in malignant mesothelioma.
+28380042	2017	PLoS One	Stratford	aneuploid_selective	Genetic and pharmacological inhibition of TTK impairs pancreatic cancer cell line growth by inducing lethal chromosomal instability.
+28738408	2017	Nature	Mackenzie	cin_cgas	cGAS surveillance of micronuclei links genome instability to innate immunity.
+28759889	2017	Nature	Harding	cin_cgas	Mitotic progression following DNA damage enables pattern recognition within micronuclei.
+28882413	2017	Trends Cell Biol	de Oliveira Mann	cin_cgas	cGAS Conducts Micronuclei DNA Surveillance.
+29142107	2017	Open Biol	Mitchison	cin_cgas	Is inflammatory micronucleation the key to a successful anti-mitotic cancer drug?
+29017056	2017	Cancer Cell	Gulluni	cin_taxane	Mitotic Spindle Assembly and Genomic Stability in Breast Cancer Require PI3K-C2α Scaffolding Function.
+28695965	2017	Int J Dev Biol	Bronchain	cin_taxane	Role of Mad2 expression during the early development of the sea urchin.
+28176922	2017	Onco Targets Ther	Huang	cin_taxane	Inhibition of Skp2 sensitizes lung cancer cells to paclitaxel.
+26678675	2017	Environ Toxicol	Chou	p53_aneuploidy	Phenethyl isothiocyanate alters the gene expression and the levels of protein associated with cell cycle regulation in human glioblastoma GBM 8401 cells.
+28436952	2017	Oncogene	Combes	bubr1_acetylation	Playing polo during mitosis: PLK1 takes the lead.
+28943088	2017	Curr Biol	Overlack	bubr1_acetylation	BubR1 Promotes Bub3-Dependent APC/C Inhibition during Spindle Assembly Checkpoint Signaling.
+28072388	2017	Elife	Ji	bubr1_acetylation	A sequential multi-target Mps1 phosphorylation cascade promotes spindle checkpoint signaling.
+28366743	2017	Curr Biol	Sewart	bubr1_acetylation	Different Functionality of Cdc20 Binding Sites within the Mitotic Checkpoint Complex.
+28562161	2017	Cell Cycle	Varadkar	bubr1_acetylation	PP2A-B56γ is required for an efficient spindle assembly checkpoint.
+28096334	2017	Proc Natl Acad Sci U S A	Kaisari	bubr1_acetylation	Role of CCT chaperonin in the disassembly of mitotic checkpoint complexes.
+27239782	2016	Genes Chromosomes Cancer	Hahn	mva_bub1b	Prevalence of germline mutations in the spindle assembly checkpoint gene BUB1B in individuals with early-onset colorectal cancer.
+27815460	2016	In Vivo	Matsuda	missense_function,bubr1_acetylation	BUBR1 Insufficiency in Mice Increases their Sensitivity to Oxidative Stress.
+26912231	2016	Nat Commun	Jia	missense_function	The Bub1-Plk1 kinase complex promotes spindle checkpoint signalling through Cdc20 phosphorylation.
+27848932	2016	Nat Commun	Damiani	missense_function	Lack of Diaph3 relaxes the spindle checkpoint causing the loss of neural progenitors.
+27374329	2016	Cell	Choi	missense_function	Mitotic Checkpoint Regulators Control Insulin Signaling and Metabolic Homeostasis.
+27694884	2016	Nat Commun	Li	missense_function	SUMOylated NKAP is essential for chromosome alignment by anchoring CENP-E to kinetochores.
+26681803	2016	Hum Mol Genet	Andriani	missense_function	Whole chromosome aneuploidy in the brain of Bub1bH/H and Ercc1-/Δ7 mice.
+27528194	2016	Elife	Weaver	missense_function,overexpression	BubR1 alterations that reinforce mitotic surveillance act against aneuploidy and cancer.
+27313317	2016	Genes Dev	Pfau	missense_function	Aneuploidy impairs hematopoietic stem cell fitness and is selected against in regenerating tissues in vivo.
+26883501	2016	Stroke	Yamazaki	senescence	Vascular Cell Senescence Contributes to Blood-Brain Barrier Breakdown.
+27664806	2016	J Am Heart Assoc	Tanaka	senescence	BubR1 Insufficiency Results in Decreased Macrophage Proliferation and Attenuated Atherogenesis in Apolipoprotein E-Deficient Mice.
+27561386	2016	Sci Rep	Ikawa-Yoshida	senescence	BubR1 Insufficiency Impairs Liver Regeneration in Aged Mice after Hepatectomy through Intercalated Disc Abnormality.
+26847209	2016	J Hematol Oncol	Park	senescence,p53_aneuploidy	Haplo-insufficiency of both BubR1 and SGO1 accelerates cellular senescence.
+27922816	2016	Aging (Albany NY)	Choi	senescence	The progeroid gene BubR1 regulates axon myelination and motor function.
+27174960	2016	Jpn J Clin Oncol	Yamamoto	overexpression	BUBR1 overexpression predicts disease-specific survival after nephroureterectomy in patients with upper tract urothelial carcinoma.
+27270442	2016	Oncogene	Chakravarthi	overexpression	MicroRNA-101 regulated transcriptional modulator SUB1 plays a role in prostate cancer.
+27143916	2016	Onco Targets Ther	Fu	overexpression	Overexpression of BUB1B contributes to progression of prostate cancer and predicts poor outcome in patients with prostate cancer.
+27913471	2016	Hematology Am Soc Hematol Educ Program	Barrientos	aneuploid_selective	Sequencing of chronic lymphocytic leukemia therapies.
+26641137	2016	N Engl J Med	Byrd	aneuploid_selective	Acalabrutinib (ACP-196) in Relapsed Chronic Lymphocytic Leukemia.
+26586723	2016	Mol Cancer Ther	Choudhary	aneuploid_selective	Identification of Selective Lead Compounds for Treatment of High-Ploidy Breast Cancer.
+26651340	2016	Curr Alzheimer Res	Potter	aneuploid_selective	Role of Trisomy 21 Mosaicism in Sporadic and Familial Alzheimer's Disease.
+27309803	2016	Nature	Iwasaki	aneuploid_selective	Rocaglates convert DEAD-box protein eIF4A into a sequence-selective translational repressor.
+27119970	2016	Environ Microbiol	Hocquet	aneuploid_selective	Pyomelanin-producing Pseudomonas aeruginosa selected during chronic infections have a large chromosomal deletion which confers resistance to pyocins.
+26832791	2016	Mol Cancer Ther	Wengner	cin_taxane	Novel Mps1 Kinase Inhibitors with Potent Antitumor Activity.
+26637805	2016	Oncotarget	Jemaà	cin_taxane	Whole-genome duplication increases tumor cell sensitivity to MPS1 inhibition.
+26943585	2016	Oncotarget	Tambe	cin_taxane	Novel Mad2-targeting miR-493-3p controls mitotic fidelity and cancer cells' sensitivity to paclitaxel.
+27030360	2016	J Exp Clin Cancer Res	Hasanpourghadi	cin_taxane	Targeting of tubulin polymerization and induction of mitotic blockage by Methyl 2-(5-fluoro-2-hydroxyphenyl)-1H-benzo[d]imidazole-5-carboxylate (MBIC) in human cervical cancer HeLa cell.
+25893303	2016	Oncogene	Zanetti	aneuploidy_proteotoxic	The evolving paradigm of cell-nonautonomous UPR-based regulation of immunity by cancer cells.
+27896217	2016	Front Oncol	Demirsoy	aneuploidy_proteotoxic	Adapt, Recycle, and Move on: Proteostasis and Trafficking Mechanisms in Melanoma.
+27807036	2016	Genes Dev	Dodgson	aneuploidy_proteotoxic	The pleiotropic deubiquitinase Ubp3 confers aneuploidy tolerance.
+26837754	2016	Genetics	Dodgson	aneuploidy_proteotoxic	Chromosome-Specific and Global Effects of Aneuploidy in Saccharomyces cerevisiae.
+26309087	2015	Oncotarget	Miyamoto	mva_bub1b,missense_function	Ciliopathy in PCS (MVA) syndrome.
+25696020	2015	Ann Clin Lab Sci	Cho	mva_review	A case report of a fetus with mosaic autosomal variegated aneuploidies and literature review.
+26658523	2015	PLoS One	Breit	pseudokinase	Role of Intrinsic and Extrinsic Factors in the Regulation of the Mitotic Checkpoint Kinase Bub1.
+25964054	2015	Trends Mol Med	Kapanidou	missense_function,senescence,bubr1_acetylation	BubR1 kinase: protection against aneuploidy and premature aging.
+26354767	2015	Genetics	Bailey	missense_function,p53_aneuploidy	Dependence of Human Colorectal Cells Lacking the FBW7 Tumor Suppressor on the Spindle Assembly Checkpoint.
+25672491	2015	Nat Commun	Rumpf	sirt2,nad	Selective Sirt2 inhibition by ligand-induced rearrangement of the active site.
+25617508	2015	Exp Gerontol	Gurkar	senescence	Comparison of mice with accelerated aging caused by distinct mechanisms.
+26000094	2015	Genes Cancer	Chen	overexpression	Requirement for BUB1B/BUBR1 in tumor progression of lung adenocarcinoma.
+25754611	2015	Oral Dis	Teixeira	overexpression,bubr1_acetylation	Clinicopathologic significance of BubR1 and Mad2 overexpression in oral cancer.
+26191236	2015	Int J Clin Exp Pathol	Cirak	overexpression	Predictive and prognostic values of BubR1 and synuclein-gamma expression in breast cancer.
+26312894	2015	Lancet	Mukherjee	overexpression	The role of BUB and CDC proteins in low-grade breast cancers.
+26009897	2015	Oncotarget	Pierantoni	overexpression	Deregulation of HMGA1 expression induces chromosome instability through regulation of spindle assembly checkpoint genes.
+25679766	2015	Cell	Chen	aneuploid_selective	Targeting the adaptability of heterogeneous aneuploids.
+26327694	2015	Elife	Acosta-Alvear	aneuploid_selective	Paradoxical resistance of multiple myeloma to proteasome inhibitors by decreased levels of 19S proteasomal subunits.
+25602630	2015	Cell Cycle	Corkery	cin_taxane	PRP4K is a HER2-regulated modifier of taxane sensitivity.
+25910708	2015	Tumour Biol	Mikulenkova	p53_aneuploidy	Overexpression of the ∆Np73 isoform is associated with centrosome amplification in brain tumor cell lines.
+25789401	2015	Cell Cycle	Tan	p53_aneuploidy	Stranglehold on the spindle assembly checkpoint: the human papillomavirus E2 protein provokes BUBR1-dependent aneuploidy.
+25975351	2015	J Cell Physiol	Shin	p53_aneuploidy	Differential Cellular Effects of Plk1 Inhibitors Targeting the ATP-binding Domain or Polo-box Domain.
+25936804	2015	Mol Cell	Thompson	bubr1_acetylation	An Inhibitor of PIDDosome Formation.
+26148513	2015	J Cell Sci	Vleugel	bubr1_acetylation	Dissecting the roles of human BUB1 in the spindle assembly checkpoint.
+27308438	2015	Mol Cell Oncol	Donnelly	aneuploidy_proteotoxic	Aneuploidy and proteotoxic stress in cancer.
+26404941	2015	Genes Dev	Santaguida	aneuploidy_proteotoxic	Aneuploidy-induced cellular stresses limit autophagic degradation.
+26571033	2015	Autophagy	Santaguida	aneuploidy_proteotoxic	Aneuploidy triggers a TFEB-mediated lysosomal stress response.
+25788277	2015	Oncotarget	Pannu	aneuploidy_proteotoxic	HSET overexpression fuels tumor progression via centrosome clustering-independent mechanisms in breast cancer patients.
+24981203	2014	Chromosome Res	Schmid	mva_bub1b	Mosaic variegated aneuploidy in mouse BubR1 deficient embryos and pregnancy loss in human.
+24344301	2014	Proc Natl Acad Sci U S A	Ochiai	mva_bub1b	TALEN-mediated single-base-pair editing identification of an intergenic mutation upstream of BUB1B as causative of PCS (MVA) syndrome.
+24259107	2014	Am J Med Genet A	Pinson	mva_bub1b,cep57_trip13	CEP57 mutation in a girl with mosaic variegated aneuploidy syndrome.
+24369136	2014	Asian J Androl	Anderson	mva_review,mva_cancer_rx	Male-mediated developmental toxicity.
+24733023	2014	Nat Rev Genet	Deng	mva_review	X chromosome regulation: diverse patterns in development, tissues and disease.
+24667481	2014	Hum Reprod Update	Taylor	mva_review,mva_cancer_rx	The origin, mechanisms, incidence and clinical consequences of chromosomal mosaicism in humans.
+24477775	2014	Hum Genet	Hook	mva_review	Turner syndrome revisited: review of new data supports the hypothesis that all viable 45,X cases are cryptic mosaics with a rescue cell line, implying an origin by mitotic loss.
+24371226	2014	Cancer Res	Salsi	missense_function	NUP98 fusion oncoproteins promote aneuploidy by attenuating the mitotic spindle checkpoint.
+24920578	2014	EMBO J	Cosentino	sirt2	Sirtuin to the rescue: SIRT2 extends life span of BubR1 mice.
+24825348	2014	EMBO J	North	sirt2,nad,senescence,overexpression	SIRT2 induces the checkpoint kinase BubR1 to increase lifespan.
+25285631	2014	Biochem Biophys Res Commun	Suematsu	sirt2,nad	Deacetylation of the mitotic checkpoint protein BubR1 at lysine 250 by SIRT2 and subsequent effects on BubR1 degradation during the prometaphase/anaphase transition.
+24743044	2014	Oncotarget	Singh	sirt2,nad	Novel downstream molecular targets of SIRT1 in melanoma: a quantitative proteomics approach.
+25483095	2014	Cell Cycle	Bargiela-Iparraguirre	senescence,cin_taxane	Mad2 and BubR1 modulates tumourigenesis and paclitaxel response in MKN45 gastric cancer cells.
+24695965	2014	Chromosoma	Kuijt	mtor	Conditional targeting of MAD1 to kinetochores is sufficient to reactivate the spindle assembly checkpoint in metaphase.
+25074669	2014	Endocr Relat Cancer	Baldini	aneuploid_selective	Effects of selective inhibitors of Aurora kinases on anaplastic thyroid carcinoma cell lines.
+24922075	2014	Cell Death Dis	Bah	cin_taxane	Bcl-xL controls a switch between cell death modes during mitotic arrest.
+24860162	2014	Cancer Res	Sinnott	cin_taxane	Mechanisms promoting escape from mitotic stress-induced tumor cell death.
+24792619	2014	Hum Pathol	McGrogan	cin_taxane	Spindle assembly checkpoint protein expression correlates with cellular proliferation and shorter time to recurrence in ovarian cancer.
+25275037	2014	Anticancer Res	Zhao	p53_aneuploidy	Aberrations of BUBR1 and TP53 gene mutually associated with chromosomal instability in human colorectal cancer.
+24519527	2014	Toxicol Sci	Muenyi	p53_aneuploidy	Cisplatin plus sodium arsenite and hyperthermia induces pseudo-G1 associated apoptotic cell death in ovarian cancer cells.
+25405759	2014	PLoS One	Li	p53_aneuploidy	MDM4 overexpressed in acute myeloid leukemia patients with complex karyotype and wild-type TP53.
+25057018	2014	Mol Biol Cell	Britigan	p53_aneuploidy	The ARF tumor suppressor prevents chromosomal instability and ensures mitotic checkpoint fidelity through regulation of Aurora B.
+24687487	2014	Cell Biol Int	Lentini	p53_aneuploidy	Simultaneous reduction of MAD2 and BUBR1 expression induces mitotic spindle alterations associated with p53 dependent cell cycle arrest and death.
+24361302	2014	Int J Biochem Cell Biol	Xie	bubr1_acetylation	Ubiquitin-conjugating enzyme E2C: a potential cancer biomarker.
+25052095	2014	J Cell Sci	Ghongane	bubr1_acetylation	The dynamic protein Knl1 - a kinetochore rendezvous.
+24562612	2014	EMBO Rep	Overlack	bubr1_acetylation	When Mad met Bub.
+24641887	2014	Semin Cell Dev Biol	Milán	aneuploidy_proteotoxic	Aneuploidy and tumorigenesis in Drosophila.
+23789096	2013	Biol Open	Xu	mva_bub1b,missense_function	BUBR1 recruits PP2A via the B56 family of targeting subunits to promote chromosome congression.
+23916859	2013	Pediatr Neurol	Akasaka	mva_bub1b,mva_cancer_rx	Refractory infantile spasms associated with mosaic variegated aneuploidy syndrome.
+23602569	2013	Cell Rep	Baker	mva_bub1b,missense_function,p53_aneuploidy	p21 both attenuates and drives senescence and aging in BubR1 progeroid mice.
+23533652	2013	PLoS One	Schick	mva_cancer_rx	Confirmation of the reported association of clonal chromosomal mosaicism with an increased risk of incident hematologic cancer.
+23624985	2013	J Assist Reprod Genet	Wu	mva_cancer_rx	Maternal origin of 47,XXY and confined placental mosaicism 47,XXY/48,XXY,+13 in an infant conceived through IVF.
+23958352	2013	Diagn Pathol	Gong	mva_cancer_rx	Identification of genuine primary pulmonary NK cell lymphoma via clinicopathologic observation and clonality assay.
+23547028	2013	J Cell Biol	Ricke	missense_function,senescence	Aneuploidy in health, disease, and aging.
+23792145	2013	Exp Gerontol	Greising	senescence	Diaphragm muscle sarcopenia in aging mice.
+24016527	2013	Int Rev Cell Mol Biol	Karess	senescence	New insights into the role of BubR1 in mitosis and beyond.
+23242215	2013	Nat Cell Biol	Baker	senescence,baker2013_ncb	Increased expression of BubR1 protects against aneuploidy and cancer and extends healthy lifespan.
+24349619	2013	Am J Transl Res	Dun	mtor,p53_aneuploidy	Transcriptomic changes induced by mycophenolic acid in gastric cancer cells.
+23597425	2013	Curr Opin Pharmacol	Aarts	aneuploid_selective	Tumour selective targeting of cell cycle kinases for cancer treatment.
+23933817	2013	Cell Death Differ	Jemaà	aneuploid_selective	Characterization of novel MPS1 inhibitors with preclinical anticancer activity.
+24256217	2013	J Med Chem	Naud	aneuploid_selective	Structure-based design of orally bioavailable 1H-pyrrolo[3,2-c]pyridine inhibitors of mitotic kinase monopolar spindle 1 (MPS1).
+23940287	2013	J Natl Cancer Inst	Tannous	aneuploid_selective	Effects of the selective MPS1 inhibitor MPS1-IN-3 on glioblastoma sensitivity to antimitotic drugs.
+24312139	2013	J Cancer	Torikoshi	cin_taxane	Novel functional assay for spindle-assembly checkpoint by cyclin-dependent kinase activity to predict taxane chemosensitivity in breast tumor patient.
+23907120	2013	Cell Cycle	Giovinazzi	cin_taxane	Targeting mitotic exit with hyperthermia or APC/C inhibition to increase paclitaxel efficacy.
+23764397	2013	Biochem Biophys Res Commun	Han	p53_aneuploidy	Piperlongumine inhibits LMP1/MYC-dependent mouse B-lymphoma cells.
+23598415	2013	Cell Death Dis	Kimura	p53_aneuploidy	Mitotic catastrophe and cell death induced by depletion of centrosomal proteins.
+24156017	2013	Cancer Med	Ikawa-Yoshida	p53_aneuploidy	Contribution of BubR1 to oxidative stress-induced aneuploidy in p53-deficient cells.
+23611835	2013	Biochem Pharmacol	Goda	p53_aneuploidy	Molecular mechanisms of the antitumor activity of SB225002: a novel microtubule inhibitor.
+23878276	2013	J Cell Biol	Park	p53_aneuploidy	Loss of BubR1 acetylation causes defects in spindle assembly checkpoint signaling and promotes tumor formation.
+24124473	2013	PLoS One	Venghateri	p53_aneuploidy	Ansamitocin P3 depolymerizes microtubules and induces apoptosis by binding to tubulin at the vinblastine site.
+23300461	2012	PLoS Genet	Wijshake	mva_bub1b,allele_models,senescence,metformin_exercise	Reduced life- and healthspan in mice carrying a mono-allelic BubR1 MVA mutation.
+23036167	2012	Sex Health	Goire	mva_cancer_rx	The influence of target population on nonculture-based detection of markers of Neisseria gonorrhoeae antimicrobial resistance.
+23079597	2012	Dev Cell	Suijkerbuijk	pseudokinase,kard_pp2a	Integration of kinase and phosphatase activities by BUBR1 ensures formation of stable kinetochore-microtubule attachments.
+22698286	2012	Dev Cell	Suijkerbuijk	pseudokinase	The vertebrate mitotic checkpoint protein BUBR1 is an unusual pseudokinase.
+22086113	2012	Hum Reprod Update	Sun	missense_function,bubr1_acetylation	Spindle assembly checkpoint and its regulators in meiosis.
+22952451	2012	PLoS Genet	Hamada	missense_function	Reprogramming to pluripotency can conceal somatic cell chromosomal instability.
+22465195	2012	Cancer Treat Rev	Murray	cin_taxane	Taxane resistance in breast cancer: mechanisms, predictive biomarkers and circumvention strategies.
+22544748	2012	J Biol Chem	Ma	cin_taxane	Depletion of p31comet protein promotes sensitivity to antimitotic drugs.
+22326528	2012	Gene	Wilmes	cin_taxane	Chemical genetic profiling of the microtubule-targeting agent peloruside A in budding yeast Saccharomyces cerevisiae.
+22069160	2012	J Pathol	Furlong	cin_taxane	Low MAD2 expression levels associate with reduced progression-free survival in patients with high-grade serous epithelial ovarian cancer.
+22399804	2012	J Cell Sci	Klotz	cin_taxane	The microtubule poison vinorelbine kills cells independently of mitotic arrest and targets cells lacking the APC tumour suppressor more effectively.
+22056875	2012	Oncogene	Russell	p53_aneuploidy	Cyclin G1 regulates the outcome of taxane-induced mitotic checkpoint arrest.
+22952952	2012	PLoS One	Rai	p53_aneuploidy	An antitubulin agent BCFMT inhibits proliferation of cancer cells and induces cell death by inhibiting microtubule dynamics.
+22983954	2012	Hum Mol Genet	Genin	bubr1_acetylation	Kinetochore KMN network gene CASC5 mutated in primary microcephaly.
+22223105	2012	Cell Death Differ	Manchado	aneuploidy_proteotoxic	Killing cells by targeting mitosis.
+23222101	2012	Genes Dev	Oromendia	aneuploidy_proteotoxic	Aneuploidy causes proteotoxic stress in yeast.
+22935563	2012	Autophagy	Erenpreisa	aneuploidy_proteotoxic	Macroautophagy-aided elimination of chromatin: sorting of waste, sorting of fate?
+21389084	2011	Hum Mol Genet	Miyamoto	mva_bub1b,missense_function	Insufficiency of BUBR1, a mitotic spindle checkpoint regulator, causes impaired ciliogenesis in vertebrates.
+21852209	2011	Mol Oncol	Aylon	missense_function,p53_aneuploidy	p53: guardian of ploidy.
+21720555	2011	PLoS One	Wei	missense_function	Spindle assembly checkpoint regulates mitotic cell cycle progression during preimplantation embryo development.
+21646403	2011	J Cell Biol	Ricke	missense_function	Bub1 overexpression induces aneuploidy and tumor formation through Aurora B kinase hyperactivation.
+22048312	2011	Nature	Baker	senescence	Clearance of p16Ink4a-positive senescent cells delays ageing-associated disorders.
+21845762	2011	Zhejiang Da Xue Xue Bao Yi Xue Ban	Chen	senescence	[Research progress on spindle assembly checkpoint gene BubR1].
+21980130	2011	Mol Cancer Ther	Tardif	aneuploid_selective	Characterization of the cellular and antitumor effects of MPI-0479605, a small-molecule inhibitor of the mitotic kinase Mps1.
+22649765	2011	Front Oncol	Eschenbrenner	cin_taxane	Evaluation of activity and combination strategies with the microtubule-targeting drug sagopilone in breast cancer cell lines.
+21559393	2011	PLoS One	Winsel	p53_aneuploidy	Molecular mode of action and role of TP53 in the sensitivity to the novel epothilone sagopilone (ZK-EPO) in A549 non-small cell lung cancer cells.
+21552266	2011	Nat Genet	Snape	cep57_trip13	Mutations in CEP57 cause mosaic variegated aneuploidy syndrome.
+21742793	2011	Physiol Rev	Malumbres	bubr1_acetylation	Physiological relevance of cell cycle kinases.
+22152475	2011	Mol Cell	Varetti	bubr1_acetylation	Homeostatic control of mitotic arrest.
+21628528	2011	Mol Cell Biol	Elowe	bubr1_acetylation	Bub1 and BubR1: at the interface between chromosome attachment and the spindle checkpoint.
+21525009	2011	J Biol Chem	Tipton	bubr1_acetylation	BUBR1 and closed MAD2 (C-MAD2) interact directly to assemble a functional mitotic checkpoint complex.
+21315436	2011	Cell	Tang	aneuploidy_proteotoxic,tang2011	Identification of aneuploidy-selective antiproliferation compounds.
+21335229	2011	Cell	Manchado	aneuploidy_proteotoxic	Targeting aneuploidy for cancer therapy.
+21190457	2010	N Engl J Med	Rio Frio	mva_bub1b,missense_function	Homozygous BUB1B mutation and susceptibility to gastrointestinal neoplasia.
+20516114	2010	Cancer Res	Suijkerbuijk	mva_bub1b	Molecular causes for BUBR1 dysfunction in the human cancer predisposition syndrome mosaic variegated aneuploidy.
+21290971	2010	Genet Couns	Domínguez	mva_bub1b	Variegated-like mosaicism and ring syndrome in a r(4) boy. Appraisal of 38 patients with a fairly complete ring 4.
+19931410	2010	Int J Biochem Cell Biol	Peralta-Sastre	missense_function	Checkpoint kinase 1 modulates sensitivity to cisplatin after spindle checkpoint activation in SW620 cells.
+19846757	2010	Am J Physiol Cell Physiol	Borradaile	nad	Polyploidy impairs human aortic endothelial cell function and is prevented by nicotinamide phosphoribosyltransferase.
+20616110	2010	Eur J Endocrinol	Tani	senescence	Upregulation of CDKN2A and suppression of cyclin D1 gene expressions in ACTH-secreting pituitary adenomas.
+20825315	2010	N Engl J Med	Tehranchi	aneuploid_selective	Persistent malignant stem cells in del(5q) myelodysplasia in remission.
+21159646	2010	Cancer Res	Colombo	aneuploid_selective	Targeting the mitotic checkpoint for cancer therapy with NMS-P715, an inhibitor of MPS1 kinase.
+20175926	2010	Mol Cancer	Gully	aneuploid_selective	Antineoplastic effects of an Aurora B kinase inhibitor in breast cancer.
+20359632	2010	Hematol Oncol Clin North Am	Komrokji	aneuploid_selective	Lenalidomide for treatment of myelodysplastic syndromes: current status and future directions.
+20407875	2010	J Huazhong Univ Sci Technolog Med Sci	Zhou	cin_taxane	Effect of spindle checkpoint on Akt2-mediated paclitaxel-resistance in A2780 ovarian cancer cells.
+21139045	2010	Mol Cancer Ther	Wei	cin_taxane	Nakiterpiosin targets tubulin and triggers mitotic catastrophe in human cancer cells.
+20010785	2010	Cell Death Differ	Toh	p53_aneuploidy	An essential role for p73 in regulating mitotic cell death.
+20442314	2010	Mol Cancer Ther	Wolanin	p53_aneuploidy	Expression of oncogenic kinase Bcr-Abl impairs mitotic checkpoint and promotes aberrant divisions and resistance to microtubule-targeting agents.
+20646066	2010	FEBS J	Banerjee	p53_aneuploidy	Curcumin suppresses the dynamic instability of microtubules, activates the mitotic checkpoint and induces apoptosis in MCF-7 cells.
+20138568	2010	Oral Oncol	Wang	p53_aneuploidy	Arecoline arrests cells at prometaphase by deregulating mitotic spindle assembly and spindle assembly checkpoint: implication for carcinogenesis.
+21289044	2010	Cold Spring Harb Symp Quant Biol	Torres	aneuploidy_proteotoxic	Thoughts on aneuploidy.
+20850176	2010	Cell	Torres	aneuploidy_proteotoxic	Identification of aneuploidy-tolerating mutations.
+20699436	2010	J Pharmacol Exp Ther	Greene	bubr1_dasatinib	The vascular targeting agent combretastatin-A4 and a novel cis-Restricted {beta}-Lactam Analogue, CA-432, induce apoptosis in human chronic myeloid leukemia cells and ex vivo patient samples including those displaying multidrug resistance.
+19503101	2009	Oncogene	Izumi	mva_bub1b,missense_function	BubR1 localizes to centrosomes and suppresses centrosome amplification via regulating Plk1 activity in interphase cells.
+19373780	2009	Pediatr Blood Cancer	Sari	mva_cancer_rx	Wilms tumor, AML and medulloblastoma in a child with cancer prone syndrome of total premature chromatid separation and Fanconi anemia.
+19528295	2009	J Cell Biol	Li	missense_function	Loss of spindle assembly checkpoint-mediated inhibition of Cdc20 promotes tumorigenesis in mice.
+19282667	2009	Cell Cycle	Inoue	sirt2	SIRT2 downregulation confers resistance to microtubule inhibitors by prolonging chronic mitotic arrest.
+21475871	2009	Mol Med Rep	Enjoji	overexpression	BubR1 and AURKB overexpression are associated with a favorable prognosis in gastric cancer.
+19674465	2009	J Hematol Oncol	Kotla	aneuploid_selective	Mechanism of action of lenalidomide in hematological malignancies.
+19151557	2009	Gan To Kagaku Ryoho	Saya	aneuploid_selective	[Molecular mechanism regulating effect of anti-cancer agents].
+19270519	2009	Cell Cycle	Rello-Varona	aneuploid_selective	Preferential killing of tetraploid tumor cells by targeting the mitotic kinesin Eg5.
+19855003	2009	Proc Natl Acad Sci U S A	Janssen	cin_taxane	Elevating the frequency of chromosome mis-segregation as a strategy to kill tumor cells.
+19282672	2009	Cell Cycle	Zhang	cin_taxane	CDK5RAP2 is required for spindle checkpoint function.
+19800579	2009	Cancer Cell	Huang	cin_taxane	Evidence that mitotic exit is a better cancer therapeutic target than spindle assembly.
+19935801	2009	Br J Cancer	Prencipe	cin_taxane	Cellular senescence induced by aberrant MAD2 levels impacts on paclitaxel responsiveness in vitro.
+20032382	2009	Anticancer Res	Schjølberg	p53_aneuploidy	Aneuploidy is associated with TP53 expression but not with BRCA1 or TERT expression in sporadic colorectal cancer.
+19778378	2009	J Cell Mol Med	Carrassa	p53_aneuploidy	U2OS cells lacking Chk1 undergo aberrant mitosis and fail to activate the spindle checkpoint.
+18932004	2008	Hum Genet	Bohers	mva_bub1b	Gradual reduction of BUBR1 protein levels results in premature sister-chromatid separation then in aneuploidy.
+18548531	2008	Am J Med Genet A	García-Castillo	mva_bub1b,mva_review,mva_cancer_rx	Clinical and genetic heterogeneity in patients with mosaic variegated aneuploidy: delineation of clinical subtypes.
+18286482	2008	Mol Carcinog	Haruta	missense_function	Combined BubR1 protein down-regulation and RASSF1A hypermethylation in Wilms tumors with diverse cytogenetic changes.
+18699967	2008	Cell Prolif	Burum-Auensen	missense_function	Reduced level of the spindle checkpoint protein BUB1B is associated with aneuploidy in colorectal cancers.
+18068131	2008	Biochim Biophys Acta	McGrogan	overexpression,cin_taxane	Taxanes, microtubules and chemoresistant breast cancer.
+18922902	2008	Cancer Res	Maxwell	aneuploid_selective	Targeted and nontargeted effects of ionizing radiation that impact genomic instability.
+18769141	2008	Cell Cycle	Baker	p53_aneuploidy	The yin and yang of the Cdkn2a locus in senescence and aging.
+18162463	2008	J Biol Chem	Cheng	p53_aneuploidy	ECRG2 disruption leads to centrosome amplification and spindle checkpoint defects contributing chromosome instability.
+18668508	2008	J Cell Biochem	Wu	p53_aneuploidy	Requirement of a functional spindle checkpoint for arsenite-induced apoptosis.
+19188707	2008	Cytogenet Genome Res	Ciapponi	bubr1_acetylation	Telomere capping and cellular checkpoints: clues from fruit flies.
+18368927	2008	SEB Exp Biol Ser	Sczaniecka	bubr1_acetylation	The spindle checkpoint: how do cells delay anaphase onset?
+17632782	2007	Am J Med Genet A	Micale	mva_bub1b	Mosaic variegated aneuploidy without microcephaly: implications for cytogenetic diagnosis.
+17227844	2007	Proc Natl Acad Sci U S A	Larsen	pseudokinase	Structural analysis of Bub3 interactions in the mitotic spindle checkpoint.
+17376779	2007	J Biol Chem	Matsumura	pseudokinase	Polo-like kinase 1 facilitates chromosome alignment during prometaphase through BubR1.
+17350465	2007	Cancer Genet Cytogenet	Yamamoto	missense_function,overexpression	Overexpression of BUBR1 is associated with chromosomal instability in bladder cancer.
+17478512	2007	Nucleic Acids Res	Myslinski	missense_function	Transcription of the human cell cycle regulated BUB1B gene requires hStaf/ZNF143.
+17987116	2007	PLoS One	Rosell	overexpression	BRCA1: a novel prognostic factor in resected non-small-cell lung cancer.
+17628120	2007	BioDrugs	Sudakin	aneuploid_selective	Targeting mitosis for anti-cancer therapy.
+17541033	2007	Mol Cancer Ther	Ikezoe	aneuploid_selective	A novel treatment strategy targeting Aurora kinases in acute myelogenous leukemia.
+17332352	2007	Cancer Res	Groth-Pedersen	cin_taxane	Vincristine induces dramatic lysosomal changes and sensitizes cancer cells to lysosome-destabilizing siramesine.
+17276342	2007	Dev Cell	Zachos	cin_taxane	Chk1 is required for spindle checkpoint function.
+17234259	2007	Gynecol Oncol	Fu	cin_taxane	Weakened spindle checkpoint with reduced BubR1 expression in paclitaxel-resistant ovarian carcinoma cell line SKOV3-TR30.
+17671183	2007	Cancer Res	Ha	p53_aneuploidy	p53 activation in response to mitotic spindle damage requires signaling via BubR1-mediated phosphorylation.
+17210716	2007	Cancer Res	Vogel	p53_aneuploidy	Mechanisms of mitotic cell death induced by chemotherapy-mediated G2 checkpoint abrogation.
+18159231	2007	PLoS One	Vitale	p53_aneuploidy	Inhibition of Chk1 kills tetraploid tumor cells through a p53-dependent pathway.
+17227893	2007	J Cell Biol	Dikovskaya	p53_aneuploidy	Loss of APC induces polyploidy as a result of a combination of defects in mitosis and apoptosis.
+17675670	2007	J Biol Chem	Schneider	p53_aneuploidy	The transforming acidic coiled coil 3 protein is essential for spindle-dependent chromosome alignment and mitotic survival.
+17370142	2007	J Biomed Sci	Chen	bubr1_acetylation	Dual inhibition of Cdc20 by the spindle checkpoint.
+17709426	2007	J Cell Biol	Zhang	bubr1_acetylation	BubR1 and APC/EB1 cooperate to maintain metaphase chromosome alignment.
+17510285	2007	Genes Dev	Mathew	aneuploidy_proteotoxic	Autophagy suppresses tumor progression by limiting chromosomal instability.
+17939994	2007	Proc Natl Acad Sci U S A	Irelan	aneuploidy_proteotoxic	A role for IkappaB kinase 2 in bipolar spindle assembly.
+16411201	2006	Am J Med Genet A	Matsuura	mva_bub1b,mva_cancer_rx,missense_function	Monoallelic BUB1B mutations and defective mitotic-spindle checkpoint in seven families with premature chromatid separation (PCS) syndrome.
+16182441	2006	Cancer Lett	Hanks	mva_bub1b,mva_cancer_rx	Comparative genomic hybridization and BUB1B mutation analyses in childhood cancers associated with mosaic variegated aneuploidy syndrome.
+16952055	2006	Cell Mol Life Sci	Kingsbury	mva_review	Aneuploidy in the normal and diseased brain.
+16856867	2006	Biochem Soc Trans	Jeganathan	missense_function	Differential mitotic checkpoint protein requirements in somatic and germ cells.
+16476774	2006	J Cell Biol	Baker	senescence,overexpression,p53_aneuploidy	Early aging-associated phenotypes in Bub3/Rae1 haploinsufficient mice.
+16628000	2006	Cell Cycle	Swanton	overexpression,cin_taxane,bubr1_acetylation	Chromosomal instability, colorectal cancer and taxane resistance.
+16428479	2006	Clin Cancer Res	Yuan	overexpression	Increased expression of mitotic checkpoint genes in breast cancer cells with chromosomal instability.
+17384245	2006	Ann N Y Acad Sci	Castedo	aneuploid_selective	Selective resistance of tetraploid cancer cells against DNA damage-induced apoptosis.
+16059936	2005	Am J Med Genet A	Callier	mva_review	Microcephaly is not mandatory for the diagnosis of mosaic variegated aneuploidy syndrome.
+15946858	2005	Protein Expr Purif	Yoon	pseudokinase	Identification and purification of a soluble region of BubR1: a critical component of the mitotic checkpoint complex.
+16355229	2005	Nature	Jeganathan	missense_function	The Rae1-Nup98 complex prevents aneuploidy by inhibiting securin degradation.
+16226453	2005	Curr Opin Cell Biol	Baker	senescence	The mitotic checkpoint in cancer and aging: what have mice taught us?
+16079915	2005	EMBO J	Sanchez-Perez	cin_taxane	The DASH complex and Klp5/Klp6 kinesin coordinate bipolar chromosome attachment in fission yeast.
+16025114	2005	Nat Genet	Ko	p53_aneuploidy	Plk4 haploinsufficiency causes mitotic infidelity and carcinogenesis.
+15466429	2005	Genetics	de Magalhães	p53_aneuploidy	The influence of genes on the aging process of mice: a statistical assessment of the genetics of aging.
+15475955	2004	Nat Genet	Hanks	mva_bub1b,mva_cancer_rx	Constitutional aneuploidy and cancer predisposition caused by biallelic mutations in BUB1B.
+14755404	2004	Prenat Diagn	Chen	mva_review	Prenatal diagnosis of premature centromere division-related mosaic variegated aneuploidy.
+15108198	2004	Am J Med Genet A	Ikeuchi	mva_cancer_rx	Induction of premature chromatid separation (PCS) in individuals with PCS trait and in normal controls.
+15208629	2004	Nat Genet	Baker	missense_function,senescence,baker2004	BubR1 insufficiency causes early onset of aging-associated phenotypes and infertility in mice.
+15159543	2004	Proc Natl Acad Sci U S A	Kops	missense_function	Lethality to human cancer cells through massive chromosome loss by inhibition of the mitotic checkpoint.
+15059905	2004	Cancer Res	Sudo	overexpression,cin_taxane	Dependence of paclitaxel sensitivity on a functional spindle assembly checkpoint.
+15085930	2004	IUBMB Life	Duesberg	aneuploid_selective	Aneuploidy, the primary cause of the multilateral genomic instability of neoplastic and preneoplastic cells.
+15075237	2004	J Cell Sci	Logarinho	cin_taxane	Different spindle checkpoint proteins monitor microtubule attachment and tension at kinetochores in Drosophila cells.
+12773518	2003	J Leukoc Biol	Baek	p53_aneuploidy	p53 deficiency and defective mitotic checkpoint in proliferating T lymphocytes increase chromosomal instability through aberrant exit from mitotic arrest.
+14593737	2003	Prog Cell Cycle Res	Chan	bubr1_acetylation	The mitotic checkpoint: a signaling pathway that allows a single unattached kinetochore to inhibit mitotic exit.
+11932988	2002	Am J Med Genet	Jacquemont	mva_review,mva_cancer_rx	High risk of malignancy in mosaic variegated aneuploidy syndrome.
+12419313	2002	Biochem Biophys Res Commun	Cayrol	pseudokinase	The beta2-adaptin clathrin adaptor interacts with the mitotic checkpoint kinase BubR1.
+11932908	2002	Cancer	Saeki	missense_function	Frequent impairment of the spindle assembly checkpoint in hepatocellular carcinoma.
+11981026	2002	Mol Endocrinol	Fagin	missense_function	Minireview: branded from the start-distinct oncogenic initiating events may determine tumor fate in the thyroid.
+12473343	2002	Curr Opin Cell Biol	Yu	bubr1_acetylation	Regulation of APC-Cdc20 by the spindle checkpoint.
+11528703	2001	Ryoikibetsu Shokogun Shirizu	Kawame	mva_review	[Mosaic variegated aneuploidy].
+11746029	2001	Am J Med Genet	Kajii	mva_review,mva_cancer_rx	Cancer-prone syndrome of mosaic variegated aneuploidy and total premature chromatid separation: report of five infants.
+10877982	2000	Am J Hum Genet	Matsuura	mva_cancer_rx	Chromosomal instability syndrome of total premature chromatid separation with mosaic variegated aneuploidy is defective in mitotic-spindle checkpoint.
+10773412	2000	Cancer Lett	Myrie	missense_function	Mutation and expression analysis of human BUB1 and BUB1B in aneuploid breast cancer cell lines.
+10429359	1999	J Hum Genet	Kawame	mva_review,mva_cancer_rx	Syndrome of microcephaly, Dandy-Walker malformation, and Wilms tumor caused by mosaic variegated aneuploidy with premature centromere division (PCD): report of a new case and review of the literature.
+9916837	1999	Am J Med Genet	Limwongse	mva_review,mva_cancer_rx	Child with mosaic variegated aneuploidy and embryonal rhabdomyosarcoma.
+9677059	1998	Am J Med Genet	Kajii	mva_cancer_rx	Mosaic variegated aneuploidy with multiple congenital abnormalities: homozygosity for total premature chromatid separation trait.
+8781582	1996	Mutat Res	Turner	aneuploid_selective	The mutagenic properties of DNA minor-groove binding ligands.
+7985982	1994	Ann Genet	Bitoun	mva_review	Optic atrophy, microcephaly, mental retardation and mosaic variegated aneuploidy: a human mitotic mutation.
+1734282	1992	Nature	Kuo	aneuploid_selective	A transcriptional hierarchy involved in mammalian cell-type specification.
+2423415	1986	Gene	Gayle	aneuploid_selective	Construction and characterization of pBR322-derived plasmids with deletions of the RNA I region.

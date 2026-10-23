@@ -1,0 +1,79 @@
+drug	molecule	gene	node	desired_direction	action	mechanism	first_approval	open_targets_confirms	direction_flag
+BELANTAMAB MAFODOTIN	CHEMBL4298209	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2020	yes	AVOID
+BRENTUXIMAB VEDOTIN	CHEMBL1742994	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2011	yes	AVOID
+CABAZITAXEL	CHEMBL1201748	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2010	yes	AVOID
+COLCHICINE	CHEMBL107	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	1961	yes	AVOID
+DOCETAXEL	CHEMBL3545252	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	1995	yes	AVOID
+DOCETAXEL ANHYDROUS	CHEMBL92	TUBB	Chromosome missegregation	avoid_increase	STABILISER	Tubulin stabiliser	1995	no	AVOID
+ENFORTUMAB VEDOTIN	CHEMBL3301589	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2019	yes	AVOID
+ERIBULIN MESYLATE	CHEMBL1683544	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2010	yes	AVOID
+IXABEPILONE	CHEMBL1201752	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2007	yes	AVOID
+MIRVETUXIMAB SORAVTANSINE	CHEMBL3545132	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2022	yes	AVOID
+PACLITAXEL	CHEMBL428647	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	1992	yes	AVOID
+POLATUZUMAB VEDOTIN	CHEMBL3301582	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2019	yes	AVOID
+TISOTUMAB VEDOTIN	CHEMBL4297841	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2021	yes	AVOID
+TRASTUZUMAB EMTANSINE	CHEMBL1743082	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2013	yes	AVOID
+VINBLASTINE SULFATE	CHEMBL378544	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	1965	yes	AVOID
+VINCRISTINE SULFATE	CHEMBL501867	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	1963	yes	AVOID
+VINFLUNINE	CHEMBL2110725	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2009	yes	AVOID
+VINFLUNINE DITARTRATE	CHEMBL2105629	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	2009	no	AVOID
+VINORELBINE TARTRATE	CHEMBL538943	TUBB	Chromosome missegregation	avoid_increase	INHIBITOR	Tubulin inhibitor	1994	yes	AVOID
+BORTEZOMIB	CHEMBL325041	PSMB5	Proteasome	decrease	INHIBITOR	26S proteasome inhibitor		yes	direction_match
+BORTEZOMIB D-MANNITOL	CHEMBL5315122	PSMB5	Proteasome	decrease	INHIBITOR	26S proteasome inhibitor	2003	yes	direction_match
+CARFILZOMIB	CHEMBL451887	PSMB5	Proteasome	decrease	INHIBITOR	26S proteasome inhibitor	2009	yes	direction_match
+IXAZOMIB CITRATE	CHEMBL3545432	PSMB5	Proteasome	decrease	INHIBITOR	26S proteasome inhibitor	2015	yes	direction_match
+ABROCITINIB	CHEMBL3655081	JAK1	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK1 inhibitor	2021	yes	direction_match
+ANIFROLUMAB	CHEMBL2364653	IFNAR1	cGAS-STING	decrease	ANTAGONIST	Interferon-alpha/beta receptor alpha chain antagonist	2021	yes	direction_match
+BARICITINIB	CHEMBL2105759	JAK1	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK1 inhibitor	2017	yes	direction_match
+BARICITINIB	CHEMBL2105759	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2017	yes	direction_match
+DEURUXOLITINIB PHOSPHATE	CHEMBL4594382	JAK1	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK1 inhibitor	2024	yes	direction_match
+DEURUXOLITINIB PHOSPHATE	CHEMBL4594382	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2024	yes	direction_match
+FEDRATINIB	CHEMBL1287853	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2019	yes	direction_match
+FEDRATINIB HYDROCHLORIDE	CHEMBL4297216	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2019	yes	direction_match
+FILGOTINIB	CHEMBL3301607	JAK1	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK1 inhibitor	2020	yes	direction_match
+FILGOTINIB	CHEMBL3301607	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2020	yes	direction_match
+FILGOTINIB MALEATE	CHEMBL4298167	JAK1	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK1 inhibitor	2020	yes	direction_match
+FILGOTINIB MALEATE	CHEMBL4298167	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2020	yes	direction_match
+MOMELOTINIB	CHEMBL1078178	JAK1	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK1 inhibitor	2023	yes	direction_match
+MOMELOTINIB	CHEMBL1078178	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2023	yes	direction_match
+MOMELOTINIB DIHYDROCHLORIDE MONOHYDRATE	CHEMBL6068336	JAK1	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK1 inhibitor	2024	yes	direction_match
+MOMELOTINIB DIHYDROCHLORIDE MONOHYDRATE	CHEMBL6068336	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2024	yes	direction_match
+PACRITINIB	CHEMBL2035187	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2022	yes	direction_match
+PACRITINIB CITRATE	CHEMBL5095049	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2022	yes	direction_match
+PEFICITINIB	CHEMBL3137308	JAK1	cGAS-STING	decrease	INHIBITOR	Janus Kinase (JAK) inhibitor	2019	yes	direction_match
+PEFICITINIB	CHEMBL3137308	JAK2	cGAS-STING	decrease	INHIBITOR	Janus Kinase (JAK) inhibitor	2019	yes	direction_match
+RUXOLITINIB PHOSPHATE	CHEMBL1795071	JAK1	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK1 inhibitor	2011	yes	direction_match
+RUXOLITINIB PHOSPHATE	CHEMBL1795071	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2011	yes	direction_match
+TOFACITINIB CITRATE	CHEMBL2103743	JAK1	cGAS-STING	decrease	INHIBITOR	Janus Kinase (JAK) inhibitor	2012	yes	direction_match
+TOFACITINIB CITRATE	CHEMBL2103743	JAK2	cGAS-STING	decrease	INHIBITOR	Janus Kinase (JAK) inhibitor	2012	yes	direction_match
+UPADACITINIB HEMIHYDRATE	CHEMBL5315119	JAK1	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK1 inhibitor	2019	yes	direction_match
+UPADACITINIB HEMIHYDRATE	CHEMBL5315119	JAK2	cGAS-STING	decrease	INHIBITOR	Tyrosine-protein kinase JAK2 inhibitor	2019	yes	direction_match
+PERHEXILINE MALEATE	CHEMBL1334033	MTOR	mTORC1 hyperactivity	decrease	INHIBITOR	Serine/threonine-protein kinase mTOR inhibitor	1974	yes	direction_match
+SIROLIMUS	CHEMBL413	FKBP1A	mTORC1 hyperactivity	decrease	INHIBITOR	FK506-binding protein 1A inhibitor	1999	yes	direction_match
+TACROLIMUS	CHEMBL3989887	FKBP1A	mTORC1 hyperactivity	decrease	INHIBITOR	FK506-binding protein 1A inhibitor	1994	yes	direction_match
+ASCIMINIB	CHEMBL4208229	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Tyrosine-protein kinase ABL inhibitor	2021	yes	direction_match
+ASCIMINIB HYDROCHLORIDE	CHEMBL4297220	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Bcr/Abl fusion protein inhibitor	2021	yes	direction_match
+BOSUTINIB	CHEMBL288441	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Tyrosine-protein kinase ABL inhibitor	2012	yes	direction_match
+BOSUTINIB	CHEMBL288441	SRC	p16Ink4a senescence	decrease	INHIBITOR	Tyrosine-protein kinase SRC inhibitor	2012	yes	direction_match
+BOSUTINIB MONOHYDRATE	CHEMBL2095206	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Bcr/Abl fusion protein inhibitor	2012	yes	direction_match
+DASATINIB	CHEMBL5416410	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Bcr/Abl fusion protein inhibitor	2006	yes	direction_match
+DASATINIB ANHYDROUS	CHEMBL1421	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Tyrosine-protein kinase ABL inhibitor	2006	yes	direction_match
+DASATINIB ANHYDROUS	CHEMBL1421	SRC	p16Ink4a senescence	decrease	INHIBITOR	SRC inhibitor	2006	yes	direction_match
+IMATINIB MESYLATE	CHEMBL1642	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Tyrosine-protein kinase ABL inhibitor	2001	yes	direction_match
+NILOTINIB HYDROCHLORIDE MONOHYDRATE	CHEMBL1201740	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Tyrosine-protein kinase ABL inhibitor	2007	yes	direction_match
+PONATINIB HYDROCHLORIDE	CHEMBL2105708	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Bcr/Abl fusion protein inhibitor	2012	yes	direction_match
+REGORAFENIB	CHEMBL1946170	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Tyrosine-protein kinase ABL inhibitor	2012	yes	direction_match
+TIRBANIBULIN	CHEMBL571546	SRC	p16Ink4a senescence	decrease	INHIBITOR	Tyrosine-protein kinase SRC inhibitor	2020	yes	direction_match
+UMBRALISIB TOSYLATE	CHEMBL3989869	ABL1	p16Ink4a senescence	decrease	INHIBITOR	Tyrosine-protein kinase ABL inhibitor	2021	yes	direction_match
+VANDETANIB	CHEMBL24828	SRC	p16Ink4a senescence	decrease	INHIBITOR	Tyrosine-protein kinase SRC inhibitor	2011	yes	direction_match
+VENETOCLAX	CHEMBL3137309	BCL2	p16Ink4a senescence	decrease	INHIBITOR	Apoptosis regulator Bcl-2 inhibitor	2016	yes	direction_match
+INTERFERON ALFA-2A	CHEMBL2108508	IFNAR1	cGAS-STING	decrease	AGONIST	Interferon alpha/beta receptor agonist	1986	yes	direction_mismatch
+INTERFERON ALFA-2B	CHEMBL1201558	IFNAR1	cGAS-STING	decrease	AGONIST	Interferon alpha/beta receptor agonist	1986	yes	direction_mismatch
+INTERFERON ALFA-N3	CHEMBL2109047	IFNAR1	cGAS-STING	decrease	AGONIST	Interferon alpha/beta receptor agonist	1989	yes	direction_mismatch
+INTERFERON ALFACON-1	CHEMBL1201557	IFNAR1	cGAS-STING	decrease	AGONIST	Interferon alpha/beta receptor agonist	1997	yes	direction_mismatch
+INTERFERON BETA-1A	CHEMBL1201562	IFNAR1	cGAS-STING	decrease	AGONIST	Interferon alpha/beta receptor agonist	1996	yes	direction_mismatch
+INTERFERON BETA-1B	CHEMBL1201563	IFNAR1	cGAS-STING	decrease	AGONIST	Interferon alpha/beta receptor agonist	1993	yes	direction_mismatch
+PEGINTERFERON ALFA-2A	CHEMBL1201560	IFNAR1	cGAS-STING	decrease	AGONIST	Interferon alpha/beta receptor agonist	2002	yes	direction_mismatch
+PEGINTERFERON ALFA-2B	CHEMBL1201561	IFNAR1	cGAS-STING	decrease	AGONIST	Interferon alpha/beta receptor agonist	2000	yes	direction_mismatch
+PEGINTERFERON BETA-1A	CHEMBL2108677	IFNAR1	cGAS-STING	decrease	AGONIST	Interferon alpha/beta receptor agonist	2014	yes	direction_mismatch
+ROPEGINTERFERON ALFA-2B	CHEMBL4297819	IFNAR1	cGAS-STING	decrease	POSITIVE MODULATOR	Interferon alpha/beta receptor positive modulator	2019	yes	direction_mismatch

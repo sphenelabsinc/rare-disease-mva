@@ -1,0 +1,9 @@
+position	n_orthologs	identity_to_human	residues_seen	lysine_seen	BUB1_paralog
+L737 (nonsense)	117	0.92	L:108,S:3,M:2,F:1,X:1,P:1,V:1	no	V
+R814 (MVA1)	120	0.97	R:117,X:3	no	R
+L844 (MVA1)	121	0.90	L:109,V:6,X:3,I:3	no	L
+I909 (MVA1)	122	0.86	I:105,V:10,L:3,X:2,M:2	no	L
+Q921 (MVA1)	122	0.89	Q:109,L:3,H:2,X:2,M:2,R:1,E:1,Y:1,C:1	no	F
+N1002 (patient)	120	0.97	N:117,D:1,S:1,E:1	no	N
+T1008 (PLK1 site)	120	0.94	T:113,S:3,R:3,P:1	no	L
+L1012 (MVA1)	119	0.97	L:115,V:1,R:1,T:1,E:1	no	L

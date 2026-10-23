@@ -1,0 +1,27 @@
+gene	node	desired_direction	rationale
+SIRT2	SIRT2 activity	increase	Deacetylates BubR1 K668, stabilises it (PMID 24825348)
+NAMPT	NAD+	increase	Rate-limiting NAD+ salvage; NAD+ decline lowers BubR1 (24825348)
+NMNAT1	NAD+	increase	NAD+ synthesis
+CREBBP	CBP	decrease	Acetylates BubR1 K668, destabilising it (24825348)
+HSP90AA1	HSP90	avoid_decrease	Kinase-domain MVA mutants depend on HSP90 (20516114)
+HSP90AB1	HSP90	avoid_decrease	As above
+HSF1	HSP90	increase	Heat-shock response raises chaperone capacity (speculative)
+PSMB5	Proteasome	decrease	MG132 stabilises mutant BUBR1 in vitro (20516114); systemic toxicity
+MTOR	mTORC1 hyperactivity	decrease	mTORC1 hyperactivity correlates with sarcopenia (31738183)
+PRKAA1	Mosaic variegated aneuploidy	increase	AMPK activation (AICAR) is aneuploidy-selective (21315436)
+BCL2	p16Ink4a senescence	decrease	Senolytic target (ABT-263 class)
+BCL2L1	p16Ink4a senescence	decrease	Senolytic target
+ABL1	p16Ink4a senescence	decrease	Dasatinib senolytic component
+SRC	p16Ink4a senescence	decrease	Dasatinib senolytic component
+JAK1	cGAS-STING	decrease	SASP / interferon signalling downstream of cGAS-STING
+JAK2	cGAS-STING	decrease	As above
+IFNAR1	cGAS-STING	decrease	Type I IFN receptor
+STING1	cGAS-STING	decrease	Micronucleus sensing (28738408)
+CGAS	cGAS-STING	decrease	As above
+TP53	p53/p21	avoid_decrease	p53 is net protective in BubR1 progeroid tissue (23602569)
+AURKB	PP2A-B56 at kinetochore	avoid_decrease	Aurora B inhibition worsens missegregation in SAC-weak cells
+TTK	SAC strength	avoid_decrease	MPS1 inhibitors abrogate the SAC
+PLK1	KARD phosphorylation	avoid_decrease	PLK1 phosphorylates KARD; required for alignment (23079597)
+KIF18A	Chromosome missegregation	avoid_decrease	Aneuploid cells depend on KIF18A (33505028)
+TUBB	Chromosome missegregation	avoid_increase	Microtubule poisons (vincristine) in RMS therapy; SAC-weak cells
+FKBP1A	mTORC1 hyperactivity	decrease	Rapalogs (sirolimus, everolimus, temsirolimus) are annotated in ChEMBL via FKBP12 (allosteric mTORC1 inhibition)
