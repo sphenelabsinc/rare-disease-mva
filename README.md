@@ -44,14 +44,91 @@ hf download SageBio/mva-hackathon-2026-data WGS_EX2312012_HGWCNDSX7.vcf.gz \
   --repo-type dataset --local-dir ./data
 ```
 
+## Analysis
+
+All outputs go to `data/work/` and tools/databases to `data/resources/` (both gitignored).
+Paths and thresholds live in `src/rare_disease_mva/config.py`; the shell steps share
+`scripts/pipeline/env.sh`.
+
+### 1. Variant pipeline (workstation, bioconda tools)
+
+Run in numeric order. Needs the reference (`data/ref/`), the Exomiser 14.0.0 data release 2406
+and the VEP 113 cache under `data/resources/`.
+
+| Script | Step | Main output |
+|---|---|---|
+| `scripts/pipeline/10_align.sh` | FASTQ → BAM (minimap2), duplicate marking | `data/work/bam/` |
+| `scripts/pipeline/20_prep_vcf.sh` | chr names, primary contigs, split multiallelics, left-align; QC stats, sex check, ROH | `data/work/vcf/*.norm.vcf.gz` |
+| `scripts/pipeline/22_clinvar.sh` | ClinVar 2026-10-04 annotation | `data/work/vcf/*.clinvar.vcf.gz` |
+| `scripts/pipeline/25_vep.sh` | Ensembl VEP 113 annotation | `data/work/vep/` |
+| `scripts/pipeline/30_exomiser.sh` | Exomiser genotype + phenotype ranking (8 HPO terms) | `data/work/exomiser/` |
+| `scripts/pipeline/40_sv_cnv.sh` | Manta SVs and mosdepth depth | `data/work/sv/`, `data/work/depth/` |
+
+### 2. Genotype QC (laptop)
+
+Counts and flags only; nothing is removed from the Exomiser input. Reads the normalised VCF
+if present, otherwise the raw VCF.
+
+```sh
+python -m rare_disease_mva.qc funnel                         # genome-wide funnel -> data/work/qc/qc_funnel.tsv
+python -m rare_disease_mva.qc candidates <submission.csv>    # GQ/DP/AB per submitted variant -> data/work/qc/candidate_qc.tsv
+```
+
+### 3. Phenotype-only ranking (LIRICAL)
+
+`scripts/run_lirical.sh` runs LIRICAL v2.4.1 with the HPO 2026-09-01 release, once with all
+8 HPO terms and once without the parental term HP:0200067, and maps diseases to genes.
+One-time install steps (portable JDK 21, LIRICAL, its data) are in the script header.
+Output: `data/work/lirical/lirical_genes.tsv`, `lirical_no_parental_genes.tsv`.
+
+### 4. Mechanism gene panel
+
+```sh
+python -m rare_disease_mva.panel     # -> config/gene_panels_merged.tsv
+```
+
+Merges `config/gene_panels.tsv` with PanelApp green genes (R457, Childhood solid tumours),
+the genes of HPO-annotated MVA diseases and literature genes, recording each source. Used to
+check whether top genes are known mechanism genes; it does not weight the ranking or EPCR.
+
+### 5. Candidates and EPCR
+
+```sh
+python -m rare_disease_mva.rank <exomiser.variants.tsv> config/gene_panels.tsv <out.csv>
+python -m rare_disease_mva.epcr <candidates.tsv>     # -> data/work/epcr/epcr_scored.tsv, epcr_sensitivity.tsv
+```
+
+`epcr.py` scores EPCR = 0.6 × Exomiser gene combined score + 0.4 × ACMG tier (weaker allele
+for compound hets), applies the exclusion rules, enforces that the top row is strictly highest,
+and reruns the ranking under alternative weights. The candidate-table format is in the module
+docstring. ACMG classes for manually reviewed variants come from `config/acmg_review.tsv`.
+
+### Configuration files
+
+| File | Contents |
+|---|---|
+| `src/rare_disease_mva/config.py` | paths, QC thresholds, EPCR weights |
+| `config/exomiser/` | Exomiser analysis settings and HPO terms |
+| `config/gene_panels.tsv` | phenotype-driven differential gene list |
+| `config/gene_panels_merged.tsv` | merged mechanism panel with sources |
+| `config/acmg_review.tsv` | manual ACMG/AMP review, one row per evidence code with reasons |
+
+### Tests
+
+```sh
+pytest
+```
+
 ## Layout
 
 ```
-data/        raw HF dataset (gitignored, never commit)
+config/      analysis settings, gene panels, manual ACMG review
+data/        raw HF dataset, resources and outputs (gitignored, never commit)
 docs/        specs and instructions
-notebooks/   exploratory analysis
-scripts/     one-off utilities (data download)
+notebooks/   exploratory analysis (committed without outputs)
+scripts/     variant pipeline (scripts/pipeline/), LIRICAL run, data download
 src/         reusable pipeline code (rare_disease_mva package)
+tests/       unit tests
 ```
 
 ## Conventions

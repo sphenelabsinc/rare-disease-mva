@@ -19,6 +19,7 @@ dependencies = [
     "scipy>=1.13",
     # Bioinformatics
     "biopython>=1.83",  # imports as `Bio`
+    "python-docx>=1.1",  # phenotype docx (notebooks/00_reference_check)
     # Notebooks & viz
     "jupyter>=1.0",
     "matplotlib>=3.8",
