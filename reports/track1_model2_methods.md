@@ -1,7 +1,7 @@
 # Track 1 methods: PROBAND01, Model 2 (exomiser-acmg-epcr)
 
-Team: sphenelabs · Model 2 (`exomiser-acmg-epcr`), an upgrade of Model 1 (`exomiser-rank`,
-[track1_methods.md](track1_methods.md)).
+Team: sphenelabs · Model 2 (`exomiser-acmg-epcr`), our **final model**, superseding Model 1
+(`exomiser-rank`, [track1_methods.md](track1_methods.md)).
 This document gives the methods of the Model 2 report and methods description form.
 The predictions and the full report were submitted through the challenge.
 
