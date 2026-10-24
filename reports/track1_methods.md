@@ -152,5 +152,5 @@ The remaining rows are lower-confidence Exomiser candidates.
 ## Use of AI assistance
 
 Analysis was run with Claude Code (Anthropic, Claude Opus 5.5).
-**[Fill in: plan/tier and training opt-out setting, e.g. "Claude Pro, training
-opt-out enabled, no feedback provided".]**
+Claude Pro individual plan; "Help improve Claude" (use of chats for model
+training) set to OFF.

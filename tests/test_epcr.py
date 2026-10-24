@@ -4,6 +4,7 @@ from rare_disease_mva import config as C
 from rare_disease_mva.epcr import (
     exclusion_reason,
     ordering_check,
+    phenotype_term,
     review_classes,
     score,
     score_all,
@@ -42,7 +43,7 @@ def test_cis_pair_is_penalised():
 @pytest.mark.parametrize("kw,reason", [
     ({"acmg_1": "LB"}, "ACMG B/LB"),
     ({"acmg_1": "P", "hgvs_2": "x", "acmg_2": "B"}, "ACMG B/LB"),
-    ({"artefact": 1}, "artefact-prone region"),
+    ({"artefact": 1}, "artefact (prone region or clustered low-AB call)"),
     ({"read_fail": 1}, "failed read review"),
     ({"inheritance": "AR"}, "recessive gene with a single het"),
 ])
@@ -94,6 +95,33 @@ def test_sensitivity_reports_control_and_stability():
     sens = sensitivity(cands)
     assert all(s["top"] == "top" and s["top_unchanged"] for s in sens)
     assert [s["role"] for s in sens].count("control (panel bonus)") == 1
+
+
+def test_phenotype_term_uses_phenotype_not_combined_score():
+    # A truncating VUS in a gene with no phenotype match: the combined score is inflated by the
+    # variant score, which the ACMG tier already counts.
+    c = cand("x", phenotype_score=0.5, combined_score=0.75)
+    assert score(c) == round(0.6 * 0.5 + 0.4 * 0.4, 3)
+    assert score(c, term="combined") == round(0.6 * 0.75 + 0.4 * 0.4, 3)
+
+
+@pytest.mark.parametrize("pheno,expected", [(0.5, 0.0), (0.3, 0.0), (0.75, 0.5), (1.0, 1.0)])
+def test_baseline_corrected_phenotype_term(pheno, expected):
+    assert phenotype_term(cand("x", phenotype_score=pheno), "baseline") == pytest.approx(expected)
+
+
+def test_sensitivity_includes_previous_definition_and_baseline_arms():
+    cands = [cand("top", acmg_1="P", phenotype_score=0.8, combined_score=0.98),
+             cand("vus", phenotype_score=0.5, combined_score=0.75)]
+    sens = {s["role"]: s for s in sensitivity(cands)}
+    assert sens["previous definition (combined score)"]["top_epcr"] == round(0.6 * 0.98 + 0.4, 3)
+    assert sens["baseline-corrected phenotype score"]["runner_up_epcr"] == 0.16
+    assert all(s["top_unchanged"] for s in sens.values())
+
+
+def test_sensitivity_skips_combined_arm_without_combined_scores():
+    roles = [s["role"] for s in sensitivity([cand("a", acmg_1="P"), cand("b")])]
+    assert "previous definition (combined score)" not in roles
 
 
 def test_review_classes(tmp_path):

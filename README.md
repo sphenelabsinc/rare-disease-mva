@@ -94,20 +94,32 @@ check whether top genes are known mechanism genes; it does not weight the rankin
 ### 5. Candidates and EPCR
 
 ```sh
-python -m rare_disease_mva.rank <exomiser.variants.tsv> config/gene_panels.tsv <out.csv>
-python -m rare_disease_mva.epcr <candidates.tsv>     # -> data/work/epcr/epcr_scored.tsv, epcr_sensitivity.tsv
+python -m rare_disease_mva.rank <exomiser.variants.tsv> config/gene_panels_merged.tsv --secondary LZTR1
+                                     # -> data/work/rank/raw_ranking.tsv, candidates.tsv, exclusions.tsv
+python -m rare_disease_mva.epcr data/work/rank/candidates.tsv --submission <out.csv>
+                                     # -> data/work/epcr/epcr_scored.tsv, epcr_sensitivity.tsv
+python -m rare_disease_mva.convergence <exomiser.genes.tsv> <exomiser.variants.tsv> <out.csv>
+                                     # -> data/work/rank/convergence.tsv (agreement check, reported only)
 ```
 
-`epcr.py` scores EPCR = 0.6 × Exomiser gene combined score + 0.4 × ACMG tier (weaker allele
-for compound hets), applies the exclusion rules, enforces that the top row is strictly highest,
-and reruns the ranking under alternative weights. The candidate-table format is in the module
+`rank.py` builds one hypothesis per gene from Exomiser's contributing variants, ranked by the
+unweighted Exomiser gene combined score (recessive genes take the two best hets or a
+homozygote; artefact-prone genes are flagged), and adds a hedge row pairing the top recessive
+gene's strongest allele with its rarest other het. Variants at or above the rarity threshold
+(gnomAD popmax < 0.1% recessive, < 0.01% dominant) are dropped first, and candidate variants in a
+cluster of ≥ 3 calls within 10 bp with allele balance < 0.2 are flagged as mapping artefacts
+(read from the normalised VCF, or the raw VCF via `--vcf`). Panel membership is recorded but does
+not change the order. `epcr.py` scores EPCR = 0.6 × Exomiser gene phenotype score + 0.4 × ACMG tier
+(weaker allele for compound hets; the phenotype score, not the combined score, so the variant is
+not counted twice), applies the exclusion rules, enforces that the top row is strictly highest,
+and reruns the ranking under alternative weights and phenotype-term definitions. The candidate-table format is in the module
 docstring. ACMG classes for manually reviewed variants come from `config/acmg_review.tsv`.
 
 ### Configuration files
 
 | File | Contents |
 |---|---|
-| `src/rare_disease_mva/config.py` | paths, QC thresholds, EPCR weights |
+| `src/rare_disease_mva/config.py` | paths, QC thresholds, rarity and cluster rules, EPCR weights |
 | `config/exomiser/` | Exomiser analysis settings and HPO terms |
 | `config/gene_panels.tsv` | phenotype-driven differential gene list |
 | `config/gene_panels_merged.tsv` | merged mechanism panel with sources |
