@@ -133,6 +133,12 @@ def test_read_review_keys_by_variant_and_needs_a_reason_to_fail(tmp_path):
         load_read_review(p)
 
 
+def test_notes_label_automatic_and_unclassified_classes():
+    c = Candidate("G", "AR", 0.75, 0.5, [("chr1", 1, "A", "G"), ("chr1", 900, "C", "T")],
+                  [call(hgvs="c.1A>G"), call(hgvs="c.9C>T", acmg="NA")])
+    assert candidate_row(c, {})["notes"] == "G AR; c.1A>G [VUS, automatic] + c.9C>T [not classified]"
+
+
 def test_candidate_table_carries_phenotype_and_combined_scores():
     c = Candidate("G", "AD", 0.75, 0.5, [("chr1", 1, "A", "G")], [call()])
     row = candidate_row(c, {})

@@ -65,4 +65,6 @@ CIS_DISTANCE_BP = 100   # two hets closer than this are treated as one allele in
 CIS_PENALTY = 0.3
 HEDGE_EPCR = 0.08       # fixed band 0.05-0.1, no formula
 SECONDARY_EPCR = 0.10   # fixed band 0.05-0.15, no formula
+# Reason written in the notes column of each secondary-finding row.
+SECONDARY_REASONS = {"LZTR1": "LZTR1-related schwannomatosis, unrelated to MVA"}
 MAX_MANUAL_ADJUST = 0.10

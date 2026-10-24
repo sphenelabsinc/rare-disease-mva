@@ -22,7 +22,10 @@ Membership of the mechanism panel (config/gene_panels_merged.tsv) is recorded fo
 agreement check and the EPCR control weights only; it never changes the order.
 
 ACMG classes come from the manual review (config/acmg_review.tsv) where a variant was
-reviewed, otherwise from Exomiser's automatic classification. EPCR is assigned by epcr.py.
+reviewed, otherwise from Exomiser's automatic classification; the notes label each class
+"manual" or "automatic". The notes also carry any genotype QC flag of a chosen variant (from
+qc.py; flagged, never removed) and the reason for each secondary finding (config.py).
+EPCR is assigned by epcr.py.
 
 Outputs (in --out):
     raw_ranking.tsv   every gene-level hypothesis, highest score first
@@ -49,6 +52,7 @@ from cyvcf2 import VCF
 
 from rare_disease_mva import config as C
 from rare_disease_mva.epcr import review_classes
+from rare_disease_mva.qc import find_record, genotype_flags
 
 # Genes whose calls are dominated by reference/paralog artefacts in short-read WGS.
 # Olfactory receptors are matched as OR<family><subfamily> so ORC1/4/6 and ORAI1 are kept.
@@ -287,7 +291,7 @@ def hedge_pair(top: Candidate, all_rare) -> Candidate | None:
 
 def _acmg(call: Call, reviewed: dict) -> tuple[str, str]:
     r = reviewed.get(call.hgvs)
-    return (r["class"], "manual") if r else (call.acmg, "Exomiser")
+    return (r["class"], "manual") if r else (call.acmg, "automatic")
 
 
 CANDIDATE_COLS = ["candidate_id", "gene", "finding_type", "inheritance", "hgvs_1", "zygosity_1",
@@ -301,7 +305,8 @@ CANDIDATE_COLS = ["candidate_id", "gene", "finding_type", "inheritance", "hgvs_1
 def candidate_row(c: Candidate, reviewed: dict) -> dict:
     acmg = [_acmg(call, reviewed) for call in c.calls]
     v2 = c.variants[1] if len(c.variants) > 1 else ("", "", "", "")
-    hgvs = " + ".join(f"{call.hgvs} [{cls}, {src}]" for call, (cls, src) in zip(c.calls, acmg))
+    hgvs = " + ".join(f"{call.hgvs} [not classified]" if cls == "NA" else f"{call.hgvs} [{cls}, {src}]"
+                      for call, (cls, src) in zip(c.calls, acmg))
     return {
         "candidate_id": f"{c.gene} hedge" if c.finding_type == "hedge" else c.gene,
         "gene": c.gene, "finding_type": c.finding_type, "inheritance": c.moi,
@@ -356,6 +361,8 @@ def main(argv=None):
     for c in chosen:
         if c.gene in secondary:
             c.finding_type = "secondary"
+            reason = C.SECONDARY_REASONS.get(c.gene)
+            c.notes.append(f"secondary finding; {reason}" if reason else "secondary finding")
     hedge = hedge_pair(cands[0], all_rare)
 
     # Rarity exclusions are listed for genes that would otherwise reach the top-N score range.
@@ -375,6 +382,11 @@ def main(argv=None):
                 c.ploidy = True
                 c.notes.append(f"het call on non-PAR chrX in an {C.SAMPLE_SEX} sample: likely mapping artefact")
                 exclusions.append(dict(hit, gene=c.gene, moi=c.moi, hgvs=call.hgvs, score=c.score))
+            rec, idx = find_record(checker.vcf, *v)
+            flags, ab = genotype_flags(rec, idx) if rec else ([], None)
+            if flags:
+                shown = [f"AB {ab:.2f}" if f == "allele_balance" else f for f in flags]
+                c.notes.append(f"genotype QC flag ({', '.join(shown)}), low confidence")
             review = read_review.get(v)
             if review and review["decision"] == "fail":
                 c.read_fail = True
