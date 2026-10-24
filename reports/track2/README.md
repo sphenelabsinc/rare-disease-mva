@@ -1,7 +1,9 @@
 # Track 2 working files
 
-The plan is in `docs/04-track2-plan.md`. The draft report is
-`track2_report.md`.
+The plan is in `docs/04-track2-plan.md`. The submitted report
+(`sphenelabs_track2_report.md`/`.pdf`) and the Stage 1 dossier
+(`01_variant_dossier.md`) contain patient-specific variant detail, so they are
+kept local and gitignored; see "Data policy" in the top-level README.
 
 | Stage | Write-up | Script | Inputs / outputs |
 |---|---|---|---|

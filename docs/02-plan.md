@@ -14,14 +14,18 @@ plus a GitHub link and a methods writeup. Deadline **24 Oct 2026**, with
 
 Phenotype (HPO):
 
-- HP:0002859 Rhabdomyosarcoma: the event that prompted investigation
-- HP:0000121 Nephrocalcinosis: present from birth
+- HP:0002859 Rhabdomyosarcoma
+- HP:0000121 Nephrocalcinosis
 - HP:0004322 Short stature
 - HP:0001508 Failure to thrive
 - HP:0003202 Skeletal muscle atrophy
-- HP:0001622 Premature birth (32 wk)
-- HP:0001518 Small for gestational age (~1 kg, consistent with IUGR)
-- HP:0200067 Recurrent spontaneous abortion (parental history)
+- HP:0001622 Premature birth
+- HP:0001518 Small for gestational age
+- HP:0200067 Recurrent spontaneous abortion (parental, not proband)
+
+Coded terms only. Gestational age, birth weight, timing and other free-text
+clinical detail stay in the confidential phenotype document and out of this
+repository (see §5).
 
 The organisers' notes point toward a **chromosomal instability disorder** and
 say to treat parental miscarriages as a real signal.
