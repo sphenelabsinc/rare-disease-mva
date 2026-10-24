@@ -1,6 +1,7 @@
 # Track 1 methods: PROBAND01
 
-> Draft. Rename to `<hf-username>_track1_report.md` before submitting.
+> **Superseded.** This is Model 1 (`exomiser-rank`), our earlier baseline. Our final model is
+> Model 2 (`exomiser-acmg-epcr`): see [track1_model2_methods.md](track1_model2_methods.md).
 
 ## Summary
 
@@ -153,4 +154,4 @@ The remaining rows are lower-confidence Exomiser candidates.
 
 Analysis was run with Claude Code (Anthropic, Claude Opus 5.5).
 Claude Pro individual plan; "Help improve Claude" (use of chats for model
-training) set to OFF.
+training) set to OFF; no feedback provided on outputs.

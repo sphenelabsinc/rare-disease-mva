@@ -4,6 +4,10 @@ Bioinformatics workspace for the
 [Rare Disease, Real Kid: MVA Hackathon 2026](https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026).
 Submission window: 24 Aug – 24 Oct 2026.
 
+**Final model:** Track 1 Model 2 (`exomiser-acmg-epcr`), methods in
+[reports/track1_model2_methods.md](reports/track1_model2_methods.md). Model 1 (`exomiser-rank`,
+[reports/track1_methods.md](reports/track1_methods.md)) is the earlier baseline it supersedes.
+
 ## Prerequisites
 
 - Python 3.11+ (tested on 3.13)
@@ -141,6 +145,7 @@ config/      analysis settings, gene panels, manual ACMG review
 data/        raw HF dataset, resources and outputs (gitignored, never commit)
 docs/        specs and instructions
 notebooks/   exploratory analysis (committed without outputs)
+reports/     Track 1 methods: final Model 2 (track1_model2_methods.md); earlier Model 1 baseline (track1_methods.md)
 scripts/     variant pipeline (scripts/pipeline/), LIRICAL run, data download
 src/         reusable pipeline code (rare_disease_mva package)
 tests/       unit tests
