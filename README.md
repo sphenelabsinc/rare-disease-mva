@@ -173,6 +173,10 @@ here:
 | `reports/track2/*_track2_report.{md,pdf}` | Track 2 submitted report |
 | `reports/track2/01_variant_dossier.md` | Stage 1 dossier (variant calls, read support) |
 
+Submission files are named `sphenelabs_*` (report PDFs and Markdown, the Track
+1 CSV), and that prefix is gitignored anywhere in the tree, so they stay out of
+git even if moved.
+
 The methods are described in the code, configs and the committed stage
 write-ups; anything that refers to these files can be regenerated locally from
 the challenge dataset.
