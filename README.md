@@ -98,7 +98,7 @@ python -m rare_disease_mva.rank <exomiser.variants.tsv> config/gene_panels_merge
                                      # -> data/work/rank/raw_ranking.tsv, candidates.tsv, exclusions.tsv
 python -m rare_disease_mva.epcr data/work/rank/candidates.tsv --submission <out.csv>
                                      # -> data/work/epcr/epcr_scored.tsv, epcr_sensitivity.tsv
-python -m rare_disease_mva.convergence <exomiser.genes.tsv> <exomiser.variants.tsv> <out.csv>
+python -m rare_disease_mva.convergence <exomiser.genes.tsv> <exomiser.variants.tsv> <submission.csv>
                                      # -> data/work/rank/convergence.tsv (agreement check, reported only)
 ```
 
@@ -108,7 +108,9 @@ homozygote; artefact-prone genes are flagged), and adds a hedge row pairing the 
 gene's strongest allele with its rarest other het. Variants at or above the rarity threshold
 (gnomAD popmax < 0.1% recessive, < 0.01% dominant) are dropped first, and candidate variants in a
 cluster of ≥ 3 calls within 10 bp with allele balance < 0.2 are flagged as mapping artefacts
-(read from the normalised VCF, or the raw VCF via `--vcf`). Panel membership is recorded but does
+(read from the normalised VCF, or the raw VCF via `--vcf`). In an XY sample, heterozygous calls on
+non-PAR chrX are also flagged as mapping artefacts, and a variant marked `fail` in
+`config/read_review.tsv` (with a written reason) is excluded as a failed read review. Panel membership is recorded but does
 not change the order. `epcr.py` scores EPCR = 0.6 × Exomiser gene phenotype score + 0.4 × ACMG tier
 (weaker allele for compound hets; the phenotype score, not the combined score, so the variant is
 not counted twice), applies the exclusion rules, enforces that the top row is strictly highest,
@@ -119,11 +121,12 @@ docstring. ACMG classes for manually reviewed variants come from `config/acmg_re
 
 | File | Contents |
 |---|---|
-| `src/rare_disease_mva/config.py` | paths, QC thresholds, rarity and cluster rules, EPCR weights |
+| `src/rare_disease_mva/config.py` | paths, QC thresholds, rarity, cluster and chrX ploidy rules, EPCR weights |
 | `config/exomiser/` | Exomiser analysis settings and HPO terms |
 | `config/gene_panels.tsv` | phenotype-driven differential gene list |
 | `config/gene_panels_merged.tsv` | merged mechanism panel with sources |
 | `config/acmg_review.tsv` | manual ACMG/AMP review, one row per evidence code with reasons |
+| `config/read_review.tsv` | read-level review decisions (pass/fail) with reasons |
 
 ### Tests
 
