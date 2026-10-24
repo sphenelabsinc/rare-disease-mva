@@ -4,6 +4,9 @@ Bioinformatics workspace for the
 [Rare Disease, Real Kid: MVA Hackathon 2026](https://huggingface.co/spaces/SageBio/rare-disease-real-kid-mva-hackathon-2026).
 Submission window: 24 Aug – 24 Oct 2026.
 
+**Team sphenelabs:** Emma Hsueh ([@ehsueh](https://github.com/ehsueh)),
+Yu-Ting Lin ([@YuTingLin-Data](https://github.com/YuTingLin-Data))
+
 **Final model:** Track 1 Model 2 (`exomiser-acmg-epcr`), methods in
 [reports/track1_model2_methods.md](reports/track1_model2_methods.md). Model 1 (`exomiser-rank`,
 [reports/track1_methods.md](reports/track1_methods.md)) is the earlier baseline it supersedes.
