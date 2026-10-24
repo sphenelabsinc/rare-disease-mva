@@ -7,9 +7,10 @@ Submission window: 24 Aug – 24 Oct 2026.
 **Team sphenelabs:** Emma Hsueh ([@ehsueh](https://github.com/ehsueh)),
 Yu-Ting Lin ([@YuTingLin-Data](https://github.com/YuTingLin-Data))
 
-**Final model:** Track 1 Model 2 (`exomiser-acmg-epcr`), methods in
-[reports/track1_model2_methods.md](reports/track1_model2_methods.md). Model 1 (`exomiser-rank`,
-[reports/track1_methods.md](reports/track1_methods.md)) is the earlier baseline it supersedes.
+**Final model:** Track 1 Model 2 (`exomiser-acmg-epcr`), produced by `rank.py` and `epcr.py`
+(see [Candidates and EPCR](#5-candidates-and-epcr)). It supersedes Model 1 (`exomiser-rank`), the
+earlier baseline. The methods write-ups for both were submitted to the hackathon directly and are
+kept out of this public repository (see [Data policy](#data-policy-and-what-is-not-in-this-repository)).
 
 ## Prerequisites
 
@@ -145,13 +146,98 @@ pytest
 
 ```
 config/      analysis settings, gene panels, manual ACMG review
+config/track2/   curated Track 2 inputs (causal edges, targets, rubric)
 data/        raw HF dataset, resources and outputs (gitignored, never commit)
 docs/        specs and instructions
 notebooks/   exploratory analysis (committed without outputs)
-reports/     Track 1 methods: final Model 2 (track1_model2_methods.md); earlier Model 1 baseline (track1_methods.md)
+reports/     derived summary tables and general write-ups (patient-specific
+             reports are kept local; see "Data policy" below)
+reports/track2/  Track 2 stage write-ups and tables (see its own README)
 scripts/     variant pipeline (scripts/pipeline/), LIRICAL run, data download
+scripts/track2/  Track 2 stage scripts (s0–s4, public APIs only)
 src/         reusable pipeline code (rare_disease_mva package)
 tests/       unit tests
+```
+
+## Data policy and what is not in this repository
+
+This repository is public. **No patient data, genotype data or genome-wide
+table is committed, in any form.** `data/` is gitignored in full, and the
+patterns at the end of `.gitignore` catch the same file types anywhere in the
+tree in case a script writes outside `data/`. Git history has been checked: no
+file under `data/` has ever been committed.
+
+The committed files under `reports/` are tables derived from public resources
+only (PubMed, AlphaFold DB, Ensembl/Compara, STRING, Reactome, ChEMBL, Open
+Targets) and write-ups that discuss BUB1B, its pathway and candidate drugs in
+general terms.
+
+**Patient-specific reports are left out of git.** They contain the proband's
+individual variant calls and read counts, secondary and carrier findings, and
+sample QC metrics, none of which has been published by the family or the
+organisers. They were submitted to the hackathon directly and are gitignored
+here:
+
+| Kept local | Contents |
+|---|---|
+| `reports/track1/` | Track 1 methods write-ups, submission CSV and report PDF |
+| `reports/track2/*_track2_report.{md,pdf}` | Track 2 submitted report |
+| `reports/track2/01_variant_dossier.md` | Stage 1 dossier (variant calls, read support) |
+
+Submission files are named `sphenelabs_*` (report PDFs and Markdown, the Track
+1 CSV), and that prefix is gitignored anywhere in the tree, so they stay out of
+git even if moved.
+
+The methods are described in the code, configs and the committed stage
+write-ups; anything that refers to these files can be regenerated locally from
+the challenge dataset.
+
+Genotype-scale data is held locally only and is deleted within 30 days of the
+submission window closing.
+
+### Expected `data/` layout
+
+File names and purposes only — none of these files are in the repository. Get
+them with `make data` (challenge dataset, requires `HF_TOKEN`) and the
+`scripts/pipeline/` steps (references and databases).
+
+```
+data/
+  Challenge_Clinical_Phenotype_1.docx        case description (not committed)
+  WGS_EX2312012_HGWCNDSX7.vcf.gz{,.tbi}      challenge VCF
+  WGS_EX2312012_..._L00{1..4}_R{1,2}_001.fastq.gz   raw reads, 4 lanes
+  ref/
+    GRCh38_no_alt_hs38d1.fa{,.fai,.mmi}      reference, index, minimap2 index
+  resources/
+    clinvar/      clinvar.vcf.gz, clinvar.chr.vcf.gz (+ .tbi)
+    vep/          VEP 113 cache (homo_sapiens/)
+    exomiser/     Exomiser 14.0.0 CLI, 2406_hg38, 2406_phenotype
+    gencode/      gencode.v46.basic.gtf.gz, genes.bed
+    1kg/          chr15 BUB1B 4 Mb panel subset (+ .tbi)
+  work/           all pipeline outputs: bam/ vcf/ vep/ exomiser/ sv/ depth/
+                  qc/ rank/ epcr/ lirical/ track2/cache/
+  logs/           per-step logs
+```
+
+### Which committed files depend on which ignored inputs
+
+| Committed | Needs (not committed) |
+|---|---|
+| `src/rare_disease_mva/qc.py` | `data/work/vcf/*.norm.vcf.gz`, or the raw VCF |
+| `src/rare_disease_mva/rank.py`, `epcr.py`, `convergence.py` | Exomiser TSVs under `data/work/exomiser/` |
+| `config/acmg_review.tsv` | manual review of the challenge VCF calls |
+| `config/read_review.tsv` | read-level review of the challenge VCF calls |
+| `scripts/track2/s0`–`s4` | nothing patient-derived; public APIs, cached in `data/work/track2/cache/` |
+| `reports/track2/tables/*.tsv` | regenerated from those public APIs alone |
+
+So Track 2 is fully reproducible from a clean checkout with network access;
+Track 1 needs the challenge dataset and the pipeline run first.
+
+### Verifying before a push
+
+```sh
+git ls-files | git check-ignore --stdin -v     # expect no output
+git log --all --pretty=format: --name-only | sort -u | grep -E '^data/'   # expect no output
 ```
 
 ## Conventions

@@ -21,7 +21,11 @@ Phenotype (HPO):
 - HP:0003202 Skeletal muscle atrophy
 - HP:0001622 Premature birth
 - HP:0001518 Small for gestational age
-- HP:0200067 Recurrent spontaneous abortion (parental history)
+- HP:0200067 Recurrent spontaneous abortion (parental, not proband)
+
+Coded terms only. Gestational age, birth weight, timing and other free-text
+clinical detail stay in the confidential phenotype document and out of this
+repository (see §5).
 
 The organisers' notes point toward a **chromosomal instability disorder** and
 say to treat parental miscarriages as a real signal.

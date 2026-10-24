@@ -28,3 +28,61 @@ build/
 
 # OS
 .DS_Store
+
+# --- Patient and genotype data: defence in depth -------------------------
+# Everything under data/ is already ignored. These patterns also catch data
+# written outside data/ by accident, anywhere in the tree.
+
+# Sample identifier from this challenge (FASTQ/BAM/VCF/report spill-over)
+*EX2312012*
+
+# Clinical phenotype documents (never commit; the repo is public)
+*Clinical_Phenotype*
+*.docx
+
+# Alignment and variant formats not already listed
+*.sam
+*.cram.crai
+*.bai
+*.crai
+*.tbi
+*.csi
+*.gvcf
+*.gvcf.gz
+*.g.vcf
+*.g.vcf.gz
+*.bcf
+*.fq
+*.fa
+*.fa.fai
+*.fa.mmi
+*.fna
+*.fna.gz
+*.2bit
+*.gtf
+*.gtf.gz
+*.gff
+*.gff3
+*.gff3.gz
+
+# Genome-wide / per-variant derived tables (keep curated summaries only)
+*genomewide*.tsv
+*genome_wide*.tsv
+*all_variants*.tsv
+*.variants.tsv
+*.genes.tsv
+work/
+results/
+out/
+
+# Secrets: keep only the template
+.env.*
+!.env.example
+
+# Patient-specific reports: submitted to the hackathon directly, kept local only
+# (individual variant calls, read counts, secondary/carrier findings, QC metrics)
+reports/track1/
+reports/track1_*.md
+reports/track2/*_track2_report.*
+reports/track2/01_variant_dossier.md
+sphenelabs_*
