@@ -96,7 +96,7 @@ def exclusion_reason(c: dict) -> str | None:
     if any(cls in ("B", "LB") for cls in _classes(c)):
         return "ACMG B/LB"
     if _flag(c, "artefact"):
-        return "artefact (prone region or clustered low-AB call)"
+        return "artefact (prone region, clustered low-AB call or het call on non-PAR chrX)"
     if _flag(c, "read_fail"):
         return "failed read review"
     if (c["finding_type"] == "primary" and c["inheritance"] in RECESSIVE

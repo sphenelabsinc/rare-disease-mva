@@ -1,0 +1,3 @@
+variant	gene	decision	reason
+chr15:40209701 T>G	BUB1B	pass	Clean heterozygous call; alternate reads on both strands.
+chr15:40220612 T>G	BUB1B	pass	Clean heterozygous call; alternate reads on both strands.

@@ -43,7 +43,7 @@ def test_cis_pair_is_penalised():
 @pytest.mark.parametrize("kw,reason", [
     ({"acmg_1": "LB"}, "ACMG B/LB"),
     ({"acmg_1": "P", "hgvs_2": "x", "acmg_2": "B"}, "ACMG B/LB"),
-    ({"artefact": 1}, "artefact (prone region or clustered low-AB call)"),
+    ({"artefact": 1}, "artefact (prone region, clustered low-AB call or het call on non-PAR chrX)"),
     ({"read_fail": 1}, "failed read review"),
     ({"inheritance": "AR"}, "recessive gene with a single het"),
 ])

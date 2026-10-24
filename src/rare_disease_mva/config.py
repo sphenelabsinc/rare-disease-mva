@@ -45,6 +45,10 @@ MAX_FREQ_PCT_DOMINANT = 0.01    # AD / XD / MT: < 0.01%
 CLUSTER_SIZE = 3
 CLUSTER_WINDOW_BP = 10
 CLUSTER_MAX_AB = 0.20           # a clustered call is flagged only if its alt allele balance is below this
+# A heterozygous call on non-PAR chrX cannot occur in an XY sample (one X copy); such calls are
+# reads from a paralog or pseudogene placed on chrX. Sex from the chrX hom-alt/het ratio.
+SAMPLE_SEX = "XY"
+CHRX_PAR = [(10_001, 2_781_479), (155_701_383, 156_030_895)]  # GRCh38 PAR1, PAR2
 
 # --- EPCR scoring (see epcr.py) ----------------------------------------------------
 # EPCR = w_pheno * phenotype_score + w_acmg * ACMG tier (+ w_panel * panel, control only)
@@ -61,4 +65,6 @@ CIS_DISTANCE_BP = 100   # two hets closer than this are treated as one allele in
 CIS_PENALTY = 0.3
 HEDGE_EPCR = 0.08       # fixed band 0.05-0.1, no formula
 SECONDARY_EPCR = 0.10   # fixed band 0.05-0.15, no formula
+# Reason written in the notes column of each secondary-finding row.
+SECONDARY_REASONS = {"LZTR1": "LZTR1-related schwannomatosis, unrelated to MVA"}
 MAX_MANUAL_ADJUST = 0.10

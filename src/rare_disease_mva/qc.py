@@ -134,9 +134,28 @@ def find_record(vcf: VCF, chrom: str, pos: int, ref: str, alt: str):
     return None, None
 
 
+def genotype_flags(v, idx: int) -> tuple[list[str], float | None]:
+    """FILTER/GQ/DP/allele-balance flags for allele `idx` of record `v`, and its allele balance."""
+    lo, hi = C.HET_AB_RANGE
+    gt, ad = alleles_and_ad(v)
+    gq, dp = fmt_int(v, "GQ"), fmt_int(v, "DP")
+    ab = round(ad[idx] / sum(ad), 3) if ad and idx < len(ad) else None
+    flags = []
+    if v.FILTER is not None:
+        flags.append(f"filter={v.FILTER}")
+    if gq is None or gq < C.MIN_GQ:
+        flags.append("min_gq")
+    if dp is None or dp < C.MIN_DP:
+        flags.append("min_dp")
+    if ab is not None:
+        hom = gt.count(idx) == len(gt)
+        if (hom and ab < C.HOM_ALT_MIN_AB) or (not hom and not lo <= ab <= hi):
+            flags.append("allele_balance")
+    return flags, ab
+
+
 def candidates(csv_path: Path, vcf_path: Path) -> None:
     vcf = VCF(str(vcf_path))
-    lo, hi = C.HET_AB_RANGE
     rows = []
     for row, ftype, gene, chrom, pos, ref, alt in submitted_variants(csv_path):
         v, idx = find_record(vcf, chrom, pos, ref, alt)
@@ -146,18 +165,7 @@ def candidates(csv_path: Path, vcf_path: Path) -> None:
             continue
         gt, ad = alleles_and_ad(v)
         gq, dp = fmt_int(v, "GQ"), fmt_int(v, "DP")
-        ab = round(ad[idx] / sum(ad), 3) if ad and idx < len(ad) else None
-        flags = []
-        if v.FILTER is not None:
-            flags.append(f"filter={v.FILTER}")
-        if gq is None or gq < C.MIN_GQ:
-            flags.append("min_gq")
-        if dp is None or dp < C.MIN_DP:
-            flags.append("min_dp")
-        if ab is not None:
-            hom = gt.count(idx) == len(gt)
-            if (hom and ab < C.HOM_ALT_MIN_AB) or (not hom and not lo <= ab <= hi):
-                flags.append("allele_balance")
+        flags, ab = genotype_flags(v, idx)
         rows.append(out | {
             "match": "exact", "filter": v.FILTER or "PASS",
             "gt": "/".join(map(str, gt)), "gq": gq, "dp": dp,
