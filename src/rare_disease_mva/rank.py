@@ -10,7 +10,10 @@ Before candidates are built, variants at or above the rarity threshold for the M
 dropped (gnomAD popmax < 0.1% recessive, < 0.01% dominant; secondary genes exempt). After
 selection, each chosen variant is checked in the VCF for the clustered low-allele-balance
 pattern of reads mismapped from a paralog (>= 3 calls in a 10 bp window and alt allele
-balance < 0.2); a match flags the candidate as an artefact.
+balance < 0.2); a match flags the candidate as an artefact. In an XY sample, a heterozygous
+call on non-PAR chrX is also flagged as an artefact (one X copy cannot be heterozygous).
+A variant marked `fail` in the read-level review (config/read_review.tsv, with a written
+reason) sets read_fail; this is the only way a candidate is removed by hand.
 
 Candidates are ranked by the unweighted Exomiser gene combined score, one MOI per gene; the
 top N by that score are passed to epcr.py. The table carries the Exomiser gene phenotype
@@ -26,7 +29,8 @@ Outputs (in --out):
     candidates.tsv    the top primary candidates, a hedge row for the top recessive gene and
                       any secondary genes, in the epcr.py table format plus coordinates/notes
     exclusions.tsv    variants removed by the rarity rule (genes within the top-N score range)
-                      and candidate variants flagged by the cluster rule
+                      and candidate variants flagged by the cluster or chrX ploidy rule or
+                      failed in the read review
 
 Usage:
     python -m rare_disease_mva.rank <exomiser.variants.tsv> <gene_panels_merged.tsv>
@@ -88,10 +92,12 @@ class Candidate:
     finding_type: str = "primary"
     notes: list[str] = field(default_factory=list)
     cluster: bool = False
+    ploidy: bool = False
+    read_fail: bool = False
 
     @property
     def artefact(self) -> bool:
-        return self.cluster or bool(ARTEFACT_PRONE.match(self.gene))
+        return self.cluster or self.ploidy or bool(ARTEFACT_PRONE.match(self.gene))
 
     @property
     def distance(self) -> int | None:
@@ -197,6 +203,33 @@ class ClusterCheck:
                 "detail": f"{n} calls within {w} bp, AB {ab:.3f}; calls {pos - w + 1}-{pos + w - 1}: {calls}"}
 
 
+def ploidy_hit(v: Variant, call: Call, sex=C.SAMPLE_SEX) -> dict | None:
+    """Details if `v` is a heterozygous call on non-PAR chrX in an XY sample."""
+    chrom, pos = v[0].removeprefix("chr"), v[1]
+    if sex != "XY" or chrom != "X" or call.zygosity != "het":
+        return None
+    if any(start <= pos <= end for start, end in C.CHRX_PAR):
+        return None
+    return {"variant": "-".join(map(str, v)), "rule": "ploidy",
+            "detail": f"GT {call.gt} on non-PAR chrX in an {sex} sample"}
+
+
+def load_read_review(path: Path) -> dict[Variant, dict]:
+    """Read-level review decisions keyed by variant; a `fail` needs a written reason."""
+    out = {}
+    with open(path) as fh:
+        for r in csv.DictReader(fh, delimiter="\t"):
+            pos, change = r["variant"].split(" ")
+            chrom, pos = pos.split(":")
+            ref, alt = change.split(">")
+            if r["decision"] not in ("pass", "fail"):
+                raise ValueError(f"{r['variant']}: decision must be pass or fail")
+            if r["decision"] == "fail" and not r["reason"].strip():
+                raise ValueError(f"{r['variant']}: a failed read review needs a written reason")
+            out[(chrom, int(pos), ref, alt)] = r
+    return out
+
+
 def choose_variants(vs: dict[Variant, Call], moi: str) -> list[Variant]:
     """Best single variant (dominant), or a hom/hemi or the two best hets (recessive)."""
     ranked = sorted(vs, key=lambda v: (vs[v].key(), v))
@@ -278,7 +311,7 @@ def candidate_row(c: Candidate, reviewed: dict) -> dict:
         "distance_bp": c.distance if c.distance is not None else "",
         "phenotype_score": f"{c.pheno:.4f}", "combined_score": f"{c.score:.4f}",
         "in_panel": int(c.in_panel),
-        "artefact": int(c.artefact), "read_fail": 0, "adjust": "", "adjust_reason": "",
+        "artefact": int(c.artefact), "read_fail": int(c.read_fail), "adjust": "", "adjust_reason": "",
         "chrom_1": c.variants[0][0], "pos_1": c.variants[0][1], "ref_1": c.variants[0][2],
         "alt_1": c.variants[0][3], "chrom_2": v2[0], "pos_2": v2[1], "ref_2": v2[2], "alt_2": v2[3],
         "panel_sources": c.panel_sources,
@@ -303,6 +336,7 @@ def main(argv=None):
     p.add_argument("--review", type=Path, default=C.ROOT / "config" / "acmg_review.tsv")
     p.add_argument("--vcf", type=Path, default=C.NORM_VCF if C.NORM_VCF.exists() else C.RAW_VCF,
                    help="VCF for the cluster check (normalised VCF if present, else the raw VCF)")
+    p.add_argument("--read-review", type=Path, default=C.ROOT / "config" / "read_review.tsv")
     a = p.parse_args(argv)
 
     secondary = {g for g in a.secondary.split(",") if g}
@@ -328,6 +362,7 @@ def main(argv=None):
     floor = unfiltered[min(a.top, len(unfiltered)) - 1].score
     exclusions = [e for e in rarity if e["score"] >= floor]
     checker = ClusterCheck(a.vcf)
+    read_review = load_read_review(a.read_review) if a.read_review.exists() else {}
     for c in [*chosen, *([hedge] if hedge else [])]:
         for v, call in zip(c.variants, c.calls):
             hit = checker.check(v)
@@ -335,6 +370,18 @@ def main(argv=None):
                 c.cluster = True
                 c.notes.append(f"clustered low-AB call ({hit['detail'].split(';')[0]}): likely mapping artefact")
                 exclusions.append(dict(hit, gene=c.gene, moi=c.moi, hgvs=call.hgvs, score=c.score))
+            hit = ploidy_hit(v, call)
+            if hit:
+                c.ploidy = True
+                c.notes.append(f"het call on non-PAR chrX in an {C.SAMPLE_SEX} sample: likely mapping artefact")
+                exclusions.append(dict(hit, gene=c.gene, moi=c.moi, hgvs=call.hgvs, score=c.score))
+            review = read_review.get(v)
+            if review and review["decision"] == "fail":
+                c.read_fail = True
+                c.notes.append(f"failed read review: {review['reason']}")
+                exclusions.append({"variant": "-".join(map(str, v)), "rule": "read_review",
+                                   "detail": review["reason"], "gene": c.gene, "moi": c.moi,
+                                   "hgvs": call.hgvs, "score": c.score})
     _write(a.out / "exclusions.tsv", exclusions, ["gene", "moi", "variant", "hgvs", "rule", "score", "detail"])
     rows = [candidate_row(c, reviewed) for c in [chosen[0], *([hedge] if hedge else []), *chosen[1:]]]
     _write(a.out / "candidates.tsv", rows, CANDIDATE_COLS)

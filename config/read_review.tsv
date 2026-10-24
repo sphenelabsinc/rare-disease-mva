@@ -1,0 +1,3 @@
+variant	gene	decision	reason
+chr15:40209701 T>G	BUB1B	pass	Clean heterozygous call; 25 of 46 reads carry the alternate allele, on both strands.
+chr15:40220612 T>G	BUB1B	pass	Clean heterozygous call; 13 of 28 reads carry the alternate allele, on both strands.
