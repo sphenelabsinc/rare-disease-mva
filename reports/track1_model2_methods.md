@@ -28,7 +28,7 @@ places it 4th of 4,983 genes, within the threshold of 20 set before the run. EPC
 | Genotype QC | FILTER=PASS | PASS plus GQ / DP / allele-balance thresholds, reported as a genome-wide funnel and checked for every submitted variant; flags only |
 | Phenotype evidence | Exomiser only | Exomiser plus a phenotype-only LIRICAL ranking (HPO 2026-09-01) |
 | ACMG classification | Exomiser automatic | Manual review of the two BUB1B variants; other candidates keep the automatic class |
-| Candidate rules | First two variants by position; `OR*` prefix excluded | Two best variants by Exomiser variant score, then frequency; rarest other het as the hedge allele; `^OR\d+[A-Z]` olfactory-receptor match; rarity thresholds by inheritance mode; clustered-call artefact rule |
+| Candidate rules | First two variants by position; `OR*` prefix excluded | Two best variants by Exomiser variant score, then frequency; rarest other het as the hedge allele; `^OR\d+[A-Z]` olfactory-receptor match; rarity thresholds by inheritance mode; clustered-call and chrX ploidy artefact rules |
 
 ## Data
 
@@ -106,9 +106,13 @@ and SMC5 from the literature. The panel does not affect ranking or EPCR.
   containing it holds three or more calls (GATK VariantFiltration convention, cluster size 3,
   window 10) and its own allele balance is below 0.2 (the gnomAD high-quality heterozygous genotype
   standard). Several low-fraction calls carried by the same reads within a few base pairs is the
-  pattern of reads from a paralogous or unrepresented sequence placed on the wrong locus. This is
-  the only genotype-level exclusion. An isolated low-allele-balance call is kept, because it may be
-  a true mosaic variant.
+  pattern of reads from a paralogous or unrepresented sequence placed on the wrong locus. An
+  isolated low-allele-balance call is kept, because it may be a true mosaic variant.
+- **chrX ploidy:** the proband is XY, so a heterozygous call on chrX outside the pseudoautosomal
+  regions (GRCh38 PAR1 10,001–2,781,479, PAR2 155,701,383–156,030,895) is flagged as a likely
+  mapping artefact. With one X copy a 0/1 genotype cannot occur; such calls come from reads of a
+  paralog or pseudogene placed on chrX. The cluster and ploidy rules are the only genotype-level
+  exclusions.
 
 ### 6. Read-level and structural review
 
@@ -155,7 +159,8 @@ EPCR = 0.6 × phenotype_score + 0.4 × ACMG_tier
 - **`ACMG_tier`** is P 1.0, LP 0.75, VUS 0.4, LB 0.1, B 0. For a compound heterozygote the weaker
   allele is used.
 - **Exclusions:** candidates with a B/LB allele, a single heterozygous variant in a recessive gene,
-  an artefact-prone locus, a clustered low-allele-balance call or a failed read review.
+  an artefact-prone locus, a clustered low-allele-balance call, a heterozygous call on non-PAR chrX
+  or a failed read review.
 - **Fixed values:** hedge rows 0.08 and secondary findings 0.10. A manual adjustment (≤ 0.1) needs
   a written reason; none was used.
 - **Ordering check:** F-max sweeps EPCR as a confidence threshold, so only the order matters. The top
@@ -180,7 +185,9 @@ the run configuration and are in the repository:
 
 - the manual ACMG review of the two BUB1B variants (`config/acmg_review.tsv`)
 - the artefact-gene list
-- the rarity and clustered-call thresholds (fixed values in `config.py`, applied by code)
+- the rarity, clustered-call and chrX ploidy settings (fixed values in `config.py`, applied by code)
+- the read-level review (`config/read_review.tsv`): a candidate can be removed by hand only by a
+  `fail` entry with a written reason; both BUB1B variants pass and no candidate was removed this way
 - LZTR1 as a secondary-finding gene
 
 No row was added, removed, reordered or re-scored by hand outside these inputs.
@@ -203,7 +210,9 @@ No row was added, removed, reordered or re-scored by hand outside these inputs.
   variant, and no exon-level deletion or SV was found in BUB1B, CEP57 or TRIP13.
 - **Artefact or mosaic.** MTCH2 c.229A>T lies in a cluster of four calls carried by the same 11
   reads and is excluded. CACNB1 c.1797A>G is an isolated call (allele balance 0.19) and is kept as a
-  low-confidence row.
+  low-confidence row. SLC25A5 c.197dup is called 0/1 in an XY proband, inside runs of heterozygous
+  calls confined to the exons at about twice the hemizygous depth, with clean 1/1 flanking calls;
+  it is excluded by the chrX ploidy rule as reads from an SLC25A5 pseudogene.
 - **Lower rows are background.** A typical genome carries about 100 genuine loss-of-function
   variants, so a rare truncating VUS in a gene without a phenotype match is expected by chance.
   Rows 2–8 are near-tied. FLG p.(Arg2447\*) is a common allele (gnomAD popmax 0.77%), a known
